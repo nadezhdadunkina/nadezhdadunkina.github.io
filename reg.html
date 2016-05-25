@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="img/favicon.ico" size="16x16" rel="icon" type="image/ico"/>
+	  <title>Форма за обратна връзка</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="PFSweb">
+      <meta name="keywords" content="HTML">
+      <meta name="author" content="Nadeto">
+	  	  <link rel=stylesheet type="text/css" href="style.css">
+   </head>
+   <body>
+   <header>
+      <h1 align = "center"><strong><i>FZone - Онлайн магазин за дамски дрехи</i></strong></h1>
+	  <img src="img/logo.png" width="110" height="51" alt="logo">
+   </header>
+   
+   
+   
+	<nav id="navid1">
+  <a href="index.html">Начална страница</a> |
+  <a href="drehi.html">Дамски дрехи</a> |
+  <a href="detaili.html">Детайли за дрехи</a> |
+  <a href="zanas.html">За нас</a> |
+  <a href="kontakti.html">Контакти</a> 
+	</nav>
+	
+    <aside id="asideid1">
+	<a href="vhod.html">Вход</a>
+	<br>
+	<a href="reg.html">Регистрация</a>
+	</aside>
+	
+<hr>
+	
+	  <section>
+	  <h2 align = "center"><strong><i>Регистрация</i></strong></h2>
+	  
+	  <article>
+	  <form method="post" action="">  
+	  <fieldset style="width: 30%">
+	  <label for="ime">Име:</label>
+	  <input type="text" id="ime" name="ime" placeholder="Ivan" required autofocus><br/>
+	  <br>	  	
+	  <label for="familiq">Фамилия:</label>
+	  <input type="text" id="familiq" name="familiq" placeholder="Petrov"><br/>
+	  <br>	
+	  <label for="pol">Изберете Вашия пол:</label><br>   
+	  <input type="radio" name="pol" id="muj" value="muj">
+	  <label for="muj">Мъж</label>
+	  <br>	 
+	  <input type="radio" name="pol" id="jena" value="jena">	  
+	  <label for="jena">Жена</label>
+	  <br> 
+	  <br>
+	  <label for="email">Email:</label>
+	  <input type="email" name="email" id="email" placeholder="fzone@abv.bg"/><br/>
+	  <br>
+	  <br>
+	  <label for="parola">Парола:</label>
+	  <input type="password" name="password" id="password"/><br/>
+	  <br>
+	  <br>
+	  <label for="potvurdeteparola">Потвърдете парола:</label>
+	  <input type="password" name="password" id="password"/><br/>
+	  <br>
+	  <br>
+	  <label for="rojdennadata">Въведете рожденна дата:</label>
+	  <input type="date" name="birthday">
+	  <br>
+	  <br>
+	  <label for="status">Статус:</label>
+      <select name="example">
+         <option value=""></option>
+         <option value="uchenik">ученик</option>
+         <option value="student">студент</option>
+         <option value="raboteshtuchasht">работещ, учащ</option>
+		 <option value="raboteshtneuchasht">работещ, неучащ</option>
+         <option value="nerabotesht">неработещ</option>
+      </select>
+	  <br>
+	  <br>
+	   <label for="vuzrast">Към коя възрастова категория спадате?</label><br>
+	   <input type="radio" name="vuzrast" id="Под 18" value="Под 18">	  
+	  <label for="Под 18">под 18г.</label><br>
+	  <input type="radio" name="vuzrast" id="18-25" value="18-25">	  
+	  <label for="18-25">18-25г.</label><br>
+	  <input type="radio" name="vuzrast" id="26-39" value="26-39">	  
+	  <label for="26-39">26-39г.</label><br>
+	  	  <input type="radio" name="vuzrast" id="40+" value="40+">	  
+	  <label for="40+">над 40 г.</label>
+	<br>
+	<br>
+	  <label for="interesi">Интереси:</label><br>
+	   <label><input type="checkbox" name="interesi" value="programirane">програмиране<br></label>
+	   <label><input type="checkbox" name="interesi" value="istoriq">история<br></label>
+  <label><input type="checkbox" name="interesi" value="sport">спорт<br></label>
+    <label><input type="checkbox" name="interesi" value="razhodki">разходки<br></label>
+	  <label><input type="checkbox" name="interesi" value="obikalqnenasveta">обикаляне на света<br></label>
+	  <label><input type="checkbox" name="interesi" value="drugo">друго<br></label>
+	  <br>
+	  	 <label>Други интереси:</label><br/>
+      <textarea name="interesi" cols="30" rows="5">
+      </textarea><br/>
+	  <br>
+	  <input type="reset" value="Изчистване на полетата" />
+	  <br>
+	  <br>
+	  <input type="submit" value="Регистрация"/>
+	  <br>
+	  <br>
+	  <br>
+	  </fieldset>
+	  </form>
+	  </article>
+      </section>
+      <hr>
+	  <footer id="footer1">   
+	  <a href="index.html" title="Начална страница">Начална страница</a>
+	  </footer>
+   </body>
+</html>

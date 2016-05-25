@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Форма за обратна връзка</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="PFSweb">
+      <meta name="keywords" content="HTML">
+      <meta name="author" content="Nadeto">
+      <link rel=stylesheet type="text/css" href="style.css">
+   </head>
+   <body>
+      <header>
+         <h1 align = "center"><strong><i>FZone - Онлайн магазин за дамски дрехи</i></strong></h1>
+         <img src="img/logo.png" width="110" height="51" alt="logo">
+      </header>
+      <nav id="navid1">
+         <a href="index.html">Начална страница</a> |
+         <a href="drehi.html">Дамски дрехи</a> |
+         <a href="detaili.html">Детайли за дрехи</a> |
+         <a href="zanas.html">За нас</a> |
+         <a href="kontakti.html">Контакти</a> 
+      </nav>
+      <aside id="asideid1">
+         <a href="vhod.html">Вход</a>
+         <br>
+         <a href="reg.html">Регистрация</a>
+      </aside>
+      <hr>
+      <section>
+         <h2><strong><i>Форма за обратна връзка</i></strong></h2>
+         <article>
+            <fieldset style="width: 18%">
+               <form method="post" action="">
+                  <label for="ime">Име:</label>
+                  <input type="ime" id="ime" name="ime" placeholder="Ivan" required autofocus><br/>
+                  <br>	  	
+                  <label for="familiq">Фамилия:</label>
+                  <input type="familiq" id="familiq" name="familiq" placeholder="Petrov"><br/>
+                  <br>	
+                  <label for="pol">Изберете Вашия пол:</label><br>   
+                  <input type="radio" name="pol" id="muj" value="muj">
+                  <label for="muj">Мъж</label>
+                  <br>	 
+                  <input type="radio" name="pol" id="jena" value="jena">	  
+                  <label for="jena">Жена</label>
+                  <br> 
+                  <br>
+                  <label for="komentar">Коментар:</label><br/>
+                  <textarea name="komentar" cols="30" rows="5">
+                  </textarea><br/>
+                  <br>
+                  <input type="reset" value="Изчистване на полетата">
+                  <br>
+                  <br>
+                  <input type="submit" value="Изпрати коментара"/>
+                  <br>
+                  <br>
+                  <br>
+            </fieldset>
+            </form>
+         </article>
+      </section>
+      <hr>
+      <footer id="footer1">     
+         <a href="index.html" title="Начална страница">Начална страница</a>
+      </footer>
+   </body>
+</html>
