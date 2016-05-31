@@ -7,55 +7,101 @@
       <meta name="description" content="PFSweb">
       <meta name="keywords" content="HTML">
       <meta name="author" content="Nadeto">
-      <link rel=stylesheet type="text/css" href="style.css">
+      <link rel=stylesheet type="text/css" href="css/style.css">
    </head>
    <body>
-      <header>
-         <h1 align = "center"><strong><i>FZone - Онлайн магазин за дамски дрехи</i></strong></h1>
-         <img src="img/logo.png" width="110" height="51" alt="logo">
+      <header id="header">
+         <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
+         <div class="absolute">
+            <img src="img/logo.png" width="110" height="51" alt="logo">
+         </div>
+         <div class="chat">Чат с нас</div>
+         <div class="box">
+            <div class="container-1">
+               <span class="icon"><i class="fa fa-search"></i></span>
+               <input type="search" id="search" placeholder="Search..." />
+            </div>
+         </div>
+         <div class="clear"></div>
       </header>
-      <nav id="navid1">
-         <a href="index.html">Начална страница</a> |
-         <a href="drehi.html">Дамски дрехи</a> |
-         <a href="detaili.html">Детайли за дрехи</a> |
-         <a href="zanas.html">За нас</a> |
-         <a href="kontakti.html">Контакти</a> 
+      <nav id="menu">
+         <ul>
+            <li class="menu"><a href="index.html">Начална страница</a></li>
+            <li class="menu">
+               <a href="drehi.html">Дамски дрехи</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
+                  <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
+                  <li class="menu">
+                     <a href="drehi.html#teniski">Тениски</a>
+                     <ul class="submenu2">
+                        <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
+                        <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
+                        <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
+                        <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
+                     </ul>
+                  </li>
+                  <li class="menu">
+                     <a href="drehi.html#pantaloni">Панталони</a>
+                     <ul class="submenu3">
+                        <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
+                        <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
+                        <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
+            <li class="menu"><a href="zanas.html">За нас</a></li>
+            <li class="menu">
+               <a href="kontakti.html">Контакти</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="anketa.html">Анкета</a></li>
+               </ul>
+            </li>
+         </ul>
       </nav>
+      <div class="clear"></div>
+      <br>
       <aside id="asideid1">
          <a href="vhod.html">Вход</a>
-         <br>
          <a href="reg.html">Регистрация</a>
       </aside>
+      <br>
+      <br>
+      <hr>
       <section>
-         <hr>
-         <article>
-            <hgroup align="center">
+         <article class="article0">
+            <hgroup>
                <h2><strong><i>Добре дошли в нашия онлайн магазин за дамски дрехи!</i></strong></h2>
                <h3>Пазарувайте с кредитна или дебитна карта и получете всичко с безплатна доставка!</h3>
+               <br>
                <h4>Получвате безплатна доставка при пазаруване над 50 лв.</h4>
             </hgroup>
             <br>
-            <center><img src="img/promotion.jpg" width="400" height="250" border="1" alt="Promociq"></center>
+            <center><img src="img/promotion.jpg" width="400" height="250" border="1" alt="promociq"></center>
          </article>
          <br>
          <br>
          <hr>
-         <article align="left" style="font-size:18px">
-            <ul>
+         <article class="article1">
+            <ul id="ul1">
                <li>В нашия онлайн магазин за дамски дрехи може да намерите рокли, панталони, тениски и др.</li>
                <li>FZone е един от най-известните онлайн магазини за дрехи в цялата страна. Към днешна дата нашият онлайн магазин разполага с над 1000 дамски дрехи. Oт 2015 година изграждаме нашите магазини в цялата страна, за да предоставим най-добрите дамски дрехи на нашите клиенти. Магазини са изградени в София, Пловдив, Бургас, Варна, Стара Загора, Русе, В.Търново, Благоевград,  Плевен и други по-големи областни градове.</li>
                <li>В резултат на натрупания досега опит в производството на дамски дрехи и благодарение на собствения ни, доказан екип от професионалисти, ние можем да гарантираме безпрепятствено и качествено изпращане на нашите продукти в максимално кратки срокове.</li>
                <li>За улеснение сме направили онлайн магазин, в който можете да поръчвате дрехи. До няколко дни се извършва доставката. Доставката е до личен адрес и се извършва в удобно за Вас време.</li>
             </ul>
          </article>
-         <article style="font-size:18px">
-            Ако желаете да оставите коментар, то може да го направите <a href="komentar.html">тук</a>.
+         <article class="article1">
+            Ако желаете да оставите коментар, то може да го направите <a href="komentar.html" id="komentarid">тук</a>.
          </article>
          <br>
       </section>
+      <div class="clear"></div>
       <hr>
-      <footer id="footer1">
+      <footer class="footer">
          <a href="drehi.html" title="Дамски дрехи">Следваща страница</a>
+         <br>
+         <br>
          <h4><u>Изготвил: Надежда Благоева Дункина</u></h4>
       </footer>
    </body>

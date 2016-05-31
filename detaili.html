@@ -7,50 +7,113 @@
       <meta name="description" content="PFSweb">
       <meta name="keywords" content="HTML">
       <meta name="author" content="Nadeto">
-	  	  <link rel=stylesheet type="text/css" href="style.css">
+      <link rel=stylesheet type="text/css" href="css/style.css">
    </head>
    <body>
-   <header>
-      <h1 align = "center"><strong><i>FZone - Онлайн магазин за дамски дрехи</i></strong></h1>
-	  <img src="img/logo.png" width="110" height="51" alt="logo">
-   </header>
-	
-	<nav id="navid1">
-  <a href="index.html">Начална страница</a> |
-  <a href="drehi.html">Дамски дрехи</a> |
-  <a href="detaili.html">Детайли за дрехи</a> |
-  <a href="zanas.html">За нас</a> |
-  <a href="kontakti.html">Контакти</a> 
-	</nav>
-	<aside id="asideid1">
-	<a href="vhod.html">Вход</a>
-	<br>
-	<a href="reg.html">Регистрация</a>
-	</aside>
+      <header id="header">
+         <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
+         <div class="absolute">
+            <img src="img/logo.png" width="110" height="51" alt="logo">
+         </div>
+         <div class="chat">Чат с нас</div>
+         <div class="box">
+            <div class="container-1">
+               <span class="icon"><i class="fa fa-search"></i></span>
+               <input type="search" id="search" placeholder="Search..." />
+            </div>
+         </div>
+         <div class="clear"></div>
+      </header>
+      <nav id="menu">
+         <ul>
+            <li class="menu"><a href="index.html">Начална страница</a></li>
+            <li class="menu">
+               <a href="drehi.html">Дамски дрехи</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
+                  <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
+                  <li class="menu">
+                     <a href="drehi.html#teniski">Тениски</a>
+                     <ul class="submenu2">
+                        <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
+                        <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
+                        <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
+                        <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
+                     </ul>
+                  </li>
+                  <li class="menu">
+                     <a href="drehi.html#pantaloni">Панталони</a>
+                     <ul class="submenu3">
+                        <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
+                        <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
+                        <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
+            <li class="menu"><a href="zanas.html">За нас</a></li>
+            <li class="menu">
+               <a href="kontakti.html">Контакти</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="anketa.html">Анкета</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <div class="clear"></div>
+      <br>
+      <aside id="asideid1">
+         <a href="vhod.html">Вход</a>
+         <a href="reg.html">Регистрация</a>
+      </aside>
+      <br>
+      <br>
       <hr>
-      <h2 align="center"><i><strong>Тук може да намерите по-подробна информация за предлаганите от нас дрехи</i></strong></h2>
+      <h2 class="article0"<i><strong>Тук може да намерите по-подробна информация за предлаганите от нас дрехи</i></strong></h2>
       <h3><i><b>Дрехите, които предлагаме са уникални, произведени лично от нас. Предлаганите от нас дрехи имат следните предимства пред останалите дрехи в Интернет пространството:</i></b></h3>
+      <div class="clear"></div>
+      <br>
       <section>
-	  <i><ol style="font-size: 18px">
-            <li>уникални са, т.е. няма да намерите същият модел никъде другаде
-				<img src="img/unikalen.jpg" align="center" width="400" height="250" alt="">
-			</li>
-            <li>разнообразни размери
-				<img src="img/razlichnirazmeri.png" align="center" width="400" height="250" alt=""><br>
-			</li>					
-            <li>многообразие от цветове
-				<img src="img/cvetove.jpg" align="center" width="400" height="250" alt=""><br>		
-			</li>					
-            <li>качествени са<br></li>
-            <li>евтини са<br></li>	
-            <li>подходящи са за специални поводи<br></li>
-			</i>
-      </ol>
-	  </section>
-	  <hr>
-	  	  <footer id="footer1">
-	  <a href="drehi.html" title="Дамски дрехи">Предишна страница</a>
-      <a href="zanas.html" title="За нас">Следваща страница</a></p>
-	  </footer>
+         <ul class="demo-3">
+            <article class="classimg">
+               <li>
+                  <figure>
+                     <img src="img/unikalen.jpg" alt="unikalen" width="450px" height="300px">
+                     <figcaption>
+                        <h3 class="h3color">уникални са, т.е. няма да намерите същият модел никъде другаде</h3>
+                     </figcaption>
+                  </figure>
+               </li>
+            </article>
+            <div class="clear"></div>
+            <article class="classimg">
+               <li>
+                  <figure>
+                     <img src="img/razlichnirazmeri.png" alt="razlichnirazmeri" width="450px" height="300">
+                     <figcaption>
+                        <h3 class="h3color">разнообразни размери</h3>
+                     </figcaption>
+                  </figure>
+               </li>
+            </article>
+            <div class="clear"></div>
+            <article class="classimg">
+               <li>
+                  <figure>
+                     <img src="img/cvetove.jpg" alt="cvetove" width="450px" height="300px">				
+                     <figcaption>
+                        <h3 class="h3color">многообразие от цветове</h3>
+                     </figcaption>
+                  </figure>
+               </li>
+            </article>
+         </ul>
+      </section>
+      <div class="clear"></div>
+      <hr>
+      <footer id="footer">
+         <a href="drehi.html" title="Дамски дрехи">Предишна страница</a>
+         <a href="zanas.html" title="За нас">Следваща страница</a></p>
+      </footer>
    </body>
 </html>

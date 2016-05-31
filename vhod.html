@@ -2,63 +2,99 @@
 <html>
    <head>
       <link href="img/favicon.ico" size="16x16" rel="icon" type="image/ico"/>
-	  <title>Форма за обратна връзка</title>
+      <title>Онлайн магазин за дамски дрехи | fzone</title>
       <meta charset="UTF-8">
       <meta name="description" content="PFSweb">
       <meta name="keywords" content="HTML">
       <meta name="author" content="Nadeto">
-	  	  <link rel=stylesheet type="text/css" href="style.css">
+      <link rel=stylesheet type="text/css" href="css/style.css">
    </head>
    <body>
-   <header>
-      <h1 align = "center"><strong><i>FZone - Онлайн магазин за дамски дрехи</i></strong></h1>
-	  <img src="img/logo.png" width="110" height="51" alt="logo">
-   </header>
-   
- 
-	<nav id="navid1">
-  <a href="index.html">Начална страница</a> |
-  <a href="drehi.html">Дамски дрехи</a> |
-  <a href="detaili.html">Детайли за дрехи</a> |
-  <a href="zanas.html">За нас</a> |
-  <a href="kontakti.html">Контакти</a> 
-	</nav>
-	
-	<aside id="asideid1">
-	<a href="vhod.html">Вход</a>
-	<br>
-	<a href="reg.html">Регистрация</a>
-	</aside>
-	<hr>
-
-	 <h2 align = "center"><strong><i>Вход</i></strong></h2>
-
-		<section>
-		<p>Моля, попълнете полетата.</p>
-		<article>
-		<fieldset style="width: 30%">
-	  <form method="post" action="">
-
-	  <label for="ime">Потребителско име:</label>
-	  <input type="text" id="ime" name="ime" required autofocus><br/>
-	  <br>
-	  <br>
-	  <label for="parola">Парола:</label>
-	  <input type="password" name="password" id="password"/><br/>
+      <header id="header">
+         <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
+         <div class="absolute">
+            <img src="img/logo.png" width="110" height="51" alt="logo">
+         </div>
+         <div class="chat">Чат с нас</div>
+         <div class="box">
+            <div class="container-1">
+               <span class="icon"><i class="fa fa-search"></i></span>
+               <input type="search" id="search" placeholder="Search..." />
+            </div>
+         </div>
+         <div class="clear"></div>
+      </header>
+      <nav id="menu">
+         <ul>
+            <li class="menu"><a href="index.html">Начална страница</a></li>
+            <li class="menu">
+               <a href="drehi.html">Дамски дрехи</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
+                  <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
+                  <li class="menu">
+                     <a href="drehi.html#teniski">Тениски</a>
+                     <ul class="submenu2">
+                        <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
+                        <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
+                        <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
+                        <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
+                     </ul>
+                  </li>
+                  <li class="menu">
+                     <a href="drehi.html#pantaloni">Панталони</a>
+                     <ul class="submenu3">
+                        <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
+                        <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
+                        <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
+            <li class="menu"><a href="zanas.html">За нас</a></li>
+            <li class="menu">
+               <a href="kontakti.html">Контакти</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="anketa.html">Анкета</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <div class="clear"></div>
       <br>
-	  	  <input type="reset" value="Изчистване на полетата">
-		  <br>
-		  <br>
-      <input type="submit" value="Вход"/>
-	  <br>
-	  <br>
-	  <br>
-	  </form>
-	  </fieldset>
-	  </article>	
-		</section>	  
+      <aside id="asideid1">
+         <a href="vhod.html">Вход</a>
+         <a href="reg.html">Регистрация</a>
+      </aside>
+      <br>
+      <br>
       <hr>
-	  <footer id="footer1">  
-	  <a href="index.html" title="Начална страница">Начална страница</a>
-	  </footer>
+      <h2><u>Вход</u></h2>
+      <section>
+         <p>Моля, попълнете полетата.</p>
+         <br>
+         <article>
+            <fieldset id="fieldsetid">
+               <form method="post" action="">
+                  <label for="ime">Потребителско име:</label>
+                  <input type="text" id="ime" name="ime" required autofocus><br/>
+                  <br>
+                  <br>
+                  <label for="parola">Парола:</label>
+                  <input type="password" name="password" id="password"/><br/>
+                  <br>
+                  <input type="reset" value="Изчистване на полетата">
+                  <br>
+                  <br>
+                  <input type="submit" value="Вход"/>
+                  <br>
+               </form>
+            </fieldset>
+         </article>
+      </section>
+      <div class="clear"></div>
+      <hr>
+      <footer id="footer">  
+         <a href="index.html" title="Начална страница">Начална страница</a>
+      </footer>
    </body>

@@ -7,74 +7,120 @@
       <meta name="description" content="PFSweb">
       <meta name="keywords" content="HTML">
       <meta name="author" content="Nadeto">
-	  	  <link rel=stylesheet type="text/css" href="style.css">
+      <link rel=stylesheet type="text/css" href="css/style.css">
    </head>
    <body>
-   <header>
-      <h1 align = "center"><strong><i>Подробна информация за продукт</i></strong></h1>
-	  <img src="img/logo.png" width="110" height="51" alt="logo">
-   </header>
-	<nav id="navid1">
-  <a href="index.html">Начална страница</a> |
-  <a href="drehi.html">Дамски дрехи</a> |
-  <a href="detaili.html">Детайли за дрехи</a> |
-  <a href="zanas.html">За нас</a> |
-  <a href="kontakti.html">Контакти</a> 
-	</nav>
-	<aside id="asideid1">
-	<a href="vhod.html">Вход</a>
-	<br>
-	<a href="reg.html">Регистрация</a>
-	</aside>
+      <header id="header">
+         <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
+         <div class="absolute">
+            <img src="img/logo.png" width="110" height="51" alt="logo">
+         </div>
+         <div class="chat">Чат с нас</div>
+         <div class="box">
+            <div class="container-1">
+               <span class="icon"><i class="fa fa-search"></i></span>
+               <input type="search" id="search" placeholder="Search..." />
+            </div>
+         </div>
+         <div class="clear"></div>
+      </header>
+      <nav id="menu">
+         <ul>
+            <li class="menu"><a href="index.html">Начална страница</a></li>
+            <li class="menu">
+               <a href="drehi.html">Дамски дрехи</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
+                  <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
+                  <li class="menu">
+                     <a href="drehi.html#teniski">Тениски</a>
+                     <ul class="submenu2">
+                        <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
+                        <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
+                        <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
+                        <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
+                     </ul>
+                  </li>
+                  <li class="menu">
+                     <a href="drehi.html#pantaloni">Панталони</a>
+                     <ul class="submenu3">
+                        <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
+                        <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
+                        <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
+            <li class="menu"><a href="zanas.html">За нас</a></li>
+            <li class="menu">
+               <a href="kontakti.html">Контакти</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="anketa.html">Анкета</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      </li>
+      </ul> 
+      </nav>
+      <div class="clear"></div>
+      <br>
+      <aside id="asideid1">
+         <a href="vhod.html">Вход</a>
+         <a href="reg.html">Регистрация</a>
+      </aside>
+      <br>
+      <br>
       <hr>
-	  <section>
-      <p>Това са ежедневни панталони, които са хубави, удобни и евтини.</p>
-      <article>
-         <img src="img/p3.1.jpg" width="200" height="300" alt="pantalon3info1">
-         <img src="img/p3.2.jpg" width="200" height="300" alt="pantalon3info2">
-         <img src="img/p3.3.jpg" width="200" height="300" alt="pantalon3info3">
-         <img src="img/p3.4.jpg" width="200" height="300" alt="pantalon3info4">
-      </article>
+      <section>
+         <p>Това са ежедневни панталони, които са хубави, удобни и евтини.</p>
+         <br>
+         <article class="product">
+            <ul>
+            <li><a><img class="zoom" src="img/tumnolilav-pantalon.jpg" alt="tumnolilav-pantalon"></a></li>
+            <li><a><img class="zoom" src="img/tumnolilav-pantalon1.jpg" alt="tumnolilav-pantalon1"></a></li>
+         </article>
+         <div class="clear"></div>
+         <br>
+         <br>
+         <article>
+            <label>Избрете размер:</label>
+            <select name="example">
+               <option value=""></option>
+               <option value="xs">xs</option>
+               <option value="s">s</option>
+               <option value="m">m</option>
+               <option value="l">l</option>
+               <option value="xl">xl</option>
+            </select>
+            <br>
+            <br>
+            <label>Избрете цвят:</label>
+            <select name="example">
+               <option value=""></option>
+               <option value="koral">корал</option>
+               <option value="cheren">черен</option>
+               <option value="tumnozelen">тъмнозелен</option>
+            </select>
+            <br>
+            <br>
+            <label>Описание:</label>
+            <label>Дамски изчистен панталон. Състав: 94 % памук и 6 % еластан.</label>
+            <br>
+            <br>
+            <label>Цена:</label>
+            <label>14 лв.</label>
+            <br>
+            <br>
+            <button type="button">Добави в кошницата</button>
+         </article>
+      </section>
       <br>
-      <br>
-	  <article>
-      <label>Избрете размер:</label>
-      <select name="example">
-         <option value=""></option>
-         <option value="xs">xs</option>
-         <option value="s">s</option>
-         <option value="m">m</option>
-         <option value="l">l</option>
-         <option value="xl">xl</option>
-      </select>
-      <br>
-      <br>
-      <label>Избрете цвят:</label>
-      <select name="example">
-         <option value=""></option>
-         <option value="koral">корал</option>
-         <option value="cheren">черен</option>
-         <option value="tumnozelen">тъмнозелен</option>
-      </select>
-      <br>
-      <br>
-      <label>Описание:</label>
-      <label>Дамски изчистен панталон. Състав: 94 % памук и 6 % еластан.</label>
-      <br>
-      <br>
-      <label>Цена:</label>
-      <label>14 лв.</label>
-      <br>
-      <br>
-      <button type="button">Добави в кошницата</button>
-	  </article>
-	  </section>
-      <br>
-      <br>
+      <div class="clear"></div>
       <hr>
-	  <footer id="footer1">
-	  <a href="drehi.html" title="Дамски дрехи">Дамски дрехи</a>        
-      <a href="index.html" title="Начална страница">Начална страница</a>
-	  </footer>
+      <footer id="footer">
+         <a href="drehi.html" title="Дамски дрехи">Дамски дрехи</a>        
+         <a href="index.html" title="Начална страница">Начална страница</a>
+      </footer>
    </body>
 </html>

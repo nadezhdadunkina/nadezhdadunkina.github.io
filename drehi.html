@@ -7,199 +7,283 @@
       <meta name="description" content="PFSweb">
       <meta name="keywords" content="HTML">
       <meta name="author" content="Nadeto">
-	  	  <link rel=stylesheet type="text/css" href="style.css">
+      <link rel=stylesheet type="text/css" href="css/style.css">
    </head>
    <body>
-   <header>
-      <h1 align = "center"><strong><i>FZone - Онлайн магазин за дамски дрехи</i></strong></h1>
-	  <img src="img/logo.png" width="110" height="51" alt="logo">
-   </header>
-	<nav id="navid1">
-  <a href="index.html">Начална страница</a> |
-  <a href="drehi.html">Дамски дрехи</a> |
-  <a href="detaili.html">Детайли за дрехи</a> |
-  <a href="zanas.html">За нас</a> |
-  <a href="kontakti.html">Контакти</a> 
-	</nav>
-	<aside id="asideid1">
-	<a href="vhod.html">Вход</a>
-	<br>
-	<a href="reg.html">Регистрация</a>
-	</aside>
-      <hr>
-	  <section>
-      <h3>
-         <a href="img/tablesize.jpg">Таблица с рамери</a>
-      </h3>
-      <hr>
-      <h2>Рокли</h2>
-	  <article>
-         <a href="info1.html"><img src="img/roklq1.jpg" alt="roklq1" width="275" height="275"></a>
-      <table border="1">
-         <tr>
-            <td>Размер</td>
-            <td>xs</td>
-            <td>s</td>
-            <td>m</td>
-            <td>l</td>
-            <td>xl</td>
-         </tr>
-         <tr>
-            <td>Цвят</td>
-            <td>син</td>
-            <td>червен</td>
-            <td>черен</td>
-            <td>бял</td>
-            <td>виолетов</td>
-         </tr>
-         <tr>
-            <td colspan="6">Цена: 66 лв.</td>
-         </tr>
-      </table>
-	  </article>
+      <header id="header">
+         <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
+         <div class="absolute">
+            <img src="img/logo.png" width="110" height="51" alt="logo">
+         </div>
+         <div class="chat">Чат с нас</div>
+         <div class="box">
+            <div class="container-1">
+               <span class="icon"><i class="fa fa-search"></i></span>
+               <input type="search" id="search" placeholder="Search..." />
+            </div>
+         </div>
+         <div class="clear"></div>
+      </header>
+      <nav id="menu">
+         <ul>
+            <li class="menu"><a href="index.html">Начална страница</a></li>
+            <li class="menu">
+               <a href="drehi.html">Дамски дрехи</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
+                  <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
+                  <li class="menu">
+                     <a href="drehi.html#teniski">Тениски</a>
+                     <ul class="submenu2">
+                        <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
+                        <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
+                        <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
+                        <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
+                     </ul>
+                  </li>
+                  <li class="menu">
+                     <a href="drehi.html#pantaloni">Панталони</a>
+                     <ul class="submenu3">
+                        <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
+                        <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
+                        <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
+            <li class="menu"><a href="zanas.html">За нас</a></li>
+            <li class="menu">
+               <a href="kontakti.html">Контакти</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="anketa.html">Анкета</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <div class="clear"></div>
       <br>
-	  <article>
-         <a href="info2.html"><img src="img/roklq2.jpg" alt="roklq2" width="275" height="275"></a>
-      <table border="1">
-         <tr>
-            <td>Размер</td>
-            <td>xs</td>
-            <td>s</td>
-            <td>m</td>
-            <td>l</td>
-            <td>xl</td>
-         </tr>
-         <tr>
-            <td>Цвят</td>
-            <td>жълт</td>
-            <td>червен</td>
-            <td>син</td>
-            <td>черен</td>
-            <td>лилав</td>
-         </tr>
-         <tr>
-            <td colspan="6">Цена: 106 лв.</td>
-         </tr>
-      </table>
+      <aside id="asideid1">
+         <a href="vhod.html">Вход</a>
+         <a href="reg.html">Регистрация</a>
+      </aside>
       <br>
-	  </article>
-      <article>
-         <img src="img/roklq3.jpg" alt="roklq3" width="275" height="275">
-      <table border="1">
-         <tr>
-            <td>Размер</td>
-            <td>xs</td>
-            <td>s</td>
-            <td>m</td>
-            <td>l</td>
-            <td>xl</td>
-         </tr>
-         <tr>
-            <td>Цвят</td>
-            <td>жълт</td>
-            <td>червен</td>
-            <td>син</td>
-            <td>черен</td>
-            <td>лилав</td>
-         </tr>
-         <tr>
-            <td colspan="6">Цена: 86 лв.</td>
-         </tr>
-      </table>
-	  </article>
-      <br>
-	  <article>
-         <img src="img/roklq4.jpg" alt="roklq4" width="275" height="275">
-
-      <table border="1">
-         <tr>
-            <td>Размер</td>
-            <td>xs</td>
-            <td>s</td>
-            <td>m</td>
-            <td>l</td>
-            <td>xl</td>
-         </tr>
-         <tr>
-            <td>Цвят</td>
-            <td>жълт</td>
-            <td>червен</td>
-            <td>син</td>
-            <td>черен</td>
-            <td>лилав</td>
-         </tr>
-         <tr>
-            <td colspan="6">Цена: 46 лв.</td>
-      </table>
-	  </article>
-      <br>
-      <h3><a href="https://www.google.bg/search?q=%D1%80%D0%BE%D0%BA%D0%BB%D0%B8&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjimd2Wu-DMAhVh2IMKHflzDbAQ_AUIBygB&biw=1920&bih=973" target="_blank">Още рокли</a></h3>
-      <hr>
-      <h2>Ризи</h2>
-	  <article>
-      <p>В нашия магазин има голямо разнообразие от ризи. Те са с размери от s до xl. Имат различни цветове. Цената на всяка риза е 25 лв. Ето и някои видове дамски ризи:</p>
-      <a href="inforiza1.html"><img src="img/riza1.jpg" alt="riza1" width="275" height="275"></a>
-      <img src="img/riza2.jpg" alt="riza2" width="275" height="275">
-      <img src="img/riza3.jpg" alt="riza3" width="275" height="275">
-      <img src="img/riza4.jpg" alt="riza4" width="275" height="275">
-      <br>
-      <h3><a href="https://www.google.bg/search?q=%D1%80%D0%B8%D0%B7%D0%B8&source=lnms&tbm=isch&sa=X&ved=0ahUKEwix2KaFzODMAhUs_4MKHaWXA8UQ_AUIBygB&biw=1920&bih=973#tbm=isch&q=%D0%B4%D0%B0%D0%BC%D1%81%D0%BA%D0%B8+%D1%80%D0%B8%D0%B7%D0%B8" target="_blank">Още ризи</a></h3>
-      </article>
-	  <hr>
-         <h2>Тениски</h2>
-         <h3>Имаме голямо разнообразие на дамски тениски. Има тениски за фенове, спортни тениски, тениски с надписи и други. Размерите са от s до xl. Цената на тениска за фен е 25 лв, а цената на всяка една от останалите тениски е 16 лв.</h3>
-      <article style="font-family: times new roman; font-size: 19px">
-         <ol>
-            <li align="left">Тениски за фенове:</li>
-            <a href="infoteniska1.html"><img src="img/teniska1.jpg" alt="teniska1info1" width="275" height="275"></a>
-            <img src="img/teniska2.jpg" alt="teniska2" width="275" height="275">
-            <img src="img/teniska3.jpg" alt="teniska3" width="275" height="275">
-            <img src="img/teniska4.jpg" alt="teniska4" width="275" height="275">
-            <li align="left">Спортни тениски:</li>
-            <img src="img/teniska5.jpg" alt="teniska5" width="275" height="275">
-            <img src="img/teniska6.jpg" alt="teniska6" width="275" height="275">
-            <img src="img/teniska7.jpg" alt="teniska7" width="275" height="275">
-            <li align="left">Тениски с надписи:</li>
-            <img src="img/teniska8.jpg" alt="teniska8" width="275" height="275">			
-            <img src="img/teniska9.jpg" alt="teniska9" width="275" height="275">		
-            <img src="img/teniska10.jpg" alt="teniska10" width="275" height="275">			
-            <img src="img/teniska11.jpg" alt="teniska11" width="275" height="275">
-            <li align="left">Други тениски:</li>
-            <img src="img/teniska12.jpg" alt="teniska12" width="275" height="275">			
-            <img src="img/teniska13.jpg" alt="teniska13" width="275" height="275">		
-            <img src="img/teniska14.jpg" alt="teniska14" width="275" height="275">			
-         </ol>
-	  </article>
       <br>
       <hr>
-	  <hgroup>
-      <h2>Панталони</h2>
-      <h3>Имаме няколко вида панталони:</h3>
-	  </hgroup>
-	  <article style="font-family: times new roman; font-size: 19px">
-      <ul>
-         <li>Официални</li>
+      <section>
+         <div id="div-a">
+            <a href="#rokli" title="Рокли">Рокли</a>
+            <a href="#rizi" title="Ризи">Ризи</a>
+            <a href="#teniski" title="Тениски">Тениски</a>
+            <a href="#pantaloni" title="Панталони">Панталони</a>
+         </div>
+         <hr>
+         <h2 id="rokli">Рокли</h2>
+         <article class="product">
+            <ul>
+               <li>
+                  <a href="info1.html"><img class="zoom" src="img/sinq-roklq.jpg" alt="sinq-roklq"></a>
+                  <table>
+                     <tr>
+                        <td>Размер</td>
+                        <td>xs</td>
+                        <td>s</td>
+                        <td>m</td>
+                        <td>l</td>
+                        <td>xl</td>
+                     </tr>
+                     <tr>
+                        <td>Цвят</td>
+                        <td>син</td>
+                        <td>червен</td>
+                        <td>черен</td>
+                        <td>бял</td>
+                        <td>виолетов</td>
+                     </tr>
+                     <tr>
+                        <td colspan="6">Цена: 66 лв.</td>
+                     </tr>
+                  </table>
+               </li>
+               <li>
+                  <a href="info2.html"><img class="zoom" src="img/chervena-roklq.jpg" alt="chervena-roklq"></a>
+                  <table>
+                     <tr>
+                        <td>Размер</td>
+                        <td>xs</td>
+                        <td>s</td>
+                        <td>m</td>
+                        <td>l</td>
+                        <td>xl</td>
+                     </tr>
+                     <tr>
+                        <td>Цвят</td>
+                        <td>жълт</td>
+                        <td>червен</td>
+                        <td>син</td>
+                        <td>черен</td>
+                        <td>лилав</td>
+                     </tr>
+                     <tr>
+                        <td colspan="6">Цена: 106 лв.</td>
+                     </tr>
+                  </table>
+               </li>
+               <li>
+                  <a><img class="zoom" src="img/chernaroklq3.jpg" alt="chernaroklq3"></a>
+                  <table>
+                     <tr>
+                        <td>Размер</td>
+                        <td>xs</td>
+                        <td>s</td>
+                        <td>m</td>
+                        <td>l</td>
+                        <td>xl</td>
+                     </tr>
+                     <tr>
+                        <td>Цвят</td>
+                        <td>жълт</td>
+                        <td>червен</td>
+                        <td>син</td>
+                        <td>черен</td>
+                        <td>лилав</td>
+                     </tr>
+                     <tr>
+                        <td colspan="6">Цена: 86 лв.</td>
+                     </tr>
+                  </table>
+               </li>
+               <li>
+                  <a><img class="zoom" src="img/bqla-roklq.jpg" alt="bqla-roklq"></a>
+                  <table>
+                     <tr>
+                        <td>Размер</td>
+                        <td>xs</td>
+                        <td>s</td>
+                        <td>m</td>
+                        <td>l</td>
+                        <td>xl</td>
+                     </tr>
+                     <tr>
+                        <td>Цвят</td>
+                        <td>жълт</td>
+                        <td>червен</td>
+                        <td>син</td>
+                        <td>черен</td>
+                        <td>лилав</td>
+                     </tr>
+                     <tr>
+                        <td colspan="6">Цена: 46 лв.</td>
+                  </table>
+            </ul>
+         </article>
+         <div class="clear"></div>
+         <h3><a href="https://www.google.bg/search?q=%D1%80%D0%BE%D0%BA%D0%BB%D0%B8&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjimd2Wu-DMAhVh2IMKHflzDbAQ_AUIBygB&biw=1920&bih=973" target="_blank">Още рокли</a></h3>
+         <div class="clear"></div>
+         <hr>
+         <h2 id="rizi">Ризи</h2>
+         <article class="product">
+            <div class="paragraf1">
+               <p>В нашия магазин има голямо разнообразие от ризи.</p>
+               <p>Те са с размери от s до xl. Имат различни цветове.</p>
+            </div>
+            <div class="paragraf2">
+               <p>Цената на всяка риза е 25 лв.</p>
+            </div>
+            <p> Ето и някои видове дамски ризи: </p>
+            <br>
+            <ul>
+               <li><a href="inforiza1.html"><img class="zoom" src="img/svetlosinqriza1.jpg" alt="svetlosinqriza1"></a></li>
+               <li><a><img class="zoom" src="img/cherna-riza.jpg" alt="cherna-riza"></a></li>
+               <li><a><img class="zoom" src="img/bqla-riza1.jpg" alt="bqla-riza1"></a></li>
+               <li><a><img class="zoom" src="img/lilava-riza.jpg" alt="lilava-riza"></a></li>
+            </ul>
+            <br>
+            <br>
+         </article>
+         <h3><a href="https://www.google.bg/search?q=%D1%80%D0%B8%D0%B7%D0%B8&source=lnms&tbm=isch&sa=X&ved=0ahUKEwix2KaFzODMAhUs_4MKHaWXA8UQ_AUIBygB&biw=1920&bih=973#tbm=isch&q=%D0%B4%D0%B0%D0%BC%D1%81%D0%BA%D0%B8+%D1%80%D0%B8%D0%B7%D0%B8" target="_blank">Още ризи</a></h3>
+         <hr>
+         <div class="clear"></div>
+         <h2 id="teniski">Тениски</h2>
+         <div class="paragraf3">
+            <p>Имаме голямо разнообразие на дамски тениски.</p>
+            <p>Има тениски за фенове, спортни тениски, тениски с надписи и други.</p>
+            <p>Размерите са от s до xl.</p>
+         </div>
+         <p>Цената на тениска за фен е 25 лв.</p>
+         <p>Цената на всяка една от останалите тениски е 16 лв.</p>
          <br>
-         <img src="img/pantalon1.jpg" alt="pantalon1" width="200" height="300">
-         <img src="img/pantalon2.jpg" alt="pantalon2" width="200" height="300">
+         <article class="product1">
+            <h3 id="teniskizafenove">Тениски за фенове:</h3>
+            <ul>
+               <li><a href="infoteniska1.html"><img class="zoom" src="img/teniskaliverpool.jpg" alt="teniskaliverpool"></a></li>
+               <li><a><img class="zoom" src="img/teniskachelsea.jpg" alt="teniskachelsea"></a></li>
+               <li><a><img class="zoom" src="img/teniskamu.jpg" alt="teniskamu"></a></li>
+            </ul>
+         </article>
+         <article class="product1">
+            <h3 id="sportniteniski">Спортни тениски:</h3>
+            <ul>
+               <li><a><img class="zoom" src="img/chervenateniska.jpg" alt="chervenateniska"></a></li>
+               <li><a><img class="zoom" src="img/chernateniska.jpg" alt="chernateniska"></a></li>
+               <li><a><img class="zoom" src="img/rozovateniska.jpg" alt="rozovateniska"></a></li>
+            </ul>
+         </article>
+         <article class="product1">
+            <h3 id="teniskisnadpisi">Тениски с надписи:</h3>
+            <ul>
+               <li><a><img class="zoom" src="img/bqlateniska-audi.jpg" alt="bqlateniska-audi"></a></li>
+               <li><a><img class="zoom" src="img/bqlateniska.jpg" alt="bqlateniska"></a></li>
+               <li><a><img class="zoom" src="img/bqla-teniska.jpg" alt="bqla-teniska"></a></li>
+            </ul>
+         </article>
+         <article class="product1">
+            <h3 id="drugiteniski">Други тениски:</h3>
+            <ul>
+               <li><a><img class="zoom" src="img/bqlateniska-bulgaria.jpg" alt="bqlateniska-bulgaria"></a></li>
+               <li><a><img class="zoom" src="img/cherna-teniska.jpg" alt="cherna-teniska"></a></li>
+               <li><a><img class="zoom" src="img/sinqteniska.jpg" alt="sinqteniska"></a></li>
+            </ul>
+         </article>
          <br>
          <br>
-         <li>Всекидневни</li>
          <br>
-         <a href="infopantalon3.html"><img src="img/pantalon3.jpg" alt="pantalon3info" width="200" height="300"></a>
-         <img src="img/pantalon4.jpg" alt="pantalon4" width="200" height="300">
-         <br>
-         <br>
-         <li>Дънки</li>
-         <img src="img/pantalon5-dunki.jpg" alt="pantalon5-dunki" width="200" height="300">
-         <br>
-         <li><a href="https://www.google.bg/search?q=damski+pantaloni&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiRjfn41-DMAhWi5oMKHVuOCNcQ_AUIBygB&biw=1920&bih=973">Други видове панталони</a></li>
-      </ul>
-	  </article>
+         <hgroup id="groupid">
+            <hr>
+            <div class="clear"></div>
+            <h2 id="pantaloni">Панталони</h2>
+            <h3>Имаме няколко вида панталони:</h3>
+         </hgroup>
+         <article class="product">
+            <h3 id="oficialni">Официални</h3>
+            <ul>
+               <li><a><img class="zoom" src="img/lilav-pantalon.jpg" alt="lilav-pantalon"></a></li>
+               <li><a><img class="zoom" src="img/bejov-pantalon.jpg" alt="bejov-pantalon"></a></li>
+            </ul>
+         </article>
+         <article class="product">
+            <h3 id="vsekidnevni">Всекидневни</h3>
+            <ul>
+               <li><a href="infopantalon3.html"><img class="zoom" src="img/tumnolilav-pantalon.jpg" alt="tumnolilav-pantalon"></a></li>
+               <li><a><img class="zoom" src="img/cheren-pantalon.jpg" alt="cheren-pantalon"></a></li>
+            </ul>
+         </article>
+         <article class="product">
+            <h3 id="dunki">Дънки</h3>
+            <ul>
+               <li><a><img class="zoom" src="img/svetlosini-dunki.jpg" alt="svetlosini-dunki"></a></li>
+               <li><a><img class="zoom" src="img/sini-dunki.jpg" alt="sini-dunki"></a></li>
+            </ul>
+         </article>
+         <h3><a href="https://www.google.bg/search?q=damski+pantaloni&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiRjfn41-DMAhWi5oMKHVuOCNcQ_AUIBygB&biw=1920&bih=973" target="_blank">Други видове панталони</a></h3>
+      </section>
+      <div class="clear"></div>
       <hr>
-	  </section>
-	  <footer id="footer1">
-	  <a href="index.html" title="Начална страница">Предишна страница</a>
-	  <a href="detaili.html" title="Детайли за дрехите">Следваща страница</a>
-	  </footer>
+      <footer class="footer">
+         <a href="index.html" title="Начална страница">Предишна страница</a>
+         <a href="detaili.html" title="Детайли за дрехите">Следваща страница</a>
+         <a href="#rokli" title="Рокли">Рокли</a>
+         <a href="#rizi" title="Ризи">Ризи</a>
+         <a href="#teniski" title="Тениски">Тениски</a>
+         <a href="#pantaloni" title="Панталони">Панталони</a>
+      </footer>
    </body>

@@ -7,51 +7,94 @@
       <meta name="description" content="PFSweb">
       <meta name="keywords" content="HTML">
       <meta name="author" content="Nadeto">
-      <link rel=stylesheet type="text/css" href="style.css">
+      <link rel=stylesheet type="text/css" href="css/style.css">
    </head>
    <body>
-      <header>
-         <h1 align = "center"><strong><i>FZone - Онлайн магазин за дамски дрехи</i></strong></h1>
-         <img src="img/logo.png" width="110" height="51" alt="logo">
+      <header id="header">
+         <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
+         <div class="absolute">
+            <img src="img/logo.png" width="110" height="51" alt="logo">
+         </div>
+         <div class="chat">Чат с нас</div>
+         <div class="box">
+            <div class="container-1">
+               <span class="icon"><i class="fa fa-search"></i></span>
+               <input type="search" id="search" placeholder="Search..." />
+            </div>
+         </div>
+         <div class="clear"></div>
       </header>
-      <nav id="navid1">
-         <a href="index.html">Начална страница</a> |
-         <a href="drehi.html">Дамски дрехи</a> |
-         <a href="detaili.html">Детайли за дрехи</a> |
-         <a href="zanas.html">За нас</a> |
-         <a href="kontakti.html">Контакти</a> 
+      <nav id="menu">
+         <ul>
+            <li class="menu"><a href="index.html">Начална страница</a></li>
+            <li class="menu">
+               <a href="drehi.html">Дамски дрехи</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
+                  <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
+                  <li class="menu">
+                     <a href="drehi.html#teniski">Тениски</a>
+                     <ul class="submenu2">
+                        <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
+                        <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
+                        <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
+                        <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
+                     </ul>
+                  </li>
+                  <li class="menu">
+                     <a href="drehi.html#pantaloni">Панталони</a>
+                     <ul class="submenu3">
+                        <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
+                        <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
+                        <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
+            <li class="menu"><a href="zanas.html">За нас</a></li>
+            <li class="menu">
+               <a href="kontakti.html">Контакти</a>
+               <ul class="submenu">
+                  <li class="menu"><a href="anketa.html">Анкета</a></li>
+               </ul>
+            </li>
+         </ul>
       </nav>
+      </li>
+      </ul> 
+      </nav>
+      <div class="clear"></div>
+      <br>
       <aside id="asideid1">
          <a href="vhod.html">Вход</a>
-         <br>
          <a href="reg.html">Регистрация</a>
       </aside>
+      <br>
+      <br>
       <hr>
       <section>
-         <article align="center">
+         <article id="article1id" center>
             <hgroup>
-               <h2><i><strong><u>Информация</u></strong></i></h2>
+               <h2><u>Информация</u></h2>
                <h3>Адрес: ул. Пирин 89 бул. България София, София град 1680</h3>
                <h3>Телефон за връзка: 0885 674 356</h3>
+               <h3>Телефон за незабавна връзка: 0888 56 65 45</h3>
             </hgroup>
-            <p>Телефон за незабавна връзка: 0888 56 65 45</p>
-			<p>Ако желаете, можете да попълните нашата <a href="anketa.html">анкета</a>.</p>
+            <br>
+            <p>Ако желаете, можете да попълните нашата <a href="anketa.html" id="anketaid">анкета</a>.</p>
             <br>
          </article>
+         <label class="class-label">Връзка с други сайтове:</label> 
+         <div class="clear"></div>
+         <br>
          <article>
-            <label style="font-size: 18px">Вързка с facebook:</label> 
             <a href="https://www.facebook.com/"><img src="img/fb.png" width="37" height="37" alt="fb"></a>
-            <br>
-            <label style="font-size: 18px">Вързка с twitter:</label> 
             <a href="https://twitter.com/"><img src="img/twitter.png" width="37" height="37" alt="fb"></a>
-            <br>
-            <label style="font-size: 18px">Вързка с instagram:</label> 
             <a href="https://www.instagram.com/"><img src="img/instagram.jpg" width="37" height="37" alt="fb"></a>
             <br>
-            <br>
          </article>
-         <h3 align = "left" style="font-size: 23px"><u><strong><i>Форма за обратна връзка</i></strong></u></h3>
-         <fieldset style="width: 30%">
+         <h3 id="formaid">Форма за обратна връзка</h3>
+         <fieldset>
             <form method="post" action="">
                <label for="ime">Име:</label>
                <input type="text" id="ime" name="ime" placeholder="Ivan" required autofocus><br/>
@@ -89,7 +132,8 @@
          </fieldset>
       </section>
       <hr>
-      <footer id="footer1">
+      <div class="clear"></div>
+      <footer id="footer">
          <a href="zanas.html" title="За нас">Предишна страница</a>      
          <a href="index.html" title="Начална страница">Начална страница</a>
       </footer>
