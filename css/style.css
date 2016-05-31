@@ -52,11 +52,23 @@ table {
 
 
 body {
-	background-color: oldlace;
+/* background-color: oldlace; */
 	color: #000000; 
 	width:1500px;
 	margin-left:auto;
 	margin-right:auto;
+	background-image:url(../img/background.jpg);
+}
+
+.classbody{
+	background-image: url(../img/welcome.gif), url(../img/background.jpg);
+    background-position: left top, left top;
+	background-size: 235px, 215px, auto;
+    background-repeat: no-repeat, repeat;
+}
+
+h1 {
+    text-shadow: 1px 1px 3px black;
 }
 
 
@@ -72,7 +84,7 @@ header{
 
 
 #h1id {
-	font-family: verdana;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 30px;
     color: #3104B4;
     text-align: center;
@@ -145,7 +157,7 @@ h4 {
 }
 
 .chat{
-	font-family: times new roman;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 20px;
 	float:right;
 	color: black;
@@ -154,8 +166,8 @@ h4 {
 	border-radius: 7px 7px 7px 7px;
 	position: fixed;
 	margin-top: 1%;
-	top: 0;
-	right: 95px;
+	top: 176px;
+	right: 90px;
 }
 
 
@@ -349,25 +361,53 @@ p:focus{
 	
 }
 
+
+
 #groupid{
 	padding-top: 25px;
 	position: static;
 	clear: both;
 	}
 	
-.info1{
-	text-align: center;
+
+.flexcontainer1 {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+}
+
+.flexcontainer1 div{
+	 margin-left: 5.5%;
+	 margin-top: 7px;
+	 
 }
 
 #rabotno_vreme{
 	text-align: center;
 }
 
-#h3id2 {
+.h3class {
 	text-align: left;
 	font-size: 22px;
 	position: static;
+}
 
+.h3class:hover{
+	color: white;
+    text-shadow: 2px 2px 3px black, 0 0 25px blue, 0 0 7px darkblue;
+}
+
+
+.h3class1{
+	text-align: center;
+	font-size: 24px;
+	position: static;
+}
+
+.h3class1:hover{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 38px blue, 0 0 5px darkblue;
 }
 
 #h3id3{
@@ -376,8 +416,12 @@ p:focus{
 	font-size: 22px;
 	padding-top: 1%;
 	padding-bottom: 4px;
+}
 
-
+#h3id3:hover{
+	color: white;
+	font-size: 24px;
+    text-shadow: 2px 2px 3px black, 0 0 35px green, 0 0 17px darkgreen;
 }
 
 #h3id4{
@@ -386,6 +430,12 @@ p:focus{
 	font-size: 24px;
 	padding-top: 18px;
 	padding-bottom: 6px;
+}
+
+#h3id4:hover{
+	color: white;
+	font-size: 24px;
+    text-shadow: 2px 2px 3px black, 0 0 35px blue, 0 0 17px darkblue;
 }
 
 .clear {
@@ -442,18 +492,108 @@ button:hover{
 	margin-bottom: 25px;
 }
 
-.pclass>p{
-	color: green;
+.pclass p:nth-child(odd){
+	color: #5858FA;
 }
+
+.pclass p:nth-child(even){
+	color: #868A08;
+}
+
 .pclass1>p{
 	color: #5F04B4;
 }
 
+.pclass2 p:first-child{
+	color: green;
+}
+
+.pclass2 p:last-child{
+	color: blue;
+}
+
+.pclass3:not(p) { 
+	border:1px solid #ccc; width: 306px;
+	
+}
+
+.divrokli p:nth-child(3){
+		color: #9F81F7;
+	}
+	
+.borderbox{
+	width: 450px;
+    height: 170px;    
+    padding: 33px;
+    border: 1px solid black;
+    box-sizing: border-box;
+	text-align: center;
+}
 
 
 
+.borderimg{
+	border: 7px solid transparent;
+    padding: 0;
+    -webkit-border-image: url(../img/border-blue.png) 30 stretch; /* Safari 3.1-5 */
+    border-image: url(../img/border-blue.png) 30 stretch;
+}
 
 
+.imgpromotion{
+	border: 10px solid transparent;
+    padding: 1px;
+    -webkit-border-image: url(../img/border-promotion.gif) 30 stretch; /* Safari 3.1-5 */
+    border-image: url(../img/border-promotion.gif) 35 stretch;
+}
+
+
+
+.coloumns{
+	padding-top: 4px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 17px;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 3;
+	text-align: justify;
+	column-rule-width: 1px solid black;    
+	-webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 1px;
+}
+	
+
+	
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+}
+
+.flexcontainer img{	
+	margin: 25px;	
+	border: 7px solid transparent;
+    padding: 1px;
+    -webkit-border-image: url(../img/bordergift.jpg) 37 stretch; /* Safari 3.1-5 */
+    border-image: url(../img/bordergift.jpg) 37 stretch;
+	}
+	
+#giftcardsid{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 20px;
+	float: right;
+}
+	
+	
+	
 #menu {
     width: auto;
     height: 40px;
@@ -464,6 +604,11 @@ button:hover{
     background-color: #8AD9FF;
     border-radius: 15px;
 	padding-left: 7%;
+}
+
+#menu:hover{
+	color: white;
+    text-shadow: 2px 2px 3px #A9E2F3, 0 0 25px #F2E0F7, 0 0 3px #A9A9F5;
 }
 
 .submenu, .sumbenu2, .submenu3 {
@@ -543,8 +688,6 @@ color: #F90;
 	z-index: 70;
 }
 
-
-
 .box{
 	top:0;
 	position: static;
@@ -559,7 +702,7 @@ color: #F90;
 }
 
 .container-1 input#search{
-	margin-left: 38px;
+	margin-left: 3px;
   width: 200px;
   height: 34px;
   background: #A9E2F3;
@@ -677,6 +820,9 @@ color: #F90;
     -moz-transform:rotateY(0);
     transform:rotateY(0);
 }
+
+
+
 /* hack for mozilla (all versions) */
 @-moz-document url-prefix() { 
 body{
