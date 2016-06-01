@@ -88,16 +88,21 @@
          </article>
          <div class="clear"></div>
          <br>
-         <h3 id="formaid">Форма за обратна връзка</h3>
          <fieldset>
+		 <legend><h2 id="formaid">Форма за обратна връзка</h2></legend>
+		 <br>
             <form method="post" action="">
                <label for="ime">Име:</label>
+			   <br>
                <input type="text" id="ime" name="ime" placeholder="Ivan" required autofocus><br/>
-               <br>	  	
+               <br>
+			   <br>
                <label for="familiq">Фамилия:</label>
+			   <br>
                <input type="text" id="familiq" name="familiq" placeholder="Petrov"><br/>
                <br>	
-               <label for="pol">Изберете Вашия пол:</label><br>   
+			   <br>
+               <label for="pol">Пол:</label><br>   
                <input type="radio" name="pol" id="muj" value="muj">
                <label for="muj">Мъж</label>
                <br>	 
@@ -105,15 +110,20 @@
                <label for="jena">Жена</label>
                <br> 
                <br>
-               Email:
+			   <br>
+               <label for="email">Email:</label>
+			   <br>
                <input type="email" name="email" id="email" placeholder="fzone@abv.bg"/><br/>
                <br>
                <br>
                <label for="chas">Час:</label>
+			   <br>
                <input type="time" name="game-time">
                <br>
                <br>
-               Коментар:<br/>
+			   <br>
+               <label for="comment">Коментар:</label>
+			   <br/>
                <textarea name="komentar" cols="30" rows="5">
                </textarea><br/>
                <br>
