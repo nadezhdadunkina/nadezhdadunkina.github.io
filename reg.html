@@ -10,14 +10,15 @@
       <link rel=stylesheet type="text/css" href="css/style.css"> 	 
 	  <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='/text/css'>
 	  <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+
    </head>
    <body>
       <header id="header">
          <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
-         <div class="absolute">
-            <img src="img/logo.png" width="110" height="51" alt="logo">
-         </div>
-         <div class="chat">Чат с нас</div>
+               <div class="absolute">
+         <a href="index.html"><img src="img/logo.png" width="110" height="51" alt="logo"></a>
+      </div>
+              <button class="chat">Чат с нас</button>
          <div class="box">
             <div class="container-1">
                <span class="icon"><i class="fa fa-search"></i></span>
@@ -27,44 +28,41 @@
          <div class="clear"></div>
       </header>
       <nav id="menu">
-         <ul>
-            <li class="menu"><a href="index.html">Начална страница</a></li>
-            <li class="menu">
-               <a href="drehi.html">Дамски дрехи</a>
-               <ul class="submenu">
-                  <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
-                  <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
-                  <li class="menu">
-                     <a href="drehi.html#teniski">Тениски</a>
-                     <ul class="submenu2">
-                        <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
-                        <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
-                        <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
-                        <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
-                     </ul>
-                  </li>
-                  <li class="menu">
-                     <a href="drehi.html#pantaloni">Панталони</a>
-                     <ul class="submenu3">
-                        <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
-                        <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
-                        <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
-                     </ul>
-                  </li>
-               </ul>
-            <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
-            <li class="menu"><a href="zanas.html">За нас</a></li>
-            <li class="menu">
-               <a href="kontakti.html">Контакти</a>
-               <ul class="submenu">
-                  <li class="menu"><a href="anketa.html">Анкета</a></li>
-               </ul>
-            </li>
-         </ul>
-      </nav>
-      </li>
-      </ul> 
-      </nav>
+      <ul>
+         <li class="menu">
+            <a href="drehi.html">Дамски дрехи</a>
+            <ul class="submenu">
+               <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
+               <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
+               <li class="menu">
+                  <a href="drehi.html#teniski">Тениски</a>
+                  <ul class="submenu2">
+                     <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
+                     <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
+                     <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
+                     <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
+                  </ul>
+               </li>
+               <li class="menu">
+                  <a href="drehi.html#pantaloni">Панталони</a>
+                  <ul class="submenu3">
+                     <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
+                     <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
+                     <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
+                  </ul>
+               </li>
+            </ul>
+         <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
+         <li class="menu"><a href="zanas.html">За нас</a></li>
+         <li class="menu">
+            <a href="kontakti.html">Контакти</a>
+            <ul class="submenu">
+               <li class="menu"><a href="anketa.html">Анкета</a></li>
+            </ul>
+         </li>
+		  <li class="menu"><a href="giftcards.html">Карти за подаръци</a></li>
+      </ul>
+   </nav>
       <div class="clear"></div>
       <br>
       <aside id="asideid1">
@@ -74,18 +72,25 @@
       <br>
       <br>
       <hr>
-      <section>
-         <h2><u>Регистрация</u></h2>
+      <section class="formclass">
          <article>
             <form method="post" action="">
                <fieldset>
-                  <label for="ime">Име:</label>
-                  <input type="text" id="ime" name="ime" placeholder="Ivan" required autofocus><br/>
+			   <legend><h2>Регистрация</h2></legend>
+			   <br>
+                  <label for="ime" class="specialfont">Име*</label>
+				  <br>
+                  <input type="text" id="ime" name="ime" placeholder="Ivan" required autofocus>
                   <br>	  	
-                  <label for="familiq">Фамилия:</label>
+				  <br>
+				  <br>
+                  <label for="familiq" class="specialfont">Фамилия*</label>
+				  <br>
                   <input type="text" id="familiq" name="familiq" placeholder="Petrov"><br/>
                   <br>	
-                  <label for="pol">Изберете Вашия пол:</label><br>   
+				  <br>
+                  <label for="pol" class="specialfont">Пол*</label>
+				  <br>  
                   <input type="radio" name="pol" id="muj" value="muj">
                   <label for="muj">Мъж</label>
                   <br>	 
@@ -93,23 +98,30 @@
                   <label for="jena">Жена</label>
                   <br> 
                   <br>
-                  <label for="email">Email:</label>
+				  <br>
+                  <label for="email" class="specialfont">Email*</label>
+				  <br>
                   <input type="email" name="email" id="email" placeholder="fzone@abv.bg"/><br/>
                   <br>
                   <br>
-                  <label for="parola">Парола:</label>
+                  <label for="parola" class="specialfont">Парола*</label>
+				  <br>
                   <input type="password" name="password" id="password"/><br/>
                   <br>
                   <br>
-                  <label for="potvurdeteparola">Потвърдете парола:</label>
+                  <label for="potvurdeteparola" class="specialfont">Потвърдете парола*</label>
+				  <br>
                   <input type="password" name="password" id="password"/><br/>
                   <br>
                   <br>
-                  <label for="rojdennadata">Въведете рожденна дата:</label>
+                  <label for="rojdennadata" class="specialfont">Въведете рожденна дата*</label>
+				  <br>
                   <input type="date" name="birthday">
                   <br>
                   <br>
-                  <label for="status">Статус:</label>
+				  <br>
+                  <label for="status" class="specialfont">Статус*</label>
+				  <br>
                   <select name="example">
                      <option value=""></option>
                      <option value="uchenik">ученик</option>
@@ -120,26 +132,32 @@
                   </select>
                   <br>
                   <br>
-                  <label for="vuzrast">Към коя възрастова категория спадате?</label><br>
+				  <br>
+                  <label for="vuzrast" class="specialfont">Към коя възрастова категория спадате?*</label>
+				  <br>
                   <input type="radio" name="vuzrast" id="Под 18" value="Под 18">	  
-                  <label for="Под 18">под 18г.</label><br>
+                  <label for="Под 18">под 18г.</label>
+				  <br>
                   <input type="radio" name="vuzrast" id="18-25" value="18-25">	  
-                  <label for="18-25">18-25г.</label><br>
+                  <label for="18-25">18-25 г.</label>
+				  <br>
                   <input type="radio" name="vuzrast" id="26-39" value="26-39">	  
-                  <label for="26-39">26-39г.</label><br>
+                  <label for="26-39">26-39 г.</label>
+				  <br>
                   <input type="radio" name="vuzrast" id="40+" value="40+">	  
-                  <label for="40+">над 40 г.</label>
+                  <label for="40+">над 40г.</label>
                   <br>
                   <br>
-                  <label for="interesi">Интереси:</label><br>
-                  <label><input type="checkbox" name="interesi" value="programirane">програмиране<br></label>
-                  <label><input type="checkbox" name="interesi" value="istoriq">история<br></label>
-                  <label><input type="checkbox" name="interesi" value="sport">спорт<br></label>
-                  <label><input type="checkbox" name="interesi" value="razhodki">разходки<br></label>
-                  <label><input type="checkbox" name="interesi" value="obikalqnenasveta">обикаляне на света<br></label>
-                  <label><input type="checkbox" name="interesi" value="drugo">друго<br></label>
+				  <br>
+                  <label for="interesi" class="specialfont">Интереси*</label><br>
+                  <label><input type="checkbox" name="interesi" value="programirane">програмиране</label>
+                  <label><input type="checkbox" name="interesi" value="istoriq">история</label>
+                  <label><input type="checkbox" name="interesi" value="sport">спорт</label>
+                  <label><input type="checkbox" name="interesi" value="drugo">друго</label>
                   <br>
-                  <label>Други интереси:</label><br/>
+				  <br>
+				  <br>
+                  <label class="specialfont">Други интереси:</label><br/>
                   <textarea name="interesi" cols="30" rows="5">
       </textarea>
                   <br/>
@@ -155,10 +173,17 @@
             </form>
          </article>
       </section>
-      <hr>
-      <div class="clear"></div>
-      <footer id="footer">   
-         <a href="index.html" title="Начална страница">Начална страница</a>
-      </footer>
+   <div class="clear"></div>
+   <hr>
+   <div id="idcontainer">
+   <div class="socialcontainer">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" width="135" height="55" alt="fb"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="img/twitter.jpg" width="135" height="55" alt="fb"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" width="135" height="55" alt="fb"></a>
+	</div>
+	</div>
+   <footer id="footer">   
+      <div> © 2016 <a href="http://www.pfsweb.com/" title="PFSweb" target="_blank">PFSweb</a> All Rights Reserved</div>
+   </footer>
    </body>
 </html>
