@@ -110,8 +110,8 @@ h4 {
 	border-radius: 7px 7px 7px 7px;
 	position: fixed;
 	margin-top: 1%;
-	top: 86px;
-	right: 75px;
+	top: 36px;
+	right: 230px;
 	z-index: 20;
 }
 
@@ -248,6 +248,8 @@ infoteniska1.html */
 .product{
 	width:1500px;
 	float:left;	
+	margin: 15px;
+	padding: 5px;
 }
 
 .product ul li{
@@ -283,6 +285,8 @@ article .aimage {
 	text-align: center;
 	font-family: calibri;
 	font-size: 18px;
+	margin: 15px;
+    padding: 5px;
 }
 
 
@@ -435,7 +439,6 @@ nav a {
 	float:left;
 	margin:0;
 	padding:0;
-	
 }
 
 #menu a {
@@ -477,11 +480,11 @@ nav a {
 	background-color: #81DAF5;
 	line-height: 15%;
 	padding:10px 15px;
+	border-radius: 10px;
 }
 
 #menu ul  li:hover > ul {
 	color: #F90;
-    background-color: #81DAF5;
 	display:block;
 	
 }
@@ -586,6 +589,10 @@ aside a{
 	font-size: 14px;
 }
 
+#anketaid1{
+	margin: 15px;
+    padding: 5px;
+}
 
 
 
@@ -604,14 +611,12 @@ aside a{
 	clear: both;
 	margin-bottom: 5px;
 	margin-top: 5px;
-	color: blue;
-	
 }
 
 #article1id{
 	text-align: center;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 
@@ -664,6 +669,10 @@ aside a{
 .divrokli p:nth-child(3){
 		color: #9F81F7;
 	}
+	
+.divrokli{
+	margin-left: 15px;
+}
 
 
 
@@ -827,6 +836,10 @@ aside a{
 	font-size: 19px;
 }
 
+#regid{
+	margin: 15px;
+    padding: 5px;
+}
 
 
 
@@ -835,6 +848,12 @@ aside a{
 
 
 /* GIFTCARDS.HTML */
+
+#h3giftcards{
+	margin: 15px;
+	padding: 5px;
+}
+
 
 .flexcontainer {
    display: -webkit-flex;
@@ -1012,6 +1031,17 @@ ul .classimg{
 	color: #868A08;
 }
 
+.pclass{
+	margin: 15px;
+    padding: 5px;
+}
+
+.divclass1{
+	margin: 15px;
+    padding: 0;
+}
+
+
 
 
 
@@ -1032,6 +1062,10 @@ ul .classimg{
 	color: blue;
 }
 
+.pclass2{
+	margin: 15px;
+    padding: 5px;
+}
 
 
 
@@ -1044,12 +1078,51 @@ ul .classimg{
 
 .pclass3:not(p) { 
 	border:1px solid #ccc; width: 306px;
-	
+	margin: 15px;
+    padding: 5px;
+}
+
+.classarticle3{
+	margin: 15px;
+    padding: 5px;
 }
 
 
 
 
+
+
+
+
+/* INFORIZA1.HTML */
+
+.articleclass1{
+	margin: 15px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+/* INFOTENISKA1.HTML */
+
+	.pclass1{
+		margin: 15px;
+		padding: 5px;
+	}
+
+	.pclass-2{
+		margin: 15px;
+		padding: 5px;
+	}
+
+	.articleclass2{
+		margin: 15px;
+		padding: 5px;
+	}
 
 
 
