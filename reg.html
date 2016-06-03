@@ -12,9 +12,18 @@
 	  <link rel=stylesheet type="text/css" href="css/responsive.css">  
 	  <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='/text/css'>
 	  <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
-
    </head>
    <body>
+         <ul class="navigation">
+			<li class="nav-item"><a href="drehi.html">Дамски дрехи</a></li>
+			<li class="nav-item"><a href="detaili.html">Детайли за дрехи</a></li>
+			<li class="nav-item"><a href="zanas.html">За нас</a></li>
+			<li class="nav-item"><a href="kontakti.html">Контакти</a></li>
+			<li class="nav-item"><a href="giftcards.html">Карти за подаръци</a></li>	
+	   </ul>
+	<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+	<label for="nav-trigger"></label>
+<div class="site-wrap">
       <header id="header">
          <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
                <div class="classlogo">
@@ -73,8 +82,7 @@
       <section class="formclass">
          <article>
             <form method="post" action="">
-			<br>
-               <fieldset>
+               <fieldset id="fieldsetid">
 			   <legend><h2 id="regid">Регистрация</h2></legend>
 			   <br>
                   <label for="ime" class="specialfont">Име*</label>
@@ -165,9 +173,6 @@
                   <br>
                   <br>
                   <input type="submit" value="Регистрация"/>
-                  <br>
-                  <br>
-                  <br>
                </fieldset>
             </form>
          </article>
@@ -180,9 +185,9 @@
 	</div>
 	</div>
       </section>
-
    <footer id="footer">   
       <div> © 2016 <a href="http://www.pfsweb.com/" title="PFSweb" target="_blank">PFSweb</a> All Rights Reserved</div>
    </footer>
+   </div>
    </body>
 </html>

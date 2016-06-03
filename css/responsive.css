@@ -24,15 +24,15 @@
 		color: blue;
 		margin-left: 15px;
 		font-family: times new roman;
-		font-size: 22px;
-		padding-top: 1%;
-		padding-bottom: 0.5%
+		font-size: 21px;
+		padding-top: 35px;
+		padding-bottom: 14px;
 	}
 
 	h3{
 		color: slategray;
 		margin-left: 15px;
-		font-size: 19px;
+		font-size: 17px;
 		font-family: times new roman;
 	}
 
@@ -51,7 +51,8 @@
 		position: fixed;
 		margin-top: 1%;
 		top: 0;
-		right: 230px;
+		right: 100px;
+		right: 100px;
 		z-index: 20;
 	}
 
@@ -114,14 +115,12 @@
 
 	fieldset { 
 		display: block;
-		margin-left: 2px;
-		margin-right: 2px;
-		padding-top: 0.35em;
-		padding-bottom: 0.625em;
-		padding-left: 0.75em;
-		padding-right: 0.75em;
 		border: 1px solid black;
-		width: 25%
+		padding-top: 15px;
+		margin-top: 35px;
+		padding-bottom: 33px;
+		width: 75%;
+		text-align: center;
 	}
 
 
@@ -192,14 +191,23 @@
 	.product{
 		width: 100%;
 		float:left;
-		margin: 15px;
-		padding: 5px;
+		padding: 0;
 	}
 
 	.product ul li{
+		width: 300px;
+		float:left;
+		margin-right:10px;
+	}
+	
+	.product1{
+		width: 100%;
+		float: left;
+	}
+	.product1 ul li{
 		width:300px;
 		float:left;
-		margin-right:30px;
+		margin-right:10px;
 	}
 
 	.zoom {
@@ -219,6 +227,7 @@
 
 
 
+
 	/* Used in komentar.html, vhod.html */
 
 	#fieldsetid {
@@ -227,6 +236,9 @@
 		text-align: center;
 		font-family: calibri;
 		font-size: 18px;
+		padding-top: 15px;
+		margin-top: 35px;
+		padding-bottom: 35px;
 	}
 
 
@@ -247,9 +259,9 @@
 	}
 
 	.container-1 input#search{
-		margin-left: 35px;
+		margin-left: 100px;
 		width: 100px;
-		height: 25px;
+		height: 19px;
 		background: #A9E2F3;
 		border: none;
 		font-size: 15px;
@@ -291,15 +303,14 @@
 	 
 	#menu{
 	  width: 100%;
-	  height: 100%;
 	  position: fixed;
 	  top: 0;
 	  right: 0;
 	  bottom: 0;
 	  left: 0;
 	  z-index: 0;
+	  display: block;
 	  
-	  /* non-critical appearance styles */
 	  list-style: none;
 	  background: lightyellow;
 	 }
@@ -311,10 +322,8 @@
 		 }
 		 
 	.menu a {
-		  /* non-critical appearance styles */
 		  display: block;
 		  padding: 1em;
-		  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
 		  color: white;
 		  font-size: 1.2em;
 		  text-decoration: none;
@@ -323,7 +332,6 @@
 		
 	.menu a:hover {
 		  color: #c74438;
-		  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
 		}
 	 
 	
@@ -356,7 +364,6 @@
 
 	 
 	h1, h3, p {
-	  max-width: 600px;
 	  margin: 0 auto 1em;
 	}
 	
@@ -549,12 +556,19 @@
 	 
 	/* INDEX.HTML */
 
+	
 	#ul1{
 		font-family: times new roman;
 		font-size: 17px;
 		list-style-type: disc;
 		margin-left: 3%;
 		float: left;
+	}
+	
+	
+	#idh3index{
+		margin-top: 3px;
+		margin-bottom: 13px;
 	}
 
 
@@ -565,7 +579,7 @@
 
 	.imgpromotion{
 		border: 10px solid transparent;
-		padding: 1px;
+		padding-top:1px;
 		-webkit-border-image: url(../img/border-promotion.gif) 30 stretch; /* Safari 3.1-5 */
 		border-image: url(../img/border-promotion.gif) 35 stretch;
 		width: 330px;
@@ -573,6 +587,7 @@
 	}
 
 	.article0{
+		padding-top: 50px;
 		font-family: arial;
 		font-size: 18px;
 		text-align: center;
@@ -583,7 +598,7 @@
 	.article1 {
 		font-family: times new roman;
 		font-size: 17px;
-		
+		padding-top: 14px;
 	} 
 	 
 	 
@@ -675,15 +690,15 @@
 	}
 
 	.flexcontainer1 div{
-		 margin-left: 5.5%;
-		 margin-top: 7px;
+		margin-left: 15px;
+		margin-top: 5px;
 		 
 	}
 
 	.borderbox{
-		width: 450px;
-		height: 170px;    
-		padding: 33px;
+		width: 426px;
+		height: 198px;
+		padding: 11px;
 		border: 1px solid black;
 		box-sizing: border-box;
 		text-align: center;
@@ -696,6 +711,10 @@
 		padding: 0;
 		-webkit-border-image: url(../img/border-blue.png) 30 stretch; /* Safari 3.1-5 */
 		border-image: url(../img/border-blue.png) 30 stretch;
+		width: 447px;
+		height: 123px;
+		margin-top: 0;
+		padding-top: 0;
 	}
 
 	.borderimg:hover{
@@ -741,20 +760,37 @@
 	/* KONTAKTI.HTML */
 
 	#anketaid{
-		margin-bottom:0;
+		padding: 5px;
+		width: 20%;
 	}
+	
+	
+	
 
 	#formaid{
-		font-size: 20px;
+		font-size: 14px;
 		clear: both;
-		margin-bottom: 5px;
 		margin-top: 5px;
+		width: 75%;
+		margin-bottom: 25px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+		text-align: center;
 	}
 
 	#article1id{
 		text-align: center;
 		margin-top: 15px;
 		margin-bottom: 15px;
+		line-height: 3px;
+		padding-top: 25px;
+		padding-bottom: 0;
+	}
+	
+	
+	#idinfo{
+		padding-bottom: 25px;
+		padding-bottom: 25px;
 	}
 
 	 
@@ -773,8 +809,15 @@
 	}
 
 	#anketaid1{
-		margin: 15px;
 		padding: 5px;
+		padding-left: 34px;
+		padding-top: 15px;
+		padding-bottom: 34px;
+		margin-top: 25px;
+		width: 75%;
+		margin: auto;
+		margin-top: 35px;
+		text-align: left;
 	}
 	 
 
@@ -788,9 +831,7 @@
 
 	 /* DREHI.HTML */
 
-	#rokli{
-		font-size: 24px;
-	}
+
 
 	.divrokli p{
 		font-size: 19px;
@@ -803,17 +844,7 @@
 	.divrokli{
 		margin-left: 15px;
 	}
-		
-
-	.product1{
-		width: 100%;
-		float: left;
-	}
-	.product1 ul li{
-		width:300px;
-		float:left;
-		margin-right:30px;
-	}	
+			
 
 
 	#div-a{
@@ -823,6 +854,7 @@
 		padding-left: 15px;
 		margin-top: 25px;
 		position: static;
+		padding-top: 17px;
 	}
 
 	#groupid{
@@ -832,16 +864,59 @@
 		}
 		
 		
-	.paragraf1>p{
-		font-size: 19px;
-	}
 	.paragraf2~p{
 		color: #642EFE;
+		line-height: 0.5px;
 	}
 	.paragraf3+p{
 		color: #04B431;
+		line-height: 1px;
 	}
 
+	#rokli, #rizi, #teniski, #pantaloni{
+		margin-left: 25px;
+		font-size: 21px;
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+	
+	.paragraf1, .paragraf2, .paragraf3{
+		margin: 0;
+	}
+	.paragraf2 p{
+		padding: 0;
+	}
+	
+	#idp{
+		margin-left: 15px;
+	}
+	
+	.divrokli{
+		margin: 0;
+		padding: 0;
+	}
+	
+	.divrokli p, .paragraf1 p, .paragraf2 p, .product p, .paragraf3{
+		font-size: 17px;
+		line-height: 1px;
+		padding-top: 0;
+		margin-left: 0;
+	}
+	
+	.paragraf3 p{
+		line-height: 1px;
+	}
+	
+	div p{
+		padding-top: 0;
+		padding-left: 15px;
+	}
+	
+	p {
+		margin-left:0;
+	}
+		
+	
 
 
 
@@ -985,6 +1060,7 @@
 		float: initial;
 		margin-right:20px;
 		display: inline;
+		margin:0;
 		
 	}
 
@@ -993,7 +1069,7 @@
 		padding:0;
 		position:relative;
 		cursor:pointer;
-		margin-left:-50px;
+
 		
 	}
 	.demo-3 figure img {
@@ -1081,10 +1157,16 @@
 	
 	.divclass1{
 		margin: 15px;
-		padding: 0;
+	    padding-bottom: 15px;
 	}
 
-
+	.pclass{
+		font-size: 17px;
+		line-height: 1.5px;
+		margin-left: 0;
+		padding-top: 33px;
+		padding-bottom: 0;
+		}
 
 
 
@@ -1108,8 +1190,10 @@
 	}
 	
 	.pclass2{
-		margin: 15px;
-		padding: 5px;
+		margin-left: 5px;
+		margin-top: 35px;    padding: 0;
+    line-height: 1px;
+		line-height: 1px;
 	}
 
 
@@ -1122,6 +1206,11 @@
 
 	/* INFOPANTALON3.HTML */
 
+	.pclass3{
+		margin-left: 19px;
+		margin-top: 35px;
+	}
+	
 	.pclass3:not(p) { 
 		border:1px solid #ccc; width: 306px;
 		
@@ -1151,13 +1240,13 @@
 	/* INFOTENISKA1.HTML */
 
 	.pclass1{
-		margin: 15px;
-		padding: 5px;
+		margin-top: 35px;
+		line-height: 1px;
 	}
 
 	.pclass-2{
-		margin: 15px;
 		padding: 0;
+		line-height: 1px;
 	}
 
 
@@ -1196,6 +1285,132 @@
 
 
 
+	
+	
+
+	
+
+.navigation {
+
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  background: black;
+  display: block;
+}
+
+
+.nav-item {
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
+
+
+.nav-item a {
+  display: block;
+  padding: 1em;
+  
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.site-wrap { 
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; 
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 4em;
+  background-image:url(../img/background.jpg);
+  background-size: 200%;
+}
+
+
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+
+.nav-trigger + label, .site-wrap {
+  transition: left 0.5s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+#menu {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
@@ -1241,8 +1456,97 @@
 /* PHONES */
 @media (max-width: 568px) {
 	body {
-		background: orange;
+	/* background-color: oldlace; */
+		color: #000000; 
+		width:100%;
+		margin-left:auto;
+		margin-right:auto;
+		background-image:url(../img/background.jpg);
+	    overflow-x: hidden;
 	}
+	
+	.navigation {
+
+	  width: 100%;
+	  height: 100%;
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  z-index: 0;
+	  list-style: none;
+	  background: black;
+	  display: block;
+}
+
+
+.nav-item {
+	  width: 200px;
+	  border-top: 1px solid #111;
+	  border-bottom: 1px solid #000;
+}
+
+
+.nav-item a {
+  display: block;
+  padding: 1em;
+  
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.site-wrap { 
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; 
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 4em;
+  background-image:url(../img/background.jpg);
+  background-size: 200%;
+}
+
+
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+
+.nav-trigger + label, .site-wrap {
+  transition: left 0.5s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+#menu {
+	display: none;
+}
 	
   
 }

@@ -111,7 +111,7 @@ h4 {
 	position: fixed;
 	margin-top: 1%;
 	top: 36px;
-	right: 230px;
+	right: 100px;
 	z-index: 20;
 }
 
@@ -177,11 +177,14 @@ fieldset {
     margin-left: 2px;
     margin-right: 2px;
     padding-top: 0.35em;
-    padding-bottom: 0.625em;
     padding-left: 0.75em;
     padding-right: 0.75em;
     border: 1px solid black;
-	width: 25%
+	width: 25%;
+	margin: auto;
+	padding-bottom: 35px;
+	padding-top: 15px;
+	text-align: center;
 }
 
 
@@ -248,7 +251,7 @@ infoteniska1.html */
 .product{
 	width:1500px;
 	float:left;	
-	margin: 15px;
+	margin: 5px;
 	padding: 5px;
 }
 
@@ -281,12 +284,13 @@ article .aimage {
 
 #fieldsetid {
 	color: black;
-	border: 1px solid black;
-	text-align: center;
-	font-family: calibri;
-	font-size: 18px;
-	margin: 15px;
-    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: calibri;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-top: 35px;
+    padding-bottom: 35px;
 }
 
 
@@ -404,6 +408,10 @@ header{
 
 nav a {
 	color: black;
+}
+
+.navigation, .nav-trigger{
+	display: none;
 }
 
 	
@@ -539,6 +547,16 @@ aside a{
 
 /* INDEX.HTML */
 
+
+
+
+#idh3index{
+	margin-top: 3px;
+	margin-bottom: 13px;
+}
+
+
+
 #ul1{
 	font-family: times new roman;
 	font-size: 19px;
@@ -571,7 +589,7 @@ aside a{
 .article1 {
 	font-family: times new roman;
 	font-size: 20px;
-	
+	padding-top: 14px;
 } 
 
 
@@ -590,8 +608,12 @@ aside a{
 }
 
 #anketaid1{
-	margin: 15px;
     padding: 5px;
+	margin: auto;
+	padding-left: 135px;
+	padding-top: 25px;
+    margin-top: 35px;
+	text-align: left;
 }
 
 
@@ -631,11 +653,13 @@ aside a{
 .product1{
 	width: 1500px;
 	float: left;
+	margin-left: 10px;
 }
 .product1 ul li{
 	width:300px;
 	float:left;
 	margin-right:75px;
+	
 }	
 
 
@@ -665,13 +689,21 @@ aside a{
 	color: #04B431;
 }
 
+.paragraf1, .paragraf2{
+		margin: 0;
+	}
+.paragraf2 p{
+		padding: 0;
+	}
+
 
 .divrokli p:nth-child(3){
 		color: #9F81F7;
 	}
 	
 .divrokli{
-	margin-left: 15px;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -1036,9 +1068,20 @@ ul .classimg{
     padding: 5px;
 }
 
+
 .divclass1{
 	margin: 15px;
     padding: 0;
+}
+
+div p{
+	padding-top: 5px;
+    padding-left: 15px;
+}
+
+.paragraf2 p{
+	padding-top: 5px;
+    padding-left: 15px;
 }
 
 
@@ -1063,9 +1106,15 @@ ul .classimg{
 }
 
 .pclass2{
-	margin: 15px;
-    padding: 5px;
+	margin-top: 3px;
+    margin-left: 20px;
 }
+
+.pclass1 p, .pclass p{
+
+	padding-top: 5px;
+    padding-left: 15px;
+	}
 
 
 
@@ -1109,14 +1158,12 @@ ul .classimg{
 
 /* INFOTENISKA1.HTML */
 
-	.pclass1{
-		margin: 15px;
-		padding: 5px;
-	}
+
 
 	.pclass-2{
-		margin: 15px;
-		padding: 5px;
+	padding-top: 5px;
+    padding-left: 5px;
+
 	}
 
 	.articleclass2{
