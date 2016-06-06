@@ -152,9 +152,9 @@
 
 	label[for="nav-trigger"] {
 	  position: fixed;
-	  left: 15px; top: 15px;
-	  z-index: 2;
-	  
+	  left: 15px; 
+	  top: 15px;
+	  z-index: 2; 
 	  height: 30px;
 	  width: 30px;
 	  cursor: pointer;
@@ -215,11 +215,12 @@
 
 	.imgpromotion{
 		width: 330px;
-		height: 220px;
+		height: 216px;
+		margin-top: 0;
 	}
 
 	.article0{
-		padding-top: 43px;
+		padding-top: 33px;
 		font-size: 20px;
 	} 
 
@@ -348,7 +349,9 @@
 	 
 	 
 
-	 /* DREHI.HTML */
+	 /* 	.paragraf1, .paragraf2, .paragraf3{
+		margin: 0;
+	}.HTML */
 
 
 	.product1{
@@ -396,6 +399,7 @@
 	.paragraf1, .paragraf2, .paragraf3{
 		margin: 0;
 	}
+	
 	.paragraf2 p{
 		padding: 0;
 	}
@@ -597,9 +601,6 @@
 
 
 
-
-
-
 	/* FOOTER */
 
 	footer {
@@ -616,16 +617,292 @@
 
 
 
+
+
+
+
+
+
+
 /* PHONES */
 @media (max-width: 480px) {
 	
 	
 	/* COMMON */
 	
+
 	
-	body {
-		width:100%;
-	    overflow-x: hidden;
+	h2 { 
+		font-size: 18px;
+		padding-top: 0;
+	}
+
+	h3{
+		margin-left: 15px;
+		font-size: 18.5px;
+	}
+
+	h4 {
+		margin-left: 18px;
+		font-size: 15.5px;
+	}
+
+	.chat{
+		font-size: 10px;
+		margin-right: -41px;
+	}
+
+
+	p {
+		font-size: 18px;
+	}
+
+
+	fieldset { 
+		padding-top: 15px;
+		margin-top: 35px;
+		padding-bottom: 33px;
+		width: 75%;
+	}
+
+
+
+	.socialcontainer a img{
+		width: 95px;
+		height: 45px;
+	}
+
+	#asideid1{
+		font-size: 15px;
+	}
+	
+	#idcontainer{
+		height: 60px;
+	}
+
+	#idcontainer .socialcontainer{
+		position: relative;
+		margin: 15px;
+		padding: 7px 7px;
+		margin-left: 0;
+	}
+
+	.socialcontainer a img{
+		width: 67px;
+		height: 36px;
+	}
+
+
+	/* Used in drehi.html, info1.html, info2.html, 
+	infopantalon3.html, inforiza1.html, 
+	infoteniska1.html */
+
+	.product{
+		width: 100%;
+		padding: 0;
+	}
+
+	.product ul li{
+		margin-right:10px;
+	}
+	
+	table, th, td {
+		height: 15px;
+		width: 84%;
+		font-size: 14px;
+		margin-bottom: 21px;
+		margin-top: -5px;
+	}
+	
+	article .aimage{
+		display: inline-table;
+		border: 1px solid black;
+	}
+	
+	.zoom, .zoom:hover{
+		width: 250px;
+		height: 211px;
+	}
+	
+
+	
+	a[target="_blank"] {
+		font-size: 17px;
+	}
+	
+	.paragraf1 p, .paragraf2 p, .paragraf3 p, .pclass1, .pclass2, .pclass-2{
+		line-height: 15px;
+	}
+	
+	.divrokli p, .paragraf1 p, .paragraf2 p, .product p, .paragraf3{
+		line-height: 15px;
+	}
+	
+	
+	label {
+		font-size: 14.5px;
+	}
+	
+
+
+
+	/* SEARCH */
+
+	.container-1 input#search{
+		margin-left: 134px;
+		width: 69px;
+		height: 18px;
+		font-size: 12px;
+		padding-left: 4px;
+		margin-top: -14px;
+	}
+	
+
+
+	
+	
+	
+	
+	/* HEADER */
+	
+	header{
+		padding: 5%;
+	}
+	
+	#h1id{
+		font-size: 20px;
+	}
+	
+	.classlogo{
+		position: relative;
+		width: 100px;
+		height: 54px;
+	}
+	
+	.classlogo:hover{
+		animation: none;
+	}
+	
+	.classlogo img{
+		width: 79px;
+		height: 43px;
+	}
+
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	/* VHOD.HTML */
+	
+	#fieldsetid{
+		font-size: 15px;
+	}
+	
+	
+	
+	
+	
+	
+	/* REG.HTML */
+	#fieldsetid label{
+		font-size: 16px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/* NAV */
+	
+	label[for="nav-trigger"] {
+		height: 21px;
+		width: 21px;
+	}
+	
+	.site-wrap{
+		padding: 2.5em;
+	}
+	
+	.nav-item a{
+		font-size: 15px;
+	}
+	
+	.nav-trigger:checked ~ .site-wrap {
+		left: 155px;
+		box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	}
+	
+	
+	
+	
+	/* INDEX.HTML */
+	
+	#idh3index{
+		margin-top: -3px;
+		margin-bottom: 7px;
+		font-size: 17px;
+	}
+	
+	
+	.imgpromotion{
+		margin-top: 4px;
+		width: 234px;
+		height: 124px;
+	}
+	
+	#ul1{
+		margin-left: 14px;
+		font-size: 14px;
+	}
+	
+	.article1{
+		margin-left: 0;
+		font-size: 15px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	/* DREHI.HTML */
+	
+	#div-a{
+		font-size: 16.5px;
+		padding-top: 7px;
+	}
+	
+	
+	#rokli, #rizi, #teniski, #pantaloni{
+		font-size: 20px;
+		margin-bottom: 1px;
+	}
+	
+	.divrokli p{
+		font-size: 16px;
+		line-height: 15px;
+	}
+	
+	.product img{
+		width: 250px;
+		height: 211px;
+	}
+	
+	.paragraf2~p {
+		line-height: 15px;
 	}
 	
 
@@ -634,7 +911,45 @@
 	
 	
 	
+	
+	
+	
+	/* ANKETA.HTML */
+	
+	#anketaid1{
+		padding-left: 24px;
+		margin-left: 4px;
+		font-size: 12px;
+	}
+	
+	.classanketa{
+		font-size: 13.5px;
+	}
 
 	
-  
+	/* INFO1.HTML */
+	
+	.pclass{
+		line-height: 18px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/* FOOTER */
+
+	footer {
+		padding-left: 3px;
+		font-size: 12px;
+	}
+	
+	
+	
+	
+	
 }

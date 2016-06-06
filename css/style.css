@@ -568,7 +568,7 @@ aside a{
 
 
 .imgpromotion{
-	border: 10px solid transparent;
+	border: 7px solid transparent;
     padding: 1px;
     -webkit-border-image: url(../img/border-promotion.gif) 30 stretch; /* Safari 3.1-5 */
     border-image: url(../img/border-promotion.gif) 35 stretch;
