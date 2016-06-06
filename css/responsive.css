@@ -38,6 +38,11 @@
 	p {
 		font-size: 18px;
 	}
+	
+	a:hover {
+		text-decoration: none;
+		color: lightyellow !important;
+	}
 
 
 	fieldset { 
