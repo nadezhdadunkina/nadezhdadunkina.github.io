@@ -9,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -21,14 +21,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
 	line-height: 1;
 	overflow-x: hidden;
-	
+
 }
 ol, ul {
 	list-style: none;
@@ -58,7 +58,7 @@ table {
 
 body {
 /* background-color: oldlace; */
-	color: #000000; 
+	color: #000000;
 	width:1500px;
 	margin-left:auto;
 	margin-right:auto;
@@ -78,7 +78,7 @@ h1 {
 }
 
 
-h2 { 
+h2 {
 	color: blue;
 	margin-left: 17px;
 	font-family: times new roman;
@@ -118,7 +118,7 @@ h4 {
 
 
 table, th, td {
-    border: 1px solid #424242;
+	border: 1px solid #424242;
 	margin-bottom: 15px;
 	margin-top: 5px;
 	padding-bottom: 3%;
@@ -159,7 +159,6 @@ div a{
 }
 
 
-
 a {
 	text-decoration: none;
 	color: #6600ff;
@@ -172,7 +171,7 @@ article a {
 }
 
 
-fieldset { 
+fieldset {
     display: block;
     margin-left: 2px;
     margin-right: 2px;
@@ -244,13 +243,13 @@ a[target="_blank"] {
 	clear: both;
 }
 
-/* Used in drehi.html, info1.html, info2.html, 
-infopantalon3.html, inforiza1.html, 
+/* Used in drehi.html, info1.html, info2.html,
+infopantalon3.html, inforiza1.html,
 infoteniska1.html */
 
 .product{
 	width:1500px;
-	float:left;	
+	float:left;
 	margin: 5px;
 	padding: 5px;
 }
@@ -338,18 +337,18 @@ article .aimage {
     outline:none;
     background: #81BEF7;
   }
-  
- /* SEARCH-END */ 
+
+ /* SEARCH-END */
 
 
 
 
 
 
- 
- 
- 
- 
+
+
+
+
 
 /* HEADER */
 
@@ -402,7 +401,7 @@ header{
 /* #navid1 {
 	font-size: 18px;
 	font-family: verdana;
-	margin-left: 32%; 
+	margin-left: 32%;
 	padding-top: 2%;
 }  */
 
@@ -414,7 +413,7 @@ nav a {
 	display: none;
 }
 
-	
+
 #menu {
     width: auto;
     height: 32px;
@@ -428,7 +427,6 @@ nav a {
 }
 
 
-
 .submenu, .sumbenu2, .submenu3 {
 	display: none;
 }
@@ -439,10 +437,10 @@ nav a {
 	position:relative;
 	float:left;
 	margin:auto;
-	padding:0;	
+	padding:0;
 }
 
-#menu li { 
+#menu li {
 	position:relative;
 	float:left;
 	margin:0;
@@ -465,7 +463,7 @@ nav a {
 	display: block;
     color: blue;
     background-color: #E0F2F7;
-	border-radius:14px 14px 14px 14px;	
+	border-radius:14px 14px 14px 14px;
 }
 
 #menu ul ul {
@@ -494,7 +492,7 @@ nav a {
 #menu ul  li:hover > ul {
 	color: #F90;
 	display:block;
-	
+
 }
 
 
@@ -548,8 +546,6 @@ aside a{
 /* INDEX.HTML */
 
 
-
-
 #idh3index{
 	margin-top: 3px;
 	margin-bottom: 13px;
@@ -583,14 +579,14 @@ aside a{
 	font-size: 22px;
 	text-align: center;
 	position: relative;
-
-} 
+	padding-top: 25px;
+}
 
 .article1 {
 	font-family: times new roman;
 	font-size: 20px;
 	padding-top: 14px;
-} 
+}
 
 
 
@@ -659,8 +655,8 @@ aside a{
 	width:300px;
 	float:left;
 	margin-right:75px;
-	
-}	
+
+}
 
 
 #div-a{
@@ -677,8 +673,8 @@ aside a{
 	position: static;
 	clear: both;
 	}
-	
-	
+
+
 .paragraf1>p{
 	font-size: 21px;
 }
@@ -690,17 +686,17 @@ aside a{
 }
 
 .paragraf1, .paragraf2{
-		margin: 0;
+	margin: 0;
 	}
 .paragraf2 p{
-		padding: 0;
+	padding: 0;
 	}
 
 
 .divrokli p:nth-child(3){
-		color: #9F81F7;
+	color: #9F81F7;
 	}
-	
+
 .divrokli{
 	margin: 0;
 	padding: 0;
@@ -708,13 +704,13 @@ aside a{
 
 
 
-	
-	
-	
 
 
 
-/* ZANAS */
+
+
+
+/* ZANAS.HTML */
 
 #h3id3{
 	text-align: center;
@@ -779,25 +775,26 @@ aside a{
 	text-align: left;
 	float: left;
 	margin-left: 3%
-	
+
 }
 
+
 .flexcontainer1 {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
 }
 
 .flexcontainer1 div{
-	 margin-left: 5.5%;
-	 margin-top: 7px;
-	 
+	margin-left: 5.5%;
+	margin-top: 7px;
+
 }
 
 .borderbox{
 	width: 450px;
-    height: 170px;    
+    height: 170px;
     padding: 33px;
     border: 1px solid black;
     box-sizing: border-box;
@@ -826,7 +823,7 @@ aside a{
     -moz-column-count: 2; /* Firefox */
     column-count: 3;
 	text-align: justify;
-	column-rule-width: 1px solid black;    
+	column-rule-width: 1px solid black;
 	-webkit-column-gap: 20px; /* Chrome, Safari, Opera */
     -moz-column-gap: 20px; /* Firefox */
     column-gap: 20px;
@@ -837,10 +834,8 @@ aside a{
     -moz-column-rule-width: 1px; /* Firefox */
     column-rule-width: 1px;
 }
-	
 
-	
-  
+
 #aboutus:hover {
    transform: rotate(6deg);
 }
@@ -905,16 +900,21 @@ aside a{
 }
 
 
-.flexcontainer img{	
-	margin: 15px;	
+.flexcontainer img{
+	margin: 15px;
 	border: 7px solid transparent;
     padding: 1px;
     -webkit-border-image: url(../img/bordergift.jpg) 37 stretch; /* Safari 3.1-5 */
     border-image: url(../img/bordergift.jpg) 37 stretch;
 	}
-	
-	
-	
+
+
+
+.classlabel{
+	font-family: arial;
+	font-size: 18px;
+}
+
 #giftcardsid{
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 20px;
@@ -923,24 +923,7 @@ aside a{
 
 
 
-.flexcontainer2{
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-}
 
-.flexcontainer2 label{
-	padding-bottom: 6px;
-	padding-top: 7px;
-	margin: auto;
-}
-
-.classlabel{
-	font-family: arial;
-	font-size: 18px;
-	margin-left: 100px;
-}
 
 
 
@@ -963,7 +946,7 @@ ul .classimg{
 .h3color{
 	color: white;
 	margin-top: 100px;
-	
+
 }
 
 .demo-3 {
@@ -974,7 +957,7 @@ ul .classimg{
     float: initial;
     margin-right:20px;
 	display: inline;
-	
+
 }
 
 .demo-3 figure {
@@ -983,7 +966,7 @@ ul .classimg{
     position:relative;
     cursor:pointer;
     margin-left:-50px;
-	
+
 }
 .demo-3 figure img {
     display:block;
@@ -1049,7 +1032,7 @@ ul .classimg{
 
 
 
-	
+
 
 
 /* INFO1.HTML */
@@ -1125,10 +1108,11 @@ div p{
 
 /* INFOPANTALON3.HTML */
 
-.pclass3:not(p) { 
-	border:1px solid #ccc; width: 306px;
+.pclass3:not(p) {
+	border:1px solid #ccc;
+	width: 306px;
 	margin: 15px;
-    padding: 5px;
+	padding: 5px;
 }
 
 .classarticle3{
@@ -1160,17 +1144,15 @@ div p{
 
 
 
-	.pclass-2{
+.pclass-2{
 	padding-top: 5px;
     padding-left: 5px;
+}
 
-	}
-
-	.articleclass2{
-		margin: 15px;
-		padding: 5px;
-	}
-
+.articleclass2{
+	margin: 15px;
+	padding: 5px;
+}
 
 
 
@@ -1188,19 +1170,9 @@ footer {
 	padding-top: 6px;
 	padding-bottom: 6px;
 	background-color: #8AD9FF;
-	border-radius: 14px 14px 14px 14px;	
-	
+	border-radius: 14px 14px 14px 14px;
+
 }
-
-
-/* .footerimg{
-	padding-left: 100px;
-	width: 100px;
-	height: 50px;
-} */
-
-
-/* END FOOTER */
 
 
 
@@ -1211,7 +1183,7 @@ footer {
 /* HACKS */
 
 /* hack for mozilla (all versions) */
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
 body{
 	 background: #CEECF5;
   }
@@ -1221,58 +1193,12 @@ body{
 @-moz-document url-prefix() {
 	button:hover{
 	color:green;
-}	
+}
 }
 
 /* hack for IE (8+ versions) */
 @media screen\0 {
-   body { 
+   body {
    background: #CEF6CE;
-   } 
+   }
 }
-
-
-
-
-
-
-
-
-
-
-/* OTHER */
-
-
-
-/* .tableclass {
-	padding: 5px;
-	width: 20%;
-	color: blue;
-	text-align: center;
-} */
-
-
-
-/*
-
-#ul2{
-	font-family: times new roman;
-	font-size: 19px;
-	list-style-type: square;
-	float: left;
-	padding-top: 1%;
-	margin-left: 3%
-}
-
-*/
-
-
-/*
-
-.class-label{
-	font-size: 18px;
-	font-family: arial;
-	font-style: italic;
-}
-
-*/
