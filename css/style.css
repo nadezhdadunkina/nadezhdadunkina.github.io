@@ -262,7 +262,13 @@ infoteniska1.html */
 	width:300px;
 	float:left;
 	margin-right:75px;
+}
 
+.productname{
+	margin-top: 15px;
+	margin-left: 0;
+	margin-bottom: 2px;
+	font-size: 21px;
 }
 
 .zoom {
