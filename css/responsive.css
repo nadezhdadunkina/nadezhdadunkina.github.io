@@ -58,6 +58,10 @@
 		width: 95px;
 		height: 45px;
 	}
+	
+	label {
+		font-size: 14.5px;
+	}
 
 
 
@@ -299,7 +303,7 @@
 	/* KONTAKTI.HTML */
 
 	#anketaid{
-		padding: 5px;
+		padding: 0;
 		width: 20%;
 	}
 	
@@ -318,6 +322,10 @@
 		line-height: 3px;
 		padding-top: 25px;
 		padding-bottom: 0;
+	}
+	
+	#article1id p{
+		margin-left: 1px;
 	}
 	
 	
@@ -355,12 +363,12 @@
 	 
 
 	 /* 	.paragraf1, .paragraf2, .paragraf3{
-		margin: 0;
-	}.HTML */
+		margin: 0;  */
 
 
 	.product1{
 		width: 100%;
+		margin-left: 0;
 	}
 	
 	.product1 ul li{
@@ -389,9 +397,13 @@
 		
 	.paragraf2~p{
 		line-height: 0.5px;
+		margin-left: -14px;
 	}
+	
+	
 	.paragraf3+p{
 		line-height: 1px;
+		margin-left: -14px;
 	}
 
 	#rokli, #rizi, #teniski, #pantaloni{
@@ -410,29 +422,39 @@
 	}
 	
 	#idp{
-		margin-left: 15px;
+		margin-left: 5px;
+		font-size: 16px;
 	}
 	
 
 	
-	.divrokli p, .paragraf1 p, .paragraf2 p, .product p, .paragraf3{
+	.divrokli p, .paragraf1 p, .paragraf2 p, .paragraf3{
 		font-size: 17px;
 		line-height: 1px;
 		padding-top: 0;
-		margin-left: 0;
+		margin-left: -10px;
 	}
 	
 	.paragraf3 p{
 		line-height: 1px;
+		margin-left: -4px;
 	}
 	
 	div p{
 		padding-top: 0;
 		padding-left: 15px;
+		margin-left: -6px;
 	}
 	
 	p {
 		margin-left:0;
+	}
+	
+	.product p{
+		font-size: 17px;
+		line-height: 1px;
+		padding-top: 0;
+		margin-left: -14px;
 	}
 		
 	
@@ -515,6 +537,11 @@
 	.demo-3 .classimg {
 		padding-left: 37px;
 	}
+	
+	#iddiv{
+		font-size: 15px;
+		text-align: left;
+	}
 
 
 
@@ -531,6 +558,7 @@
 	
 	.divclass1{
 	    padding-bottom: 15px;
+		margin-left: 2px;
 	}
 
 	.pclass{
@@ -539,7 +567,10 @@
 		margin-left: 0;
 		padding-top: 33px;
 		padding-bottom: 0;
+		margin-left: -8px;
 		}
+
+
 
 
 
@@ -556,11 +587,17 @@
 		margin-top: 35px;    
 		padding: 0;
 		line-height: 1px;
+		margin-left: -4px;
+		
 	}
 
 
 
-
+	/* INFORIZA1.HTML */
+	
+	.articleclass1{
+		margin-left: 0px;
+	}
 
 
 
@@ -578,6 +615,11 @@
 		margin-bottom: 5px;
 		width: 250px;
 		height: 35px;
+		margin-left: 4px;
+	}
+	
+	.classarticle3{
+		margin-left: 0px;
 	}
 	
 
@@ -594,11 +636,17 @@
 	.pclass1{
 		margin-top: 35px;
 		line-height: 1px;
+		margin-left: 0px;
 	}
 
 	.pclass-2{
 		padding: 0;
 		line-height: 1px;
+		margin-left: 0px;
+	}
+	
+	.articleclass2{
+		margin-left: -1px;
 	}
 
 
@@ -613,8 +661,7 @@
 	}
 
 
-  
-
+ 
 
 }
 
@@ -629,53 +676,20 @@
 
 
 
-/* PHONES */
-@media (max-width: 480px) {
+	/* PHONES */
+
+		/* ONLY FOR IPHONE 5 */
+@media (max-width: 320px) {
 	
 	
 	/* COMMON */
 	
-
-	
-	h2 { 
-		font-size: 18px;
-		padding-top: 0;
-	}
-
-	h3{
-		margin-left: 15px;
-		font-size: 18.5px;
-	}
-
-	h4 {
-		margin-left: 18px;
-		font-size: 15.5px;
-	}
 
 	.chat{
 		font-size: 10px;
 		margin-right: -41px;
 	}
 
-
-	p {
-		font-size: 18px;
-	}
-
-
-	fieldset { 
-		padding-top: 15px;
-		margin-top: 35px;
-		padding-bottom: 33px;
-		width: 75%;
-	}
-
-
-
-	.socialcontainer a img{
-		width: 95px;
-		height: 45px;
-	}
 
 	#asideid1{
 		font-size: 15px;
@@ -697,10 +711,6 @@
 		height: 36px;
 	}
 
-
-	/* Used in drehi.html, info1.html, info2.html, 
-	infopantalon3.html, inforiza1.html, 
-	infoteniska1.html */
 
 	.product{
 		width: 100%;
@@ -732,23 +742,26 @@
 
 	
 	a[target="_blank"] {
-		font-size: 17px;
+		font-size: 14px;
+		margin-left: 0px;
+		font-family: verdana;
 	}
 	
 	.paragraf1 p, .paragraf2 p, .paragraf3 p, .pclass1, .pclass2, .pclass-2{
 		line-height: 15px;
+		font-size: 17px;
 	}
 	
 	.divrokli p, .paragraf1 p, .paragraf2 p, .product p, .paragraf3{
 		line-height: 15px;
+		font-size: 17px;
 	}
 	
 	
 	label {
-		font-size: 14.5px;
+		font-size: 13px;
 	}
 	
-
 
 
 	/* SEARCH */
@@ -764,6 +777,7 @@
 	
 
 
+	
 	
 	
 	
@@ -794,35 +808,7 @@
 	}
 
 
-	
-	
-	
-	
-	
-	
 
-	
-	
-	
-	/* VHOD.HTML */
-	
-	#fieldsetid{
-		font-size: 15px;
-	}
-	
-	
-	
-	
-	
-	
-	/* REG.HTML */
-	#fieldsetid label{
-		font-size: 16px;
-	}
-	
-	
-	
-	
 	
 	
 	
@@ -833,10 +819,11 @@
 	label[for="nav-trigger"] {
 		height: 21px;
 		width: 21px;
+		margin-left: -8px;
 	}
 	
 	.site-wrap{
-		padding: 2.5em;
+		padding: 2em;
 	}
 	
 	.nav-item a{
@@ -848,6 +835,16 @@
 		box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
 	}
 	
+	
+	.nav-trigger:checked + label {
+		left: 170px;
+	}
+	
+	
+	
+	
+	
+		
 	
 	
 	
@@ -879,8 +876,7 @@
 	
 	
 	
-	
-	
+		
 	
 	
 	/* DREHI.HTML */
@@ -908,11 +904,26 @@
 	
 	.paragraf2~p {
 		line-height: 15px;
+		margin-left: -10px
 	}
+	
+
+
+	
+
 	
 
 	
 	
+	/* REG.HTML, KOMENTAR.HTML, VHOD.HTML */
+	
+	#fieldsetid label{
+		font-size: 16px;
+	}	
+	
+	#fieldsetid {
+		font-size: 14px;
+	}
 	
 	
 	
@@ -932,10 +943,238 @@
 	}
 
 	
+	
+	
+	
+	
+
+	
 	/* INFO1.HTML */
 	
 	.pclass{
 		line-height: 18px;
+	}
+	
+
+	
+	
+	
+	
+		
+	/* GIFTCARDS.HTML */
+	
+	#h3giftcards {
+		font-size: 16px;
+		padding-top: 19px;
+		text-align: -webkit-auto;
+		margin-left: 5px;
+	}
+	
+	
+	.flexcontainer {
+		margin-left: 7px;
+	}
+	
+
+	.flexcontainer img{	
+		margin-left: 15px;
+		width: 215px;
+		height: 150px;
+		}
+		
+
+	.classlabel{
+		margin-left: 15px;
+		text-align: center;
+		display: flex;
+		margin-bottom: 15px;
+		padding-bottom: 0;
+		font-size: 13px;
+	}
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	/* ZANAS.HTML */
+	
+	div h2{
+		margin-top: 15px;
+		font-size: 19px;
+		padding-top: 23px;
+		padding-bottom: 0;
+	}
+	
+	
+	.borderbox {
+		width: 230px;
+		height: 190px;
+		padding: 11.5px;
+	}
+	
+	
+	.borderbox h3{
+		font-size: 15px;
+		font-family: verdana;
+	}
+	
+	
+	.flexcontainer1 {
+	   display: -webkit-flex;
+	   display: inline;
+	   -webkit-flex-direction: coloumn;
+	   flex-direction: coloumn;
+	   -webkit-align-items: center;
+	   align-items: center;
+	   -webkit-justify-content: center;
+	   justify-content: center;
+	}
+	
+	.flexcontainer1 div {
+		margin-top: 15px;
+	}
+	
+	#h3id3 {
+		font-size: 17.5px;
+		padding-top: 15px;
+		padding-bottom: 0;
+		margin-left: 0;
+	}
+	
+	
+	#rabotno_vreme {
+		font-size: 15px;
+		margin-left: 0;
+	}
+	
+	.flexcontainer1 div img{ 		
+		width: 230px;
+		height: 200px;
+	}
+	
+	#h3id4 {
+		margin-bottom: 4px;
+		font-size: 19px;
+	}
+	
+	.borderimg {
+		width: 248px;
+		height: 70px;
+		margin-top: 0;
+		margin-left: 1px;
+		padding-top: 0;
+		display: inline;
+	}
+	
+	.h3class, .h3class1{
+		font-size: 19px;
+		text-align: center;
+	}
+	
+	#ol1{
+		font-size: 16px;
+		text-align: start;
+		margin-left: 18px;
+	}
+	
+	
+	.coloumns {
+		padding-top: 5px;
+		margin-left: 15px;
+		font-family: arial;
+		font-size: 13px;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		text-align: initial;
+		-webkit-column-gap: 13px;
+		-moz-column-gap: 13px;
+		column-gap: 13px;
+	}
+	
+	#giftcardsid {
+		font-size: 15px;
+	}
+	
+	
+	
+	
+		
+	
+	
+	
+	/* DETAILI.HTML */
+	
+	
+	.article0{
+		padding-top: 25px;
+		font-size: 16px;
+		padding-bottom: 7px;
+		text-align: center;
+	}
+	
+	#iddiv{
+		font-size: 13px;
+		text-align: justify;
+	}
+	
+	.demo-3 figure img {
+		backface-visibility: hidden;
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		transition: all 1s;
+		width: 220px;
+		height: 136px;
+	}
+	
+
+	
+	ul .classimg {
+		height: 130px;
+		margin-left: 30px;
+	}
+	
+	
+	.demo-3 figure figcaption {
+		top: 0;
+		left: 0;
+		width: 220px;
+		height: 136px;
+		padding: 15px;
+		background-color: rgba(26,76,110,0.5);
+		text-align: center;
+		backface-visibility: hidden;
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		transition: all .5s;
+	}
+	
+	.demo-3 figure:hover img,figure.hover img {
+		-webkit-transform:rotateY(0deg);
+		-moz-transform:rotateY(0deg);
+		transform:rotateY(0deg);
+	}
+	.demo-3 figure:hover figcaption,figure.hover figcaption {
+		-webkit-transform:rotateY(0);
+		-moz-transform:rotateY(0);
+		transform:rotateY(0);
+	}
+	
+	
+	.h3color {
+		font-family: calibri;
+		margin-top: 34px;
+		font-size: 16px;
+		text-align: center;
+		margin-left: 0;
 	}
 	
 	
@@ -944,6 +1183,40 @@
 	
 	
 	
+	
+	/* KONTAKTI.HTML */
+	
+	
+	#article1id {
+		line-height: 16px;
+		padding-top: 15px;
+		padding-bottom: 0;
+		text-align: inherit;
+		font-size: 18px;
+	}
+	
+	hgroup h3 {
+		margin-left: 15px;
+		font-size: 15px;
+	}
+	
+	#idinfo{
+		padding-bottom: 16px;
+	}
+	
+	div p{
+		font-size: 15px;
+		margin-top: auto;
+		
+	}
+	
+	#formaid {
+		font-size: 11px;
+		padding-top: 17px;
+	}
+	
+	
+
 	
 	
 	/* FOOTER */
@@ -952,6 +1225,389 @@
 		padding-left: 3px;
 		font-size: 12px;
 	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* PHONES */
+@media (max-width: 480px) {
+
+
+
+	/* COMMON */
+	
+
+
+	#h1id {
+    font-size: 23px;
+	}
+	
+	
+	.site-wrap {
+		padding: 2em;
+	}	
+	
+	label[for="nav-trigger"] {
+		height: 21px;
+		width: 21px;
+		margin-left: -8px;
+	}
+	
+	.chat {
+		font-size: 13px;
+		margin-left: 73px;
+		top: 1px;
+		right: 0;
+		left: 193px;
+		position: fixed;
+		height: 33px;
+		width: 47px;
+	}
+	
+	#idcontainer .socialcontainer{
+		position: relative;
+		margin: 15px;
+		padding: 7px 7px;
+		margin-left: 0;
+	}
+
+	.socialcontainer a img{
+		width: 67px;
+		height: 36px;
+	}
+	
+	.pclass, .product p, div p {
+		line-height: 17.5px;
+	}
+	
+	
+	
+
+	
+	
+	
+	
+	
+	/* DREHI.HTML */
+	
+	.paragraf2~p {
+		line-height: 17.5px;
+		font-size: 16.5px;
+	}	
+	
+	
+	.divrokli p, .paragraf1 p, .paragraf2 p, .paragraf3 {
+		line-height: 16px;
+		font-size: 16.5px;
+	}
+	
+	
+	.paragraf3 p {
+		line-height: 16px;
+		font-size: 16.5px;
+		margin-left: 1px;
+	}
+	
+	#idp {
+		font-size: 17px;
+	}
+	
+	
+	
+	
+	
+	/* KONTAKTI.HTML */
+	
+	
+	#article1id {
+		line-height: 17px;
+		padding-top: 15px;
+		padding-bottom: 0;
+		text-align: inherit;
+		font-size: 18px;
+	}
+	
+	hgroup h3 {
+		margin-left: 15px;
+		font-size: 15px;
+	}
+	
+	#idinfo{
+		padding-bottom: 16px;
+	}
+	
+	div p{
+		font-size: 15px;
+		margin-top: auto;
+		
+	}
+	
+	#formaid {
+		font-size: 11px;
+		padding-top: 17px;
+	}
+	
+	
+	
+		/* GIFTCARDS.HTML */
+	
+	#h3giftcards {
+		font-size: 17px;
+		padding-top: 19px;
+		text-align: -webkit-auto;
+		margin-left: 5px;
+	}
+	
+	
+	.flexcontainer {
+		margin-left: 7px;
+	}
+	
+
+
+	.flexcontainer img{	
+		margin-left: 12px;
+		width: 235px;
+		height: 155px;
+		}
+		
+
+
+	.classlabel{
+		margin-left: 15px;
+		text-align: center;
+		display: flex;
+		margin-bottom: 15px;
+		padding-bottom: 0;
+		font-size: 14px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	/* ZANAS.HTML */
+	
+	div h2{
+		margin-top: 15px;
+		font-size: 19px;
+		padding-top: 23px;
+		padding-bottom: 0;
+	}
+	
+	
+	.borderbox {
+		width: 230px;
+		height: 190px;
+		padding: 11.5px;
+	}
+	
+	
+	.borderbox h3{
+		font-size: 15px;
+		font-family: verdana;
+	}
+	
+	
+	.flexcontainer1 {
+	   display: -webkit-flex;
+	   display: inline;
+	   -webkit-flex-direction: coloumn;
+	   flex-direction: coloumn;
+	   -webkit-align-items: center;
+	   align-items: center;
+	   -webkit-justify-content: center;
+	   justify-content: center;
+	}
+	
+	.flexcontainer1 div {
+		margin: auto;
+		margin-top: 25px;
+	}
+	
+	#h3id3 {
+		font-size: 17.5px;
+		padding-top: 15px;
+		padding-bottom: 0;
+		margin-left: 0;
+	}
+	
+	
+	#rabotno_vreme {
+		font-size: 15px;
+		margin-left: 0;
+	}
+	
+	.flexcontainer1 div img{ 		
+		width: 230px;
+		height: 200px;
+		margin: auto;
+		display: table-row-group;
+	}
+	
+	#h3id4 {
+		margin-bottom: 4px;
+		font-size: 19px;
+	}
+	
+	.borderimg {
+		width: 100%;
+		height: 88px;
+		margin-top: 0;
+		margin-left: 1px;
+		padding-top: 0;
+		display: inline;
+	}
+	
+	.h3class, .h3class1{
+		font-size: 19px;
+		text-align: center;
+	}
+	
+	#ol1{
+		font-size: 16px;
+		text-align: start;
+		margin-left: 18px;
+	}
+	
+	
+	.coloumns {
+		padding-top: 5px;
+		margin-left: 15px;
+		font-family: arial;
+		font-size: 13px;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		text-align: initial;
+		-webkit-column-gap: 13px;
+		-moz-column-gap: 13px;
+		column-gap: 13px;
+	}
+	
+	#giftcardsid {
+		font-size: 15px;
+	}
+	
+	
+	
+	/* DETAILI.HTML */
+	
+	
+	
+	.article0{
+		padding-top: 25px;
+		font-size: 16px;
+		padding-bottom: 7px;
+		text-align: center;
+	}
+	
+	#iddiv{
+		font-size: 13px;
+		text-align: justify;
+	}
+	
+	.demo-3 figure img {
+		backface-visibility: hidden;
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		transition: all 1s;
+		max-width: 60%;
+		height: 60%;
+	}
+	
+	ul .classimg {
+		height: 217px;
+		margin-left: 30px;
+	}
+	
+	.demo-3 figure figcaption {
+		top: 0;
+		left: 0;
+		max-width: 60%;
+		height: 60%;
+		padding: 15px;
+		background-color: rgba(26,76,110,0.5);
+		text-align: center;
+		backface-visibility: hidden;
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		transition: all .5s;
+	}
+	
+	.demo-3 figure:hover img,figure.hover img {
+		-webkit-transform:rotateY(0deg);
+		-moz-transform:rotateY(0deg);
+		transform:rotateY(0deg);
+	}
+	.demo-3 figure:hover figcaption,figure.hover figcaption {
+		-webkit-transform:rotateY(0);
+		-moz-transform:rotateY(0);
+		transform:rotateY(0);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
