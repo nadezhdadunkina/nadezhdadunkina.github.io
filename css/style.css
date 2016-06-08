@@ -43,6 +43,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
 /* COMMON */
 /* Variable */
 body {
@@ -267,31 +274,43 @@ article .aimage {
 /* HEADER */
 header {
   position: relative;
-  padding: 3%; }
-
-#h1id {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 30px;
-  color: #3104B4;
-  text-align: center;
-  padding-bottom: 1%;
-  padding-top: 1%;
-  position: relative; }
-
-.classlogo {
-  position: absolute;
-  width: 111px;
-  height: 50px;
-  border-radius: 7px 7px 7px 7px; }
-
-.classlogo:hover {
-  animation: pulse 1.5s infinite; }
-
+  padding: 3%;
+  /* ASIDE */ }
+  header #h1id {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: #3104B4;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    position: relative; }
+  header .classlogo {
+    position: absolute;
+    width: 111px;
+    height: 50px;
+    border-radius: 7px 7px 7px 7px; }
+    header .classlogo:hover {
+      animation: pulse 1.5s infinite; }
 @keyframes pulse {
   0% {
     background-color: #F8E0EC; }
   100% {
     background-color: #F5A9BC; } }
+  header aside {
+    font-family: arial;
+    display: block;
+    padding-top: 1%;
+    float: right; }
+    header aside a {
+      color: #3A01DF; }
+    header aside #asideid1 {
+      display: block;
+      font-family: arial;
+      font-size: 17px;
+      float: right;
+      position: relative;
+      padding-top: 1%; }
+
 /* NAV */
 nav a {
   color: #000000; }
@@ -366,22 +385,6 @@ nav a {
 
 .submenu, .sumbenu2, .submenu3 {
   display: none; }
-
-/* ASIDE */
-aside {
-  font-family: arial;
-  display: block; }
-
-aside a {
-  color: #3A01DF; }
-
-#asideid1 {
-  display: block;
-  font-family: arial;
-  font-size: 17px;
-  float: right;
-  position: relative;
-  padding-top: 1%; }
 
 /* INDEX.HTML */
 #idh3index {

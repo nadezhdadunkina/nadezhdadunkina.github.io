@@ -48,7 +48,7 @@ table {
 
 
 
-
+@import 'reset';
 
 
 
@@ -130,6 +130,7 @@ table, th, td {
 	width:300px;
 	color: $black;
 }
+
 
 
 td:hover{
@@ -362,38 +363,66 @@ article .aimage {
 header{
 	position: relative;
 	padding: 3%;
-}
-
-#h1id {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 30px;
-    color: #3104B4;
-    text-align: center;
-	padding-bottom: 1%;
-	padding-top: 1%;
-	position: relative;
-}
 
 
-.classlogo{
-	position: absolute;
-	width: 111px;
-    height: 50px;
-	border-radius: 7px 7px 7px 7px;
+	#h1id {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 30px;
+		color: #3104B4;
+		text-align: center;
+		padding-bottom: 1%;
+		padding-top: 1%;
+		position: relative;
+	}
+
+
+	.classlogo{
+		position: absolute;
+		width: 111px;
+		height: 50px;
+		border-radius: 7px 7px 7px 7px;
+
+
+		&:hover{
+			animation: pulse 1.5s infinite;
+
+
+			@keyframes pulse {
+				0% {
+				background-color: #F8E0EC;
+				}
+				100% {
+				background-color: #F5A9BC;
+				}
+			}
+		}
+	}
+	
+	/* ASIDE */
+
+	aside {
+		font-family: arial;
+		display: block;
+		padding-top: 1%;
+		float: right;
+		
+		a{
+			color: #3A01DF;
+		}
+
+		#asideid1{
+			display: block;
+			font-family: arial;
+			font-size: 17px;
+			float: right;
+			position: relative;
+			padding-top: 1%;
+		}
+
+	}
 }
 
-.classlogo:hover{
-	animation: pulse 1.5s infinite;
-}
 
-@keyframes pulse {
-	0% {
-    background-color: #F8E0EC;
-  }
-    100% {
-    background-color: #F5A9BC;
-  }
-}
 
 
 
@@ -517,28 +546,6 @@ nav a {
 
 
 
-
-/* ASIDE */
-
-aside {
-	font-family: arial;
-	display: block;
-}
-
-
-aside a{
-	color: #3A01DF;
-}
-
-
-#asideid1{
-	display: block;
-	font-family: arial;
-	font-size: 17px;
-	float: right;
-	position: relative;
-	padding-top: 1%;
-}
 
 
 
