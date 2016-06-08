@@ -65,4 +65,7 @@
 .submenu, .sumbenu2, .submenu3 {
   display: none; }
 
+body {
+  color: blue; }
+
 /*# sourceMappingURL=sass.css.map */
