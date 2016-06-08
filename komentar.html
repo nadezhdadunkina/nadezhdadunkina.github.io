@@ -7,123 +7,125 @@
       <meta name="description" content="PFSweb">
       <meta name="keywords" content="HTML">
       <meta name="author" content="Nadeto">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel=stylesheet type="text/css" href="css/style.css"> 	  
-	  <link rel=stylesheet type="text/css" href="css/responsive.css">  
-	  <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='/text/css'>
-	  <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel=stylesheet type="text/css" href="css/style.css">
+      <link rel=stylesheet type="text/css" href="css/responsive.css">
+      <link rel=stylesheet type="text/css" href="css/sassfile.scss">
+      <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='/text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
    </head>
    <body>
-         <ul class="navigation">
-			<li class="nav-item"><a href="drehi.html">Дамски дрехи</a></li>
-			<li class="nav-item"><a href="detaili.html">Детайли за дрехи</a></li>
-			<li class="nav-item"><a href="zanas.html">За нас</a></li>
-			<li class="nav-item"><a href="kontakti.html">Контакти</a></li>
-			<li class="nav-item"><a href="giftcards.html">Карти за подаръци</a></li>	
-	   </ul>
-	<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
-	<label for="nav-trigger"></label>
-<div class="site-wrap">
-      <header id="header">
-         <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
-      <div class="classlogo">
-         <a href="index.html"><img src="img/logo.png" width="110" height="51" alt="logo"></a>
-      </div>
-             <div><button class="chat">Чат с нас</button></div>
-         <div class="box">
-            <div class="container-1">
-               <span class="icon"><i class="fa fa-search"></i></span>
-               <input type="search" id="search" placeholder="Search..." />
-            </div>
-         </div>
-         <div class="clear"></div>
-			 <aside id="asideid1">
-         <a href="vhod.html">Вход</a>
-         <a href="reg.html">Регистрация</a>
-      </aside>
-      </header>
-      <nav id="menu">
-      <ul>
-         <li class="menu">
-            <a href="drehi.html">Дамски дрехи</a>
-            <ul class="submenu">
-               <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
-               <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
-               <li class="menu">
-                  <a href="drehi.html#teniski">Тениски</a>
-                  <ul class="submenu2">
-                     <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
-                     <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
-                     <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
-                     <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
-                  </ul>
-               </li>
-               <li class="menu">
-                  <a href="drehi.html#pantaloni">Панталони</a>
-                  <ul class="submenu3">
-                     <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
-                     <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
-                     <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
-                  </ul>
-               </li>
-            </ul>
-         <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
-         <li class="menu"><a href="zanas.html">За нас</a></li>
-         <li class="menu">
-            <a href="kontakti.html">Контакти</a>
-            <ul class="submenu">
-               <li class="menu"><a href="anketa.html">Анкета</a></li>
-            </ul>
-         </li>
-		  <li class="menu"><a href="giftcards.html">Карти за подаръци</a></li>
+      <ul class="navigation">
+         <li class="nav-item"><a href="drehi.html">Дамски дрехи</a></li>
+         <li class="nav-item"><a href="detaili.html">Детайли за дрехи</a></li>
+         <li class="nav-item"><a href="zanas.html">За нас</a></li>
+         <li class="nav-item"><a href="kontakti.html">Контакти</a></li>
+         <li class="nav-item"><a href="giftcards.html">Карти за подаръци</a></li>
       </ul>
-   </nav>
-
-      <section>
-         <article>
-            <fieldset id="fieldsetid">
-			<legend><h2>Форма за обратна връзка</h2></legend>
-               <form method="post" action="">
-			   <br>
-                  <label for="ime">Име*</label>
-				  <br>
-                  <input type="ime" id="ime" name="ime" placeholder="Ivan" required autofocus><br/>
-                  <br>	  	
-                  <label for="familiq">Фамилия*</label>
-				  <br>
-                  <input type="familiq" id="familiq" name="familiq" placeholder="Petrov"><br/>
-                  <br>	
-                  <label for="pol">Пол*</label><br>   
-                  <input type="radio" name="pol" id="muj" value="muj">
-                  <label for="muj">Мъж</label>
-                  <br>	 
-                  <input type="radio" name="pol" id="jena" value="jena">	  
-                  <label for="jena">Жена</label>
-                  <br> 
-                  <br>
-                  <label for="komentar">Коментар*</label><br/>
-                  <textarea name="komentar" cols="30" rows="5">
-                  </textarea><br/>
-                  <br>
-                  <input type="reset" value="Изчистване на полетата">
-                  <br>
-                  <br>
-                  <input type="submit" value="Изпрати коментара"/>
-            </fieldset>
-            </form>
-         </article>
-		    <div class="clear"></div>
-   <div id="idcontainer">
-   <div class="socialcontainer">
-            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" width="135" height="55" alt="fb"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="img/twitter.jpg" width="135" height="55" alt="fb"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" width="135" height="55" alt="fb"></a>
-	</div>
-	</div>
-      </section>
-   <footer id="footer">   
-      <div> © 2016 <a href="http://www.pfsweb.com/" title="PFSweb" target="_blank">PFSweb</a> All Rights Reserved</div>
-   </footer>
-   </div>
+      <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+      <label for="nav-trigger"></label>
+      <div class="site-wrap">
+         <header id="header">
+            <h1 id="h1id">FZone - Онлайн магазин за дамски дрехи</h1>
+            <div class="classlogo">
+               <a href="index.html"><img src="img/logo.png" width="110" height="51" alt="logo"></a>
+            </div>
+            <div><button class="chat">Чат с нас</button></div>
+            <div class="box">
+               <div class="container-1">
+                  <span class="icon"><i class="fa fa-search"></i></span>
+                  <input type="search" id="search" placeholder="Search..." />
+               </div>
+            </div>
+            <div class="clear"></div>
+            <aside id="asideid1">
+               <a href="vhod.html">Вход</a>
+               <a href="reg.html">Регистрация</a>
+            </aside>
+         </header>
+         <nav id="menu">
+            <ul>
+               <li class="menu">
+                  <a href="drehi.html">Дамски дрехи</a>
+                  <ul class="submenu">
+                     <li class="menu"><a href="drehi.html#rokli">Рокли</a></li>
+                     <li class="menu"><a href="drehi.html#rizi">Ризи</a></li>
+                     <li class="menu">
+                        <a href="drehi.html#teniski">Тениски</a>
+                        <ul class="submenu2">
+                           <li class="menu"><a href="drehi.html#teniskizafenove">За фенове</a></li>
+                           <li class="menu"><a href="drehi.html#sportniteniski">Спортни</a></li>
+                           <li class="menu"><a href="drehi.html#teniskisnadpisi">С надписи</a></li>
+                           <li class="menu"><a href="drehi.html#drugiteniski">Други тениски</a></li>
+                        </ul>
+                     </li>
+                     <li class="menu">
+                        <a href="drehi.html#pantaloni">Панталони</a>
+                        <ul class="submenu3">
+                           <li class="menu"><a href="drehi.html#oficialni">Официални</a></li>
+                           <li class="menu"><a href="drehi.html#vsekidnevni">Всекиидневни</a></li>
+                           <li class="menu"><a href="drehi.html#dunki">Дънки</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               <li class="menu"><a href="detaili.html">Детайли за дрехи</a>
+               <li class="menu"><a href="zanas.html">За нас</a></li>
+               <li class="menu">
+                  <a href="kontakti.html">Контакти</a>
+                  <ul class="submenu">
+                     <li class="menu"><a href="anketa.html">Анкета</a></li>
+                  </ul>
+               </li>
+               <li class="menu"><a href="giftcards.html">Карти за подаръци</a></li>
+            </ul>
+         </nav>
+         <section>
+            <article>
+               <fieldset id="fieldsetid">
+                  <legend>
+                     <h2>Форма за обратна връзка</h2>
+                  </legend>
+                  <form method="post" action="">
+                     <br>
+                     <label for="ime">Име*</label>
+                     <br>
+                     <input type="ime" id="ime" name="ime" placeholder="Ivan" required autofocus><br/>
+                     <br>	  	
+                     <label for="familiq">Фамилия*</label>
+                     <br>
+                     <input type="familiq" id="familiq" name="familiq" placeholder="Petrov"><br/>
+                     <br>	
+                     <label for="pol">Пол*</label><br>   
+                     <input type="radio" name="pol" id="muj" value="muj">
+                     <label for="muj">Мъж</label>
+                     <br>	 
+                     <input type="radio" name="pol" id="jena" value="jena">	  
+                     <label for="jena">Жена</label>
+                     <br> 
+                     <br>
+                     <label for="komentar">Коментар*</label><br/>
+                     <textarea name="komentar" cols="30" rows="5">
+                     </textarea><br/>
+                     <br>
+                     <input type="reset" value="Изчистване на полетата">
+                     <br>
+                     <br>
+                     <input type="submit" value="Изпрати коментара"/>
+               </fieldset>
+               </form>
+            </article>
+            <div class="clear"></div>
+            <div id="idcontainer">
+               <div class="socialcontainer">
+                  <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" width="135" height="55" alt="fb"></a>
+                  <a href="https://twitter.com/" target="_blank"><img src="img/twitter.jpg" width="135" height="55" alt="fb"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" width="135" height="55" alt="fb"></a>
+               </div>
+            </div>
+         </section>
+         <footer id="footer">
+            <div> © 2016 <a href="http://www.pfsweb.com/" title="PFSweb" target="_blank">PFSweb</a> All Rights Reserved</div>
+         </footer>
+      </div>
    </body>
 </html>
