@@ -1,56 +1,6 @@
-/* RESET */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-	overflow-x: hidden;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
+/* Import reset */
 
 @import 'reset';
-
-
 
 
 /* COMMON */
@@ -58,6 +8,37 @@ table {
 /* Variable */
 
 $black: #000000;
+
+$font-base: 20px;
+
+
+/* Mixin */
+
+@mixin border-radius($radius: 7px){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin fontsize{
+	font-size: $font-base;
+}
+
+@mixin transition($transitionall: all .5s){
+	-webkit-transition: $transitionall;
+    -moz-transition: $transitionall;
+    transition: $transitionall;
+}
+
+@mixin transform($transformrotateY){
+	-webkit-transform: $transformrotateY;
+    -moz-transform: $transformrotateY;
+    transform: $transformrotateY;
+}
+
+
+
+
 
 body {
 /* background-color: oldlace; */
@@ -91,23 +72,24 @@ h2 {
 
 h3{
 	color: slategray;
-	font-size: 20px;
-	font-family: times new roman;
+	@include fontsize;
+	font-family: sans-serif;
 }
 
 h4 {
-	color: slategray;
+	@extend h3;
+	font-size: 19px;
 }
 
 
 
 .chat{
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 20px;
+	@include fontsize;
 	float:right;
 	color: $black;
 	padding: 1px;
-	border-radius: 7px 7px 7px 7px;
+	@include border-radius;
 	position: fixed;
 	margin-top: 1%;
 	top: 36px;
@@ -150,7 +132,7 @@ tr:first-child{
 p {
 	color: $black;
 	font-family: times new roman;
-	font-size: 20px;
+	@include fontsize;
 	padding-bottom: 3px;
 }
 
@@ -328,9 +310,7 @@ article .aimage {
 	float: left;
 	color: blue;
 	padding-left: 45px;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
+	@include border-radius;
 }
 
 .container-1 .icon{
@@ -380,7 +360,7 @@ header{
 		position: absolute;
 		width: 111px;
 		height: 50px;
-		border-radius: 7px 7px 7px 7px;
+		@include border-radius;
 
 
 		&:hover{
@@ -452,7 +432,7 @@ nav a {
     font-weight: bold;
     text-align: center;
     background-color: #8AD9FF;
-    border-radius: 15px;
+    @include border-radius(15px);
 	padding-left: 7%;
 	
 	&:hover{
@@ -488,7 +468,7 @@ nav a {
 					display: block;
 					color: blue;
 					background-color: #E0F2F7;
-					border-radius:14px 14px 14px 14px;	
+					@include border-radius(14px);	
 				}
 			}
 			
@@ -560,8 +540,9 @@ nav a {
 
 
 #idh3index{
-	margin-top: 3px;
-	margin-bottom: 13px;
+	margin-top: 11px;
+    margin-bottom: 13px;
+    font-size: 17px;
 }
 
 
@@ -597,7 +578,7 @@ nav a {
 
 .article1 {
 	font-family: times new roman;
-	font-size: 20px;
+	@include fontsize;
 	padding-top: 14px;
 }
 
@@ -638,7 +619,7 @@ nav a {
 }
 
 #formaid{
-	font-size: 20px;
+	@include fontsize;
 	clear: both;
 	margin-bottom: 5px;
 	margin-top: 5px;
@@ -673,7 +654,7 @@ nav a {
 
 #div-a{
 	font-family: times new roman;
-	font-size: 20px;
+	@include fontsize;
     text-align: left;
 	padding-left: 15px;
 	margin-top: 25px;
@@ -936,7 +917,7 @@ nav a {
 
 #giftcardsid{
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 20px;
+	@include fontsize;
 	float: right;
 }
 
@@ -1019,34 +1000,28 @@ ul .classimg{
     background-color:rgba(26,76,110,0.5);
     text-align:center;
     backface-visibility:hidden;
-    -webkit-transform:rotateY(-180deg);
-    -moz-transform:rotateY(-180deg);
-    transform:rotateY(-180deg);
-    -webkit-transition:all .5s;
-    -moz-transition:all .5s;
-    transition:all .5s;
+    @include transition;
+	@include transform(rotateY(-180deg));
 }
+
+
+
+
 
 
 .demo-3 figure img {
     backface-visibility:hidden;
-    -webkit-transition:all .5s;
-    -moz-transition:all .5s;
-    transition:all 1s;
+    @include transition(1s);
 }
 .demo-3 figure:hover img,figure.hover img {
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    transform:rotateY(90deg);
+    @include transform(rotateY(90deg));
 }
 .demo-3 figure:hover figcaption,figure.hover figcaption {
-    -webkit-transform:rotateY(0);
-    -moz-transform:rotateY(0);
-    transform:rotateY(0);
+	@include transform(rotateY(0deg));
 }
 
 #iddiv{
-	font-size: 20px;
+	@include fontsize;
     text-align: center;
     margin-top: 15px;
 }
@@ -1177,7 +1152,7 @@ footer {
 	padding-top: 6px;
 	padding-bottom: 6px;
 	background-color: #8AD9FF;
-	border-radius: 14px 14px 14px 14px;
+	@include border-radius(14px);
 
 }
 

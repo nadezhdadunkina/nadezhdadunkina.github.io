@@ -1,7 +1,8 @@
 @charset "UTF-8";
+/* Import reset */
 /* RESET */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -43,15 +44,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0; }
-
 /* COMMON */
 /* Variable */
+/* Mixin */
 body {
   /* background-color: oldlace; */
   color: #000000;
@@ -76,13 +71,13 @@ h2 {
   padding-top: 1%;
   padding-bottom: 0.5%; }
 
-h3 {
+h3, h4 {
   color: slategray;
   font-size: 20px;
-  font-family: times new roman; }
+  font-family: sans-serif; }
 
 h4 {
-  color: slategray; }
+  font-size: 19px; }
 
 .chat {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -90,7 +85,9 @@ h4 {
   float: right;
   color: #000000;
   padding: 1px;
-  border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   position: fixed;
   margin-top: 1%;
   top: 36px;
@@ -288,7 +285,9 @@ header {
     position: absolute;
     width: 111px;
     height: 50px;
-    border-radius: 7px 7px 7px 7px; }
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px; }
     header .classlogo:hover {
       animation: pulse 1.5s infinite; }
 @keyframes pulse {
@@ -327,6 +326,8 @@ nav a {
   font-weight: bold;
   text-align: center;
   background-color: #8AD9FF;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   border-radius: 15px;
   padding-left: 7%; }
   #menu:hover {
@@ -357,7 +358,9 @@ nav a {
           display: block;
           color: blue;
           background-color: #E0F2F7;
-          border-radius: 14px 14px 14px 14px; }
+          -webkit-border-radius: 14px;
+          -moz-border-radius: 14px;
+          border-radius: 14px; }
       #menu ul li:hover > ul {
         color: #F90;
         background-color: #81DAF5;
@@ -388,8 +391,9 @@ nav a {
 
 /* INDEX.HTML */
 #idh3index {
-  margin-top: 3px;
-  margin-bottom: 13px; }
+  margin-top: 11px;
+  margin-bottom: 13px;
+  font-size: 17px; }
 
 #ul1 {
   font-family: times new roman;
@@ -715,28 +719,28 @@ ul .classimg {
   background-color: rgba(26, 76, 110, 0.5);
   text-align: center;
   backface-visibility: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s; }
+  transform: rotateY(-180deg); }
 
 .demo-3 figure img {
   backface-visibility: hidden;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all 1s; }
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s; }
 
 .demo-3 figure:hover img, figure.hover img {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
   transform: rotateY(90deg); }
 
 .demo-3 figure:hover figcaption, figure.hover figcaption {
-  -webkit-transform: rotateY(0);
-  -moz-transform: rotateY(0);
-  transform: rotateY(0); }
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  transform: rotateY(0deg); }
 
 #iddiv {
   font-size: 20px;
@@ -808,7 +812,9 @@ footer {
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: #8AD9FF;
-  border-radius: 14px 14px 14px 14px; }
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px; }
 
 /* HACKS */
 /* hack for mozilla (all versions) */
