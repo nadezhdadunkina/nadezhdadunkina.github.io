@@ -224,7 +224,7 @@
 	
 
 	.imgpromotion{
-		width: 100%;
+		width: 60%;
 		height: 216px;
 		margin-top: 0;
 	}
@@ -783,6 +783,12 @@
 	
 	
 	
+	/* INDEX.HTML */
+
+	.imgpromotion{
+		width: 100%;
+	}
+	
 	
 
 	
@@ -791,10 +797,6 @@
 	
 	
 
-	
-	
-	
-	
 	
 	/* DREHI.HTML */
 	

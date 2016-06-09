@@ -9,7 +9,9 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+table,
+th,
+td, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -40,7 +42,7 @@ q:before, q:after {
   content: '';
   content: none; }
 
-table {
+table, th, td {
   border-collapse: collapse;
   border-spacing: 0; }
 
@@ -107,6 +109,9 @@ table, th, td {
   width: 300px;
   color: #000000; }
 
+th {
+  font-weight: bold; }
+
 td:hover {
   background-color: lightblue; }
 
@@ -153,10 +158,9 @@ input:focus {
   background-color: #F8E0F1; }
 
 a:hover {
-  text-decoration: none;
   color: #000000 !important; }
 
-a:focus {
+a:focus, a:hover {
   text-decoration: none; }
 
 p:focus {

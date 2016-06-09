@@ -9,6 +9,8 @@
 
 $black: #000000;
 
+$textdecoration: none;
+
 $font-base: 20px;
 
 
@@ -99,7 +101,7 @@ h4 {
 
 
 
-table, th, td {
+table{
 	border: 1px solid #424242;
 	margin-bottom: 15px;
 	margin-top: 5px;
@@ -113,7 +115,14 @@ table, th, td {
 	color: $black;
 }
 
+th{
+	@extend table;
+	font-weight: bold;
+}
 
+td{
+	@extend  table;
+}
 
 td:hover{
 	background-color: lightblue;
@@ -125,7 +134,7 @@ tr:last-child{
 }
 
 tr:first-child{
-	text-decoration: none;
+	text-decoration: $textdecoration;
 	background-color: #81BEF7;
 }
 
@@ -143,7 +152,7 @@ div a{
 
 
 a {
-	text-decoration: none;
+	text-decoration: $textdecoration;
 	color: #6600ff;
 }
 
@@ -175,13 +184,14 @@ input:focus{
 }
 
 a:hover {
-	text-decoration: none;
+	@extend a:focus;
 	color: $black !important;
 }
 
 a:focus{
-	text-decoration: none;
+	text-decoration: $textdecoration;
 }
+
 
 
 p:focus{
