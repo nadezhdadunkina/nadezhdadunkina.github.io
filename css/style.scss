@@ -1,11 +1,13 @@
+/* Sass - import, variables, mixins, mixin(shape - triangle), nesting, extend */
+
+
 /* Import reset */
 
 @import 'reset';
 
-
 /* COMMON */
 
-/* Variable */
+/* Variables */
 
 $black: #000000;
 
@@ -14,7 +16,7 @@ $textdecoration: none;
 $font-base: 20px;
 
 
-/* Mixin */
+/* Mixins */
 
 @mixin border-radius($radius: 7px){
 	-webkit-border-radius: $radius;
@@ -37,6 +39,44 @@ $font-base: 20px;
     -moz-transform: $transformrotateY;
     transform: $transformrotateY;
 }
+
+@mixin triangle($width, $dir, $color){
+	@if $dir == up {
+		width: 0;
+		height: 0;
+		border-left: $width solid transparent;
+		border-right: $width solid transparent;
+		border-bottom: $width solid $color;
+	} 
+	@else if $dir == down{
+		width: 0;
+		height: 0;
+		border-left: $width solid transparent;
+		border-right: $width solid transparent;
+		border-top: $width solid $color;
+	} 
+	@else if $dir == right{
+		width: 0;
+		height: 0;
+		border-top: $width solid transparent;
+		border-bottom: $width solid transparent;
+		border-left: $width solid $color;
+	} 
+	@else if $dir == left{
+		width: 0;
+		height: 0;
+		border-top: $width solid transparent;
+		border-bottom: $width solid transparent;
+		border-right: $width solid $color;
+	}
+}
+
+
+
+
+
+/* end Sass */
+
 
 
 
@@ -268,8 +308,8 @@ a[target="_blank"] {
 }
 
 .zoom:hover {
+	@extend .zoom;
 	width: 120%;
-	height: 300px;
 }
 
 article .aimage {
@@ -371,7 +411,6 @@ header{
 		width: 111px;
 		height: 50px;
 		@include border-radius;
-
 
 		&:hover{
 			animation: pulse 1.5s infinite;
@@ -850,6 +889,21 @@ nav a {
 #aboutus:hover {
    transform: rotate(6deg);
 }
+
+
+.triangle{
+	@include triangle(11px, right, #A4A4A4);
+	display: block;
+    float: right;
+	margin-right: 2px;
+}
+
+.ir{
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
 
 
 

@@ -1,6 +1,8 @@
 @charset "UTF-8";
+/* Sass - import, variables, mixins, mixin(shape - triangle), nesting, extend */
 /* Import reset */
 /* RESET */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/_reset\.scss}line{font-family:\000033}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,32 +25,40 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/_reset\.scss}line{font-family:\0000324}}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/_reset\.scss}line{font-family:\0000328}}
 body {
   line-height: 1;
   overflow-x: hidden; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/_reset\.scss}line{font-family:\0000332}}
 ol, ul {
   list-style: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/_reset\.scss}line{font-family:\0000335}}
 blockquote, q {
   quotes: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/_reset\.scss}line{font-family:\0000338}}
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/_reset\.scss}line{font-family:\0000343}}
 table, th, td {
   border-collapse: collapse;
   border-spacing: 0; }
 
 /* COMMON */
-/* Variable */
-/* Mixin */
+/* Variables */
+/* Mixins */
+/* end Sass */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\0000385}}
 body {
   /* background-color: oldlace; */
   color: #000000;
@@ -63,9 +73,11 @@ body {
 	background-size: 235px, 215px, auto;
     background-repeat: no-repeat, repeat;
 } */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003102}}
 h1 {
   text-shadow: 1px 1px 3px black; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003107}}
 h2 {
   color: blue;
   font-family: times new roman;
@@ -73,14 +85,17 @@ h2 {
   padding-top: 1%;
   padding-bottom: 0.5%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003115}}
 h3, h4 {
   color: slategray;
   font-size: 20px;
   font-family: sans-serif; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003121}}
 h4 {
   font-size: 19px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003128}}
 .chat {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 20px;
@@ -96,6 +111,7 @@ h4 {
   right: 100px;
   z-index: 20; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003144}}
 table, th, td {
   border: 1px solid #424242;
   margin-bottom: 15px;
@@ -109,37 +125,46 @@ table, th, td {
   width: 300px;
   color: #000000; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003158}}
 th {
   font-weight: bold; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003167}}
 td:hover {
   background-color: lightblue; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003172}}
 tr:last-child {
   background-color: #F6CEF5; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003176}}
 tr:first-child {
   text-decoration: none;
   background-color: #81BEF7; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003181}}
 p {
   color: #000000;
   font-family: times new roman;
   font-size: 20px;
   padding-bottom: 3px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003189}}
 div a {
   color: green; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003194}}
 a {
   text-decoration: none;
   color: #6600ff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003199}}
 article a {
   text-decoration: underline;
   overflow: hidden;
   margin-bottom: 3%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003206}}
 fieldset {
   display: block;
   margin-left: 2px;
@@ -154,30 +179,39 @@ fieldset {
   padding-top: 15px;
   text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003222}}
 input:focus {
   background-color: #F8E0F1; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003226}}
 a:hover {
   color: #000000 !important; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003231}}
 a:focus, a:hover {
   text-decoration: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003237}}
 p:focus {
   background: red; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003242}}
 button:hover {
   color: red; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003246}}
 label {
   font-size: 17.5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003251}}
 img {
   position: static; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003256}}
 a[target="_blank"] {
   color: #2A9A47 !important; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003262}}
 #idcontainer {
   position: relative;
   width: 100%;
@@ -185,45 +219,53 @@ a[target="_blank"] {
   margin: 0 auto;
   text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003270}}
 #idcontainer .socialcontainer {
   position: relative;
   margin: 15px;
   padding: 7px 7px;
   margin-left: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003279}}
 .clear {
   clear: both; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003285}}
 .product {
   width: 1500px;
   float: left;
   padding-top: 15px;
   padding-bottom: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003292}}
 .product ul li {
   width: 300px;
   float: left;
   margin-right: 75px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003298}}
 .productname {
   margin-top: 15px;
   margin-left: 0;
   margin-bottom: 2px;
   font-size: 21px; }
 
-.zoom {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003305}}
+.zoom, .zoom:hover {
   width: 100%;
   height: 300px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003310}}
 .zoom:hover {
-  width: 120%;
-  height: 300px; }
+  width: 120%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003315}}
 article .aimage {
   display: block;
   border: 1px solid #000000; }
 
 /* Used in komentar.html, vhod.html */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003325}}
 #fieldsetid {
   color: #000000;
   border: 1px solid #000000;
@@ -235,17 +277,20 @@ article .aimage {
   padding-bottom: 35px; }
 
 /* SEARCH */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003340}}
 .box {
   top: 0;
   position: static;
   float: right; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003346}}
 .container-1 {
   width: 200px;
   vertical-align: middle;
   white-space: nowrap;
   position: relative; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003353}}
 .container-1 input#search {
   margin-left: 3px;
   width: 200px;
@@ -260,6 +305,7 @@ article .aimage {
   -moz-border-radius: 7px;
   border-radius: 7px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003366}}
 .container-1 .icon {
   position: absolute;
   top: 50%;
@@ -268,15 +314,18 @@ article .aimage {
   z-index: 1;
   color: #4f5b66; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003375}}
 .container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active {
   outline: none;
   background: #81BEF7; }
 
 /* HEADER */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003393}}
 header {
   position: relative;
   padding: 3%;
   /* ASIDE */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003398}}
   header #h1id {
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
@@ -285,6 +334,7 @@ header {
     padding-bottom: 1%;
     padding-top: 1%;
     position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003409}}
   header .classlogo {
     position: absolute;
     width: 111px;
@@ -292,6 +342,7 @@ header {
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003415}}
     header .classlogo:hover {
       animation: pulse 1.5s infinite; }
 @keyframes pulse {
@@ -299,13 +350,16 @@ header {
     background-color: #F8E0EC; }
   100% {
     background-color: #F5A9BC; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003432}}
   header aside {
     font-family: arial;
     display: block;
     padding-top: 1%;
     float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003438}}
     header aside a {
       color: #3A01DF; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003442}}
     header aside #asideid1 {
       display: block;
       font-family: arial;
@@ -315,13 +369,16 @@ header {
       padding-top: 1%; }
 
 /* NAV */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003466}}
 nav a {
   color: #000000; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003470}}
 .navigation, .nav-trigger {
   display: none; }
 
 /* Nesting */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003476}}
 #menu {
   width: auto;
   height: 32px;
@@ -334,20 +391,24 @@ nav a {
   -moz-border-radius: 15px;
   border-radius: 15px;
   padding-left: 7%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003487}}
   #menu:hover {
     color: white;
     text-shadow: 2px 2px 3px #A9E2F3, 0 0 25px #F2E0F7, 0 0 3px #A9A9F5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003492}}
   #menu ul {
     list-style: none;
     position: relative;
     float: left;
     margin: auto;
     padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003499}}
     #menu ul li {
       position: relative;
       float: left;
       margin: 0;
       padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003505}}
       #menu ul li a {
         display: block;
         color: #000000;
@@ -358,6 +419,7 @@ nav a {
         padding: 0 65px;
         font-family: Arial;
         text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003516}}
         #menu ul li a:hover {
           display: block;
           color: blue;
@@ -365,10 +427,12 @@ nav a {
           -webkit-border-radius: 14px;
           -moz-border-radius: 14px;
           border-radius: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003524}}
       #menu ul li:hover > ul {
         color: #F90;
         background-color: #81DAF5;
         display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003531}}
     #menu ul ul {
       display: none;
       position: absolute;
@@ -378,27 +442,33 @@ nav a {
       border: 1px solid #E0F2F7;
       width: 100%;
       z-index: 20; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003541}}
       #menu ul ul li {
         float: none;
         border: 1px solid #E0F2F7; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003545}}
         #menu ul ul li a {
           background-color: #81DAF5;
           line-height: 15%;
           padding: 10px 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003552}}
       #menu ul ul ul {
         right: -200%;
         top: 0;
         z-index: 70; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003562}}
 .submenu, .sumbenu2, .submenu3 {
   display: none; }
 
 /* INDEX.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003591}}
 #idh3index {
   margin-top: 11px;
   margin-bottom: 13px;
   font-size: 17px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003599}}
 #ul1 {
   font-family: times new roman;
   font-size: 19px;
@@ -406,9 +476,11 @@ nav a {
   margin-left: 3%;
   float: left; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003608}}
 #komentarid {
   margin-bottom: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003613}}
 .imgpromotion {
   border: 7px solid transparent;
   padding: 1px;
@@ -416,6 +488,7 @@ nav a {
   /* Safari 3.1-5 */
   border-image: url(../img/border-promotion.gif) 35 stretch; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003620}}
 .article0 {
   font-family: arial;
   font-size: 22px;
@@ -423,16 +496,19 @@ nav a {
   position: relative;
   padding-top: 25px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003628}}
 .article1 {
   font-family: times new roman;
   font-size: 20px;
   padding-top: 14px; }
 
 /* ANKETA.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003644}}
 .classanketa {
   font-family: arial;
   font-size: 14px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003649}}
 #anketaid1 {
   padding: 5px;
   margin: auto;
@@ -442,30 +518,36 @@ nav a {
   text-align: left; }
 
 /* KONTAKTI.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003666}}
 #anketaid {
   margin-bottom: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003670}}
 #formaid {
   font-size: 20px;
   clear: both;
   margin-bottom: 5px;
   margin-top: 5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003677}}
 #article1id {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px; }
 
 /* DREHI.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003692}}
 .product1 {
   width: 1500px;
   float: left; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003696}}
 .product1 ul li {
   width: 300px;
   float: left;
   margin-right: 75px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003704}}
 #div-a {
   font-family: times new roman;
   font-size: 20px;
@@ -474,34 +556,43 @@ nav a {
   margin-top: 25px;
   position: static; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003713}}
 #groupid {
   padding-top: 25px;
   position: static;
   clear: both;
   margin-left: 4px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003721}}
 .paragraf1 > p {
   font-size: 21px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003724}}
 .paragraf2 > p {
   color: #642EFE; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003727}}
 .paragraf3 + p {
   color: #04B431; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003731}}
 .paragraf1, .paragraf2 {
   margin: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003734}}
 .paragraf2 p {
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003739}}
 .divrokli p:nth-child(3) {
   color: #9F81F7; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003743}}
 .divrokli {
   margin: 0;
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003748}}
 #teniskizafenove, #sportniteniski, #teniskisnadpisi, #drugiteniski, #oficialni, #vsekidnevni, #dunki {
   font-size: 21px;
   margin-bottom: 0px;
@@ -509,6 +600,7 @@ nav a {
   color: #5858FA; }
 
 /* ZANAS.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003765}}
 #h3id3 {
   text-align: center;
   font-style: italic;
@@ -516,29 +608,35 @@ nav a {
   padding-top: 1%;
   padding-bottom: 4px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003773}}
 #h3id3:hover {
   color: white;
   font-size: 24px;
   text-shadow: 2px 2px 3px #000000, 0 0 35px green, 0 0 17px darkgreen; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003779}}
 .h3class {
   text-align: left;
   font-size: 22px;
   position: static; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003785}}
 .h3class:hover {
   color: white;
   text-shadow: 2px 2px 3px #000000, 0 0 25px blue, 0 0 7px darkblue; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003791}}
 .h3class1 {
   text-align: center;
   font-size: 24px;
   position: static; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003797}}
 .h3class1:hover {
   color: white;
   text-shadow: 1px 1px 2px #000000, 0 0 38px blue, 0 0 5px darkblue; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003802}}
 #h3id4 {
   text-align: center;
   font-style: italic;
@@ -546,14 +644,17 @@ nav a {
   padding-top: 18px;
   padding-bottom: 6px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003810}}
 #h3id4:hover {
   color: white;
   font-size: 24px;
   text-shadow: 2px 2px 3px #000000, 0 0 35px blue, 0 0 17px darkblue; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003816}}
 #rabotno_vreme {
   text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003821}}
 #ol1 {
   font-family: times new roman;
   font-size: 19px;
@@ -562,16 +663,19 @@ nav a {
   float: left;
   margin-left: 3%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003832}}
 .flexcontainer1 {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003839}}
 .flexcontainer1 div {
   margin-left: 5.5%;
   margin-top: 7px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003845}}
 .borderbox {
   width: 450px;
   height: 170px;
@@ -580,6 +684,7 @@ nav a {
   box-sizing: border-box;
   text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003856}}
 .borderimg {
   border: 3px solid transparent;
   padding: 0;
@@ -587,9 +692,11 @@ nav a {
   /* Safari 3.1-5 */
   border-image: url(../img/border-blue.png) 30 stretch; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003863}}
 .borderimg:hover {
   transform: matrix(1.3, 0, 0.3, 0.7, 23, 0); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003868}}
 .coloumns {
   padding-top: 4px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -617,25 +724,48 @@ nav a {
   /* Firefox */
   column-rule-width: 1px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003889}}
 #aboutus:hover {
   transform: rotate(6deg); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003894}}
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 11px solid #A4A4A4;
+  display: block;
+  float: right;
+  margin-right: 2px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003901}}
+.ir {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent; }
+
 /* REG.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003922}}
 .formclass {
   text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003926}}
 .formclass .specialfont {
   font-family: calibri;
   font-size: 19px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003931}}
 #regid {
   margin: 15px;
   padding: 5px; }
 
 /* GIFTCARDS.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003944}}
 #h3giftcards {
   margin-top: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003949}}
 .flexcontainer {
   display: -webkit-flex;
   display: flex;
@@ -648,6 +778,7 @@ nav a {
     background-color: white; }
   100% {
     background-color: #F6CED8; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003967}}
 .flexcontainer img {
   margin: 15px;
   border: 7px solid transparent;
@@ -656,29 +787,35 @@ nav a {
   /* Safari 3.1-5 */
   border-image: url(../img/bordergift.jpg) 37 stretch; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003977}}
 .classlabel {
   font-family: arial;
   font-size: 18px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003982}}
 #giftcardsid {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 20px;
   float: right; }
 
 /* DETAILI.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\00003998}}
 ul .classimg {
   width: 450px;
   height: 300px;
   margin: auto; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031004}}
 .classimg li {
   margin-bottom: 7px;
   margin-top: 35px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031010}}
 .h3color {
   color: white;
   margin-top: 100px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031016}}
 .demo-3 {
   position: relative;
   width: 300px;
@@ -688,6 +825,7 @@ ul .classimg {
   margin-right: 20px;
   display: inline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031027}}
 .demo-3 figure {
   margin: 0;
   padding: 0;
@@ -695,12 +833,14 @@ ul .classimg {
   cursor: pointer;
   margin-left: -50px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031035}}
 .demo-3 figure img {
   display: block;
   position: relative;
   z-index: 10;
   margin: -15px 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031044}}
 .demo-3 figure figcaption {
   display: block;
   position: absolute;
@@ -714,6 +854,7 @@ ul .classimg {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031058}}
 .demo-3 figure figcaption {
   top: 0;
   left: 0;
@@ -730,74 +871,93 @@ ul .classimg {
   -moz-transform: rotateY(-180deg);
   transform: rotateY(-180deg); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031076}}
 .demo-3 figure img {
   backface-visibility: hidden;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   transition: 1s; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031080}}
 .demo-3 figure:hover img, figure.hover img {
   -webkit-transform: rotateY(90deg);
   -moz-transform: rotateY(90deg);
   transform: rotateY(90deg); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031083}}
 .demo-3 figure:hover figcaption, figure.hover figcaption {
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   transform: rotateY(0deg); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031087}}
 #iddiv {
   font-size: 20px;
   text-align: center;
   margin-top: 15px; }
 
 /* INFO1.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031105}}
 .pclass p:nth-child(odd) {
   color: #5858FA; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031109}}
 .pclass p:nth-child(even) {
   color: #868A08; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031114}}
 .divclass1 {
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031118}}
 div p {
   padding-top: 5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031122}}
 .paragraf2 p {
   padding-top: 5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031126}}
 .tableclass .tdclass {
   vertical-align: top; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031128}}
 .thclass {
   font-family: arial;
   font-size: 15px; }
 
 /* INFO2.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031142}}
 .pclass1 > p {
   color: #5F04B4; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031146}}
 .pclass2 p:first-child {
   color: green; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031150}}
 .pclass2 p:last-child {
   color: blue; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031154}}
 .pclass2 {
   margin-top: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031158}}
 .pclass1 p, .pclass p {
   padding-top: 15px; }
 
 /* INFORIZA1.HTML, INFOTENISKA1.HTML, INFOPANTALON3.HTML */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031178}}
 .articleclass1, .articleclass2, .classarticle3 {
   padding-top: 15px;
   padding-bottom: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031183}}
 .pclass-2 {
   padding-top: 5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031187}}
 .pclass3:not(p) {
   border: 1px solid #ccc;
   width: 290px;
@@ -806,6 +966,7 @@ div p {
   margin-bottom: 15px; }
 
 /* FOOTER */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031209}}
 footer {
   margin-top: 5px;
   padding-left: 15px;
@@ -831,6 +992,7 @@ footer {
     color: green; } }
 /* hack for IE (8+ versions) */
 @media screen\0 {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/ndunkina\/Documents\/GitHub\/nadezhdadunkina\.github\.io\/css\/style\.scss}line{font-family:\000031247}}
   body {
     background: #CEF6CE; } }
 
