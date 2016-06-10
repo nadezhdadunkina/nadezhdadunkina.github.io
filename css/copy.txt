@@ -1,0 +1,3 @@
+copy file1.scss+file2.scss filenew.scss
+
+sass --watch filenew.scss:filenew.css

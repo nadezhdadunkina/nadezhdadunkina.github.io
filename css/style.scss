@@ -1,9 +1,12 @@
-/* Sass - import, variables, mixins, mixin(shape - triangle), nesting, extend */
+﻿/* Sass - import, variables, mixins, mixin(shape - triangle), nesting, extend, each */
 
 
 /* Import reset */
 
 @import 'reset';
+
+
+
 
 /* COMMON */
 
@@ -11,9 +14,21 @@
 
 $black: #000000;
 
+$color1: lightblue;
+
+$color2: slategray;
+
+$blue: blue;
+
 $textdecoration: none;
 
 $font-base: 20px;
+
+$white: white;
+
+$fontsize: 18px;
+
+
 
 
 /* Mixins */
@@ -28,6 +43,10 @@ $font-base: 20px;
 	font-size: $font-base;
 }
 
+@mixin fontsize1{
+	font-size: $fontsize;
+}
+
 @mixin transition($transitionall: all .5s){
 	-webkit-transition: $transitionall;
     -moz-transition: $transitionall;
@@ -39,6 +58,7 @@ $font-base: 20px;
     -moz-transform: $transformrotateY;
     transform: $transformrotateY;
 }
+
 
 @mixin triangle($width, $dir, $color){
 	@if $dir == up {
@@ -75,6 +95,19 @@ $font-base: 20px;
 
 
 
+
+
+/* Extend */
+
+%style-align{
+	text-align: center;
+	font-style: italic;
+	font-size: 24px;
+}
+
+
+
+
 /* end Sass */
 
 
@@ -100,12 +133,12 @@ body {
 
 
 h1 {
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 3px $black;
 }
 
 
 h2 {
-	color: blue;
+	color: $blue;
 	font-family: times new roman;
 	font-size: 25px;
 	padding-top: 1%;
@@ -113,7 +146,7 @@ h2 {
 }
 
 h3{
-	color: slategray;
+	color: $color2;
 	@include fontsize;
 	font-family: sans-serif;
 }
@@ -165,7 +198,7 @@ td{
 }
 
 td:hover{
-	background-color: lightblue;
+	background-color: $color1;
 }
 
 
@@ -259,20 +292,36 @@ a[target="_blank"] {
 
 
 
-#idcontainer{
-	position: relative;
-    width: 100%;
-    height: 70px;
-    margin: 0 auto;
-    text-align: center;
-}
 
-#idcontainer .socialcontainer{
+
+.socialcontainer{
 	position: relative;
     margin: 15px;
     padding: 7px 7px;
-	margin-left: 15px;
+    text-align: center;
 }
+
+
+ul.social-links li{
+	list-style: none;
+	    display: inline-block;
+		a{text-align:center;
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+		
+		}
+}
+
+/* each */
+
+$icons:(facebook, twitter, instagram);
+@each $social in $icons{
+.#{$social}{
+background:url("../img/#{$social}.png") no-repeat;
+}
+}
+
 
 
 
@@ -327,7 +376,7 @@ article .aimage {
     border: 1px solid $black;
     text-align: center;
     font-family: calibri;
-    font-size: 18px;
+    font-size: $fontsize;
     padding-top: 15px;
     margin-top: 35px;
     padding-bottom: 35px;
@@ -356,9 +405,9 @@ article .aimage {
 	height: 34px;
 	background: #A9E2F3;
 	border: none;
-	font-size: 18px;
+	font-size: $fontsize;
 	float: left;
-	color: blue;
+	color: $blue;
 	padding-left: 45px;
 	@include border-radius;
 }
@@ -485,7 +534,7 @@ nav a {
 	padding-left: 7%;
 	
 	&:hover{
-		color: white;
+		color: $white;
 		text-shadow: 2px 2px 3px #A9E2F3, 0 0 25px #F2E0F7, 0 0 3px #A9A9F5;
 	}
 	
@@ -515,7 +564,7 @@ nav a {
 					
 				&:hover {
 					display: block;
-					color: blue;
+					color: $blue;
 					background-color: #E0F2F7;
 					@include border-radius(14px);	
 				}
@@ -692,14 +741,13 @@ nav a {
 .product1{
 	width: 1500px;
 	float: left;
-}
-.product1 ul li{
-	width:300px;
-	float:left;
-	margin-right:75px;
 
+	ul li{
+		width:300px;
+		float:left;
+		margin-right:75px;
 }
-
+}
 
 #div-a{
 	font-family: times new roman;
@@ -763,28 +811,39 @@ nav a {
 /* ZANAS.HTML */
 
 #h3id3{
-	text-align: center;
-	font-style: italic;
-	font-size: 22px;
+	@extend %style-align;
 	padding-top: 1%;
 	padding-bottom: 4px;
+	
+	&:hover{
+		color: $white;
+		font-size: 24px;
+		text-shadow: 2px 2px 3px $black, 0 0 35px green, 0 0 17px darkgreen;
+	}
 }
 
-#h3id3:hover{
-	color: white;
-	font-size: 24px;
-    text-shadow: 2px 2px 3px $black, 0 0 35px green, 0 0 17px darkgreen;
+
+#h3id4{
+	@extend %style-align;
+	padding-top: 18px;
+	padding-bottom: 6px;
+
+	&:hover{
+		@extend #h3id3:hover;
+		text-shadow: 2px 2px 3px $black, 0 0 35px $blue, 0 0 17px darkblue;
+	}
 }
+
 
 .h3class {
 	text-align: left;
 	font-size: 22px;
 	position: static;
-}
 
-.h3class:hover{
-	color: white;
-    text-shadow: 2px 2px 3px $black, 0 0 25px blue, 0 0 7px darkblue;
+	&:hover{
+		color: $white;
+		text-shadow: 2px 2px 3px $black, 0 0 25px $blue, 0 0 7px darkblue;
+	}
 }
 
 
@@ -792,26 +851,13 @@ nav a {
 	text-align: center;
 	font-size: 24px;
 	position: static;
+
+	&:hover{
+		color: $white;
+		text-shadow: 1px 1px 2px $black, 0 0 38px $blue, 0 0 5px darkblue;
+	}
 }
 
-.h3class1:hover{
-    color: white;
-    text-shadow: 1px 1px 2px $black, 0 0 38px blue, 0 0 5px darkblue;
-}
-
-#h3id4{
-	text-align: center;
-	font-style: italic;
-	font-size: 24px;
-	padding-top: 18px;
-	padding-bottom: 6px;
-}
-
-#h3id4:hover{
-	color: white;
-	font-size: 24px;
-    text-shadow: 2px 2px 3px $black, 0 0 35px blue, 0 0 17px darkblue;
-}
 
 #rabotno_vreme{
 	text-align: center;
@@ -834,21 +880,21 @@ nav a {
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
-}
 
-.flexcontainer1 div{
-	margin-left: 5.5%;
-	margin-top: 7px;
+	div{
+		margin-left: 5.5%;
+		margin-top: 7px;
 
+	}
 }
 
 .borderbox{
+	@extend #rabotno_vreme;
 	width: 450px;
     height: 170px;
     padding: 33px;
     border: 1px solid $black;
     box-sizing: border-box;
-	text-align: center;
 }
 
 
@@ -858,10 +904,10 @@ nav a {
     padding: 0;
     -webkit-border-image: url(../img/border-blue.png) 30 stretch; /* Safari 3.1-5 */
     border-image: url(../img/border-blue.png) 30 stretch;
-}
 
-.borderimg:hover{
-	transform: matrix(1.3, 0, 0.3, 0.7, 23, 0);
+	&:hover{
+		transform: matrix(1.3, 0, 0.3, 0.7, 23, 0);
+	}
 }
 
 
@@ -920,12 +966,12 @@ nav a {
 
 
 .formclass{
-	text-align: center;
-}
+	@extend #rabotno_vreme;
 
-.formclass .specialfont{
-	font-family: calibri;
-	font-size: 19px;
+	.specialfont{
+		font-family: calibri;
+		font-size: 19px;
+	}
 }
 
 #regid{
@@ -956,7 +1002,7 @@ nav a {
 
 @keyframes pulse {
   0% {
-    background-color: white;
+    background-color: $white;
   }
   100% {
     background-color: #F6CED8;
@@ -976,7 +1022,7 @@ nav a {
 
 .classlabel{
 	font-family: arial;
-	font-size: 18px;
+	font-size: $fontsize;
 }
 
 #giftcardsid{
@@ -999,16 +1045,16 @@ ul .classimg{
 	width: 450px;
 	height: 300px;
 	margin: auto;
-}
 
-.classimg li{
-	margin-bottom: 7px;
-	margin-top: 35px;
+	li{
+		margin-bottom: 7px;
+		margin-top: 35px;
+	}
 }
 
 
 .h3color{
-	color: white;
+	color: $white;
 	margin-top: 100px;
 
 }
@@ -1148,7 +1194,7 @@ div p{
 }
 
 .pclass2 p:last-child{
-	color: blue;
+	color: $blue;
 }
 
 .pclass2{
@@ -1248,3 +1294,11 @@ body{
    background: #CEF6CE;
    }
 }
+
+
+
+
+
+/* Import responsive */
+
+@import 'responsive';
