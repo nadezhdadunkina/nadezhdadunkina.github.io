@@ -2,4 +2,7 @@ var MyName;
 var myAge;
 MyName = "Nadejda";
 myAge = "\n23";
-console.log(MyName, myAge);
+console.log(MyName + " , " + myAge);
+
+var arr = [];
+arr[0] = 7;
