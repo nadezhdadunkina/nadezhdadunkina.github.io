@@ -40,7 +40,7 @@ x = new  Number(666);
 y = null;
 z = new Number(6);
 arr[0] = 7;
-arr[1] = "pesho";
+arr[1] = "dinko";
 arr[100] = 5;
 arr[1].isFemale = false;
 
