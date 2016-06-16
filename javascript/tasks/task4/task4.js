@@ -1,4 +1,4 @@
-// // 1. Numbers
+// 1. Numbers
 
 function nNumbers(n) {
     for (var i = 0; i < n; i++) {
@@ -10,7 +10,7 @@ nNumbers(14);
 
 
 
-// // 2. Numbers not divisible
+// 2. Numbers not divisible
 
 function numbersDiv(n) {
     for (var i = 0; i < n; i++) {
@@ -20,7 +20,6 @@ function numbersDiv(n) {
     }
 }
 numbersDiv(88);
-
 
 
 
