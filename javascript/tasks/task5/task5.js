@@ -193,14 +193,10 @@ var arr = [4, 1, 1, 4, 4, 4, 4, 2, 3],
 
 
 
-
-
-
-
   // 7. Binary search
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ,14, 15, 16, 17, 18, 19, 20];
-var n = 6,
+var arr = [1, 3, 5, 6, 7, 8, 11, 16, 18, 20];
+var n = 18,
     start = 0,
     stop = arr.length-1,
     middle = parseInt((start+stop)/2);
@@ -212,7 +208,8 @@ var n = 6,
         else{
             stop = middle-1;
         }
+        middle = parseInt((start + stop)/2);
     }
 
 
-console.log(middle);
+console.log("Index is: " + middle);
