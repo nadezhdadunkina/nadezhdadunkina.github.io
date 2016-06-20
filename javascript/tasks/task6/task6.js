@@ -135,7 +135,7 @@ function countElement() {
     var countDivs = document.getElementsByTagName("div").length;
     console.log("The number of divs is: " + countDivs);
 }
-//countElement();
+countElement();
 
 
 
@@ -192,16 +192,13 @@ function largerNumber(index) {
     if (index > 0 && index <= arr.length - 1) {
 
         if (arr[index] > arr[index - 1] && arr[index] > arr[index + 1]) {
-            console.log("The number " + arr[index] + " is biggest.");
-        } 
-        else if (arr[index] > arr[index - 1] && arr[index] < arr[index + 1]) {
+            console.log("The number " + arr[index] + " is the biggest.");
+        } else if (arr[index] > arr[index - 1] && arr[index] < arr[index + 1]) {
             console.log("The number " + arr[index] + " is bigger than " + arr[index - 1] + " and smaller than " + arr[index + 1]);
-        } 
-        else {
+        } else {
             console.log("The number " + arr[index] + " is smaller than " + arr[index - 1] + " and is bigger than " + arr[index + 1]);
         }
-    } 
-    else {
+    } else {
         console.log("The number is single (not neighbours)");
     }
 
@@ -209,3 +206,57 @@ function largerNumber(index) {
 largerNumber(2);
 largerNumber(0);
 largerNumber(4);
+
+
+
+
+
+
+
+
+
+
+
+
+// 7. First larger than neighbours
+
+// Variant 1
+
+function firstLargerNum() {
+    // var arr = [6, 1, 2, 2, 4, 6, 5, 7];
+    var arr = [1, 2, 3, 4, 5, 6];
+
+    for (var index = 1, len = arr.length; index < len - 1; index++) {
+
+        if (arr[index] > arr[index - 1] && arr[index] > arr[index + 1]) {
+            console.log("Index is " + index);
+            break;
+        }
+    }
+    if (index == 0 || index == arr.length - 1) {
+        return console.log(-1);
+    }
+}
+firstLargerNum();
+
+
+
+
+
+// Variant 2
+
+function firstLargNum() {
+    var arr = [6, 1, 3, 2, 4, 7];
+    for (var i = 0, len = arr.length; i < len; i++) {
+        if (arr[i - 1] > 0 && arr[i + 1] <= arr.length) {
+            if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+                console.log("The largest index is: " + i);
+                break;
+            }
+        } else if (arr[i] === (arr.length - 1)) {
+            // 	 	 	return -1;
+            console.log("-1");
+        }
+    }
+}
+firstLargNum();
