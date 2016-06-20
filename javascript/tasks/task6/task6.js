@@ -50,6 +50,7 @@ function getSingles(number) {
 console.log(getSingles(166));
 console.log(getSingles("nanananananna"));
 console.log(getSingles(168));
+console.log(getSingles(169.14));
 
 
 
@@ -135,7 +136,7 @@ function countElement() {
     var countDivs = document.getElementsByTagName("div").length;
     console.log("The number of divs is: " + countDivs);
 }
-countElement();
+//countElement();
 
 
 
