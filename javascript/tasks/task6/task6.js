@@ -135,4 +135,53 @@ function countElement() {
     var countDivs = document.getElementsByTagName("div").length;
     console.log("The number of divs is: " + countDivs);
 }
-countElement();
+//countElement();
+
+
+
+
+
+
+
+
+// 5. Appearance count
+
+var arr = [6, 1, 3, 4, 5, 6, 3, 4, 6, 5, 8, 10, 4, 7, 6, 4, 6, 3, 6, 7, 7];
+var numberToSearch = 6;
+
+testFunc(arr);
+numberApear(arr, numberToSearch);
+
+function numberApear(arr, numberToSearch) {
+    var counter = 0;
+    for (var i = 0, len = arr.length; i < len; i++) {
+        if (arr[i] === numberToSearch) {
+            counter++;
+        }
+    }
+    console.log("The number is: " + numberToSearch + " (" + counter + " times in array)");
+}
+
+function testFunc() {
+    testNewFunc(); // tazi funkciq e lokalna
+    // mojem da vikame tazi funciq samo vuv f-qta testFunc(), inache izliza greshka: testNewFunc is not defined
+    console.log("The array is: " + arr);
+
+    function testNewFunc() {
+        console.log("Problem 5. Appearance count");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// 6. Larger than neighbours
+
