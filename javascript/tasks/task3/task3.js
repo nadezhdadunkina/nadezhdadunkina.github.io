@@ -254,11 +254,10 @@ function numberAsWord(number) {
     var decades = Math.floor((number / 10) % 10);
     var specials = singles + 10;
     var hundreds = Math.floor((number / 100) % 10);
-    var result;
     var specialsAsNumber = ((Math.floor((number / 10) % 10)) * 10 + (Math.floor(number % 10)));
 
     if (isNaN(number) || (number > 999)) {
-        result = "Error!";
+        return "Error!";
     } else {
         switch (specials) {
             case 11:
@@ -386,18 +385,18 @@ function numberAsWord(number) {
                 decades = " ";
         }
         if (number >= 0 && number < 10) {
-            result = text + singles;
+            return text + singles;
         } else if (number >= 10 && number < 20) {
-            result = text + specials;
+            return text + specials;
         } else if (number >= 20 && number < 100) {
-            result = text + decades + " " + singles;
+            return text + decades + " " + singles;
         } else if (number >= 100 && number <= 999) {
             if ((specialsAsNumber) > 9 && (specialsAsNumber) <= 19) {
-                result = text + hundreds + specials;
+                return text + hundreds + specials;
             } else if (decades === 0) {
-                result = text + hundreds + " " + specials;
+                return text + hundreds + " " + specials;
             } else {
-                result = text + hundreds + decades + " " + singles;
+                return text + hundreds + decades + " " + singles;
             }
         }
     }

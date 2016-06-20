@@ -185,3 +185,27 @@ function testFunc() {
 
 // 6. Larger than neighbours
 
+var arr = [6, 1, 3, 2, 4, 7];
+
+function largerNumber(index) {
+
+    if (index > 0 && index <= arr.length - 1) {
+
+        if (arr[index] > arr[index - 1] && arr[index] > arr[index + 1]) {
+            console.log("The number " + arr[index] + " is biggest.");
+        } 
+        else if (arr[index] > arr[index - 1] && arr[index] < arr[index + 1]) {
+            console.log("The number " + arr[index] + " is bigger than " + arr[index - 1] + " and smaller than " + arr[index + 1]);
+        } 
+        else {
+            console.log("The number " + arr[index] + " is smaller than " + arr[index - 1] + " and is bigger than " + arr[index + 1]);
+        }
+    } 
+    else {
+        console.log("The number is single (not neighbours)");
+    }
+
+}
+largerNumber(2);
+largerNumber(0);
+largerNumber(4);
