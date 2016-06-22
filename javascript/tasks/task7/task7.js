@@ -90,16 +90,13 @@ function clone(object) {
     var cloned = {};
     if (typeof object === "object") {
         for (var i in object) {
-            if (object.hasOwnProperty(i)) {
-                clone[i] = clone(object[i]);
-            }
+            cloned[i] = clone(object[i]);
         }
     } else {
         return object;
     }
     return cloned;
 }
-
 
 
 var clonedStr,
@@ -111,8 +108,16 @@ var clonedStr,
         firstname: "Kostadin",
         lastname: "Ivanov",
         age: 25,
+        address: {
+            street: "Luben Karavelov",
+            number: 5,
+            city: "Razlog",
+            toString: function() {
+                return "Address: " + this.city + ", " + this.street + " N" + this.number
+            }
+        },
         toString: function() {
-            return "Firstname: " + this.firstname + ", " + "Lastname: " + this.lastname + ", " + "Age: " + this.age;
+            return "Firstname: " + this.firstname + ", " + "Lastname: " + this.lastname + ", " + "Age: " + this.age + ", " + this.address;
         }
     };
 
@@ -124,30 +129,15 @@ clonedStr = clone(str);
 clonedNum = clone(num);
 clonedObj = clone(obj);
 
-// console.log("Cloned str, num, obj: ");
-// console.log("Cloned primitive types:");
-// console.log(clonedStr);
-// console.log(clonedNum);
-// console.log("Cloned reference types:");
-// console.log(clonedObj);
-
-clonedStr = "tova e nov string";
-clonedNum = 4;
-clonedObj = {
-    firstname: "Ivan",
-    lastname: "Stefanov",
-    age: 22,
-    toString: function() {
-        return "Firstname: " + this.firstname + ", " + "Lastname: " + this.lastname + ", " + "Age: " + this.age;
-    }
-};
+str = "tova e nov string";
+num = 4;
+obj.firstname = "petko";
 
 console.log("Cloned primitive types:");
 console.log(clonedStr);
 console.log(clonedNum);
 console.log("Cloned reference types:");
-console.log(clonedObj);
-
+console.log(clonedObj.toString());
 
 
 
@@ -176,48 +166,61 @@ console.log("Lastname:" + " " + obj.lastname + " " + hasProperty("lastname"));
 
 // 5. Youngest person
 
-var theYoungest;
-
-function person(fname, lname, age) {
-    this.firstname = fname;
-    this.lastname = lname;
-    this.age = age;
-    return fname + lname + age;
-}
-
 var people = [
-    { fname: "Ivan", lname: "Petrov", age: 32 },
-    { fname: "Todor", lname: "Kostadinov", age: 46 },
-    { fname: "Ivana", lname: "Petrova", age: 34 },
-    { fname: "Nasko", lname: "Ivanov", age: 23 },
-    { fname: "Katerina", lname: "Ivanova", age: 34 },
-    { fname: "Nikolai", lname: "Spasov", age: 43 }
+    { firstname: "Ivan", lastname: "Petrov", age: 32 },
+    { firstname: "Todor", lastname: "Kostadinov", age: 46 },
+    { firstname: "Ivana", lastname: "Petrova", age: 34 },
+    { firstname: "Nasko", lastname: "Ivanov", age: 23 },
+    { firstname: "Katerina", lastname: "Ivanova", age: 26 },
+    { firstname: "Nikolai", lastname: "Spasov", age: 43 }
 ];
 
 function findTheYongestPerson() {
-    //theYoungest = findTheYongestPerson(people);
-    theYoungest = people[0].age;
-    for (var i = 0, len = people.length; i < len; i++) {
+    var theYoungest = people[0].age;
+    var youngestIndex = 0;
 
+    for (var i = 0, len = people.length; i < len; i++) {
         if (people[i].age < theYoungest) {
             theYoungest = people[i].age;
-            console.log("The youngest person is: " + people[i].fname + ' ' + people[i].lname + ', ' + people[i].age + " years old");
+            youngestIndex = i;
         }
     }
+    console.log(youngestIndex);
+    console.log("The youngest person is: " + people[youngestIndex].firstname + ' ' + people[youngestIndex].lastname + ', ' + people[youngestIndex].age + " years old");
 }
-findTheYongestPerson();  
+findTheYongestPerson();
 
 
 
 
+// 6. Write a function that groups an array of people by age, first or last name.
+// The function must return an associative array, with keys - the groups, and values - arrays with people in this groups.
 
-// 6.
-
-var arr = [
-    { fname: "Ivan", lname: "Petrov", age: 32 },
-    { fname: "Nasko", lname: "Kostadinov", age: 46 },
-    { fname: "Ivana", lname: "Petrova", age: 34 },
-    { fname: "Nasko", lname: "Ivanov", age: 23 },
-    { fname: "Katerina", lname: "Ivanova", age: 34 },
-    { fname: "Nikolai", lname: "Spasov", age: 43 }
+var people = [
+    { firstname: "Sasho", lastname: "Petrov", age: 32 },
+    { firstname: "Nasko", lastname: "Kostadinov", age: 46 },
+    { firstname: "Ivana", lastname: "Petrova", age: 34 },
+    { firstname: "Nasko", lastname: "Ivanov", age: 23 },
+    { firstname: "Katerina", lastname: "Ivanova", age: 34 },
+    { firstname: "Nikolai", lastname: "Spasov", age: 43 }
 ];
+
+function groupBy(arr, property) {
+    var groupArr = {}; // asociativen masiv
+
+    for (var i = 0, len = arr.length; i < len; i++) {
+        var key = arr[i][property];
+        var peopleInGroup = groupArr[key] || [];
+        //ako v groupArr[key] ima stoinost, to vzima neq; ako nqma stoinost, to vzima prazen masiv
+
+        peopleInGroup.push(arr[i]);
+        //dobavq arr[i] kym masiva, v koito ima groupArr[key] (ili masivut e prazen)
+
+        groupArr[key] = peopleInGroup;
+        //na key mu davame stoinost peopleInGroup; masiv ot 1 element (Array[1])
+    }
+    return groupArr; //vrushta asociativniq masiv
+}
+console.log(groupBy(people, "firstname"));
+console.log(groupBy(people, "lastname"));
+console.log(groupBy(people, "age"));
