@@ -187,7 +187,7 @@ function extractTextFromHTML(textHTML) {
     return textHTML.textContent;
 }
 
-//console.log(extractTextFromHTML(document.getElementById("bodyid")));
+console.log(extractTextFromHTML(document.getElementById("bodyid")));
 console.log("---------------------------------");
 
 
