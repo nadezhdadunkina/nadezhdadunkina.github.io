@@ -133,15 +133,35 @@ arr.sort(function(a, b) {
 });
 
 
-//var sorted = arr.sort();
 var theYongestM = arr.find(function findMales(person) {
     return person.gender === false;
 });
 
 
-//var onlyMales = arr.filter(males);
-
-
 console.log(arr);
 console.log(theYongestM);
 console.log("---------------------------------------");
+
+
+
+
+
+
+
+
+console.log("--------------Problem 6----------------");
+
+var arr = peopleArrGenerator(4);
+
+var result = arr.reduce(function (group, item){
+    var letter = item.firstname[0];
+
+    if(!group[letter]){
+        group[letter] = [];
+    }
+    group[letter].push(item);
+    return group;
+
+});
+console.log(arr);
+console.log(result);
