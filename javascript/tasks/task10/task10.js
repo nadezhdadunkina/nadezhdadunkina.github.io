@@ -54,10 +54,9 @@ String.prototype.bind = function(str, options) {
 var str = '<a data-bind-content="name" data-bind-href="link" data-bind-class="name" data-bind-id="name" data-bind-custom="custom"></а>';
 console.log(str.bind(str, { name: 'Elena', link: 'http://telerikacademy.com', custom: 'custom attribute' }));
 
-
+console.log();
 
 var str = '<a data-bind-content="name" data-bind-href="link" data-bind-class="name" data-bind-div="age"></а>'
-console.log(str.bind(str, { name: 'Elena', link: 'http://www.w3schools.com', age: '21 years old' }));
-
+console.log(str.bind(str, { name: 'Mitko', link: 'http://www.w3schools.com', age: '21 years old' }));
 
 console.log("-------------------------------------");
