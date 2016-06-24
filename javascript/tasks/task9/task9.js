@@ -305,7 +305,6 @@ function formatStr(str) {
 
 console.log(text + ',"Peter"');
 console.log(formatStr(text, "Peter"));
-console.log(formatStr(text, "Svetoslav"));
 console.log("---------------------------------");
 
 
