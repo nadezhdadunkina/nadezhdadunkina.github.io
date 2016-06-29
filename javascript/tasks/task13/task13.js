@@ -17,10 +17,8 @@ function generateList(selector, counter) {
     }
 
 
-    var $li = $('<li/>')
-        .addClass("list-item"),
-        $ul = $('<ul/>')
-        .addClass("items-list"),
+    var $li = $('<li/>').addClass("list-item"),
+        $ul = $('<ul/>').addClass("items-list"),
         i,
         $selectedEl = $(selector);
 
@@ -43,22 +41,38 @@ console.log("----------------------------------");
 
 
 
-
-
-
-
-
-
-
-
 console.log("--------------Task 2--------------");
 
+function findElements(selector) {
 
+    var $button = $(".button").text("Hide"),
+        $content = $(".content"),
+        $selectedElement = $(selector);
 
+    try {
+        if (!(selector) || typeof selector !== 'string') {
+            throw new Error('Non-existant DOM element.');
+        }
 
+        if (!$selectedElement.length) {
+            throw new Error("Error");
+        }
+    } catch (e) {
+        console.log(e);
+    }
 
+    $button.click(function() {
+        var $this = $(this);
+        $this.nextAll(".content").first().toggleClass("hidden");
 
+        if ($content.hasClass("hidden")) {
+            $this.text("Show");
+        } else {
+            $this.text("Hide");
+        }
+    });
+}
 
-
+findElements("#divId");
 
 console.log("----------------------------------");
