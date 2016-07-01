@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 15</title>
+   
+</head>
+<body>
+<script src="../libs/jquery-3.0.0.min.js"></script>
+    <script src="handlebars-v4.0.5.js"></script>
+
+    <div id="root"></div>
+    <div id="container"></div>
+   
+   	<script type="text/x-handlebars-template" id="vendors-template">
+		<table class="items-table">
+			<thead>
+				<th>#</th>
+				{{#data}}
+					{{#headers}}
+						<th>{{this}}</th>
+					{{/headers}}
+				{{/data}}
+			</thead>
+			<tbody>
+				{{#data}}
+					{{#items}}
+					<tr>
+						<td>{{@index}}</td>
+						<td>{{col1}}</td>
+						<td>{{col2}}</td>
+						<td>{{col3}}</td>
+					</tr>
+					{{/items}}
+				{{/data}}
+			</tbody>
+		</table>
+	</script>
+
+
+
+
+   	<script type="text/x-handlebars-template" id="animals-template">
+  <h1>Animals</h1>
+  <ul class="animals-list">{{#each animals}}{{#if url}}
+                <li><a href="{{this.url}}">See a {{name}}</a></li>{{else}}
+                <li><a href="#">No link for {{name}} , here is Batman!</a></li>{{/if}} {{/each}}
+            </ul>   
+   	</script>
+
+
+
+<ul id="books-list" data-template="book-item-template"></ul>
+<script type="text/hanlebars-template" id="books-template" >
+    {{#each list}}
+    <li class="book-item">
+        <a href="/#books/{{id}}">
+            <strong>{{title}}</strong></a>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+
+
+	<script src="task15.js"></script>
+</body>
+</html>
