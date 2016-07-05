@@ -47,6 +47,51 @@
     </div>
     <br>
     <div><a href="http://www.w3schools.com/" target=_ blank>View More Information</a></div>
+    <section class="images">
+        <article class="imgBig">
+            <a href="#"><img src="http://placehold.it/500x400" alt="Alt"></a>
+        </article>
+        <article class="img">
+            <a href="#"><img src="http://placehold.it/150x100" alt="Alt"></a>
+            <a href="#"><img src="http://placehold.it/150x100" alt="Alt"></a>
+            <a href="#"><img src="http://placehold.it/150x100" alt="Alt"></a>
+        </article>
+    </section>
+    <style>
+    .images {
+        width: 700px;
+        height: 400px;
+        padding: 50px;
+        background-color: lightblue;
+    }
+    
+    .imgBig {
+        position: relative;
+        float: left;
+    }
+    
+    .imgBig a img {
+        -webkit-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+        box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+    }
+    
+    .img {
+        position: absolute;
+        width: 150px;
+        height: 100px;
+        float: left;
+        margin-left: 550px;
+    }
+    
+    .img a img {
+        margin-bottom: 50px;
+        display: block;
+        -webkit-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+        box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+    }
+    </style>
 </body>
 
 </html>
