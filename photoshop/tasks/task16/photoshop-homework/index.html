@@ -1,65 +1,52 @@
 <!DOCTYPE html>
 <html>
-   <head>
-   <meta charset="UTF-8">
-      <link rel=stylesheet type="text/css" href="css/style.css">  
-	  <title>Task 16</title>
-   </head>
-   <body> 
-   <h1>Task 16 - Photoshop</h1>
-   
-   
-   <style>
-   .btn1 {
-   background: url(button.png);
-   display: inline-block;
-   height: 47px;
-   width: 120px;
-   font: 15px Cambria, serif;
-   border-radius: 16px;
-   padding: 0 20px;
-   border: 0;
-   margin: 0 20px;
-   color: black;
-   box-shadow: 2px 1px 3px #c5dae5;
-   }
-   
-	.btn2 .left,
-	.btn2 .right{
-	height: 47px;
-   width: 120px;
-   background-position: 0 0;
-   background-repeat: no-repeat;
-	}
-	
-	.btn2 .left{
-	float: left;
-	background: url(downCut.png) no-repeat;
-	display: block;
-	margin-left: -2px;
-	}
-	
-	
-		.btn2 .right{
-	float: right;
-	background: url(rightCut.png) no-repeat;
-	padding: 50px;
-	}
-   
-   
-   </style>
-   
-   <button class = "btn1">OK</button>
-   <button class = "btn1">Cancel</button>
-   <button class = "btn1"><a href="http://telerikacademy.com/" target = _blank>View More Information</a></button>
-   
-   
-   <button class = "btn2">
-   <span class="left"></span>
-   <span class="right"></span>
-   Blaaaaaaaaa
-   </button>
-   
-   
-   </body>
-   </html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet type="text/css" href="css/style.css">
+    <title>Task 16</title>
+</head>
+
+<body>
+    <h1>Task 16 - Photoshop</h1>
+    <style>
+    .divClass .btn1,
+    .btn2,
+    .btn3 {
+        width: 100%;
+    }
+    
+    .btn1,
+    .btn2,
+    .btn3 {
+        background: url(button.png);
+        border-radius: 26px;
+        display: inline-block;
+        height: 47px;
+        max-width: 192px;
+        font: 15px Cambria, serif;
+        padding: 0;
+        border: 0;
+        margin: 0 20px;
+        color: black;
+        /*box-shadow: inset -1px -5px 0px -2px rgba(0, 0, 0, 0.1);*/
+        -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow-blend-mode: multiply;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    </style>
+    <div class="divClass">
+        <button class="btn1">OK</button>
+        <button class="btn2">Cancel</button>
+        <button class="btn3"><a href="http://telerikacademy.com/" target=_ blank>View More Information</a></button>
+    </div>
+    <br>
+    <div><a href="http://www.w3schools.com/" target=_ blank>View More Information</a></div>
+</body>
+
+</html>
