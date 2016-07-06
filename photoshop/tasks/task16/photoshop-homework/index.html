@@ -13,27 +13,48 @@
     .divClass .btn1,
     .btn2,
     .btn3 {
-        width: 100%;
+        /*width: 100%;*/
+        outline: none;
     }
     
     .btn1,
     .btn2,
     .btn3 {
         background: url(button.png);
-        border-radius: 26px;
-        display: inline-block;
-        height: 47px;
-        max-width: 192px;
+        height: 57px;
+        /*        border-radius: 22px;*/
+        /*        display: inline-block;*/
+        min-width: 92px;
         font: 15px Cambria, serif;
         padding: 0;
         border: 0;
-        margin: 0 20px;
+        /*        margin: 0 20px;*/
         color: black;
-        /*box-shadow: inset -1px -5px 0px -2px rgba(0, 0, 0, 0.1);*/
-        -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        /*        -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
         box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        box-shadow-blend-mode: multiply;
+        box-shadow-blend-mode: multiply;*/
+    }
+    
+    .buttons {
+        display: inline-flex;
+        min-width: 100px;
+        /* width: 100%;*/
+    }
+    
+    .left {
+        background: url(buttonLeft.png);
+        background-repeat: no-repeat;
+        float: left;
+        width: 25px;
+        height: 57px;
+    }
+    
+    .right {
+        background: url(buttonRight.png);
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 57px;
     }
     
     a {
@@ -41,109 +62,123 @@
     }
     </style>
     <div class="divClass">
-        <button class="btn1">OK</button>
-        <button class="btn2">Cancel</button>
-        <button class="btn3"><a href="http://telerikacademy.com/" target=_ blank>View More Information</a></button>
-    </div>
-    <br>
-    <div><a href="http://www.w3schools.com/" target=_ blank>View More Information</a></div>
-    <section class="images">
-        <article class="imgBig">
-            <a href="#"><img src="http://placehold.it/500x400" alt="Alt"></a>
-        </article>
-        <article class="img">
-            <a href="#"><img src="http://placehold.it/150x100" alt="Alt"></a>
-            <a href="#"><img src="http://placehold.it/150x100" alt="Alt"></a>
-            <a href="#"><img src="http://placehold.it/150x100" alt="Alt"></a>
-        </article>
-    </section>
-    <style>
-    .images {
-        width: 700px;
-        height: 400px;
-        padding: 50px;
-        background-color: lightblue;
-    }
-    
-    .imgBig {
-        position: relative;
-        float: left;
-    }
-    
-    .imgBig a img {
-        -webkit-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
-        -moz-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
-        box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
-    }
-    
-    .img {
-        position: absolute;
-        width: 150px;
-        height: 100px;
-        float: left;
-        margin-left: 550px;
-    }
-    
-    .img a img {
-        margin-bottom: 50px;
-        display: block;
-        -webkit-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
-        -moz-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
-        box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
-    }
-    </style>
-    <nav>
-        <ul class="menu">
-            <li><a href="#"><strong>Home</strong></a></li>
-            <li><a href="#"><strong>About</strong></a></li>
-            <li><a href="#"><strong>More information</strong></a></li>
-            <li><a href="#"><strong>Contacts</strong></a></li>
-        </ul>
-    </nav>
-    <style>
-    ul {
-        list-style-type: none;
-        text-transform: uppercase;
-        display: inline-flex;
-    }
-    
-    nav ul.menu {
-        left: 189px;
-        top: 125px;
-        background-image: url("menu.png");
-        background-repeat: repeat-x;
-        border: 1px solid #cfcfcf;
-        border-radius: 10px;
-        padding: 0;
-    }
-    
-    nav ul li {
-        padding: 15px;
-    }
-    
-    nav ul li a {
-        font-size: 16px;
-        font-family: "Arial";
-        color: rgb(167, 22, 46);
-
-    }
-    
-    li:nth-child(1) {
-        border-right: 1px solid #cfcfcf;
-    }
-    
-    li:nth-child(2) {
-        border-right: 1px solid #cfcfcf;
-    }
-    
-    li:nth-child(3) {
-        border-right: 1px solid #cfcfcf;
-    }
-    
-    li:nth-child(4) {
-        border-right: none;
-    }
-    </style>
+        <div class="buttons">
+            <div class="left"></div>
+            <button class="btn1">OK</button>
+            <div class="right"></div>
+        </div>
+        <div class="buttons">
+            <div class="left"></div>
+            <button class="btn2">Cancel</button>
+            <div class="right"></div>
+        </div>
+        <div class="buttons">
+            <div class="left"></div>
+            <button class="btn3"><a href="http://telerikacademy.com/" target=_ blank>View More Information</a></button>
+            <div class="right"></div>
+        </div>
+        <br>
+        <div><a href="http://www.w3schools.com/" target=_ blank>View More Information</a></div>
+        <br>
+        <section class="images">
+            <article class="imgBig">
+                <a href="#"><img src="http://placehold.it/500x400" alt="Alt"></a>
+            </article>
+            <article class="img">
+                <a href="#"><img src="http://placehold.it/150x100" alt="Alt"></a>
+                <a href="#"><img src="http://placehold.it/150x100" alt="Alt"></a>
+                <a href="#"><img src="http://placehold.it/150x100" alt="Alt"></a>
+            </article>
+        </section>
+        <style>
+        .images {
+            width: 700px;
+            height: 400px;
+            padding: 50px;
+            background-color: lightblue;
+        }
+        
+        .imgBig {
+            position: relative;
+            float: left;
+        }
+        
+        .imgBig a img {
+            -webkit-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
+            -moz-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
+            box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
+        }
+        
+        .img {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            float: left;
+            margin-left: 550px;
+        }
+        
+        .img a img {
+            margin-bottom: 50px;
+            display: block;
+            -webkit-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
+            -moz-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
+            box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.77);
+        }
+        </style>
+        <nav>
+            <ul class="menu">
+                <li><a href="#"><strong>Home</strong></a></li>
+                <li><a href="#"><strong>About</strong></a></li>
+                <li><a href="#"><strong>More information</strong></a></li>
+                <li><a href="#"><strong>Contacts</strong></a></li>
+            </ul>
+        </nav>
+        <style>
+        ul {
+            list-style-type: none;
+            text-transform: uppercase;
+            display: inline-flex;
+        }
+        
+        nav ul.menu {
+            left: 189px;
+            top: 125px;
+            background-image: url("menu.png");
+            background-repeat: round;
+            border: 1px solid #cfcfcf;
+            border-radius: 6px;
+            padding: 0;
+        }
+        
+        nav ul li {
+            padding: 15px;
+        }
+        
+        nav ul li a {
+            font-size: 16px;
+            font-family: "Arial";
+            color: rgb(167, 22, 46);
+        }
+        
+        li:nth-child(1) {
+            border-right: 1px solid #cfcfcf;
+        }
+        
+        li:nth-child(2) {
+            border-right: 1px solid #cfcfcf;
+            border-left: 1px solid #ffffff;
+        }
+        
+        li:nth-child(3) {
+            border-right: 1px solid #cfcfcf;
+            border-left: 1px solid #ffffff;
+        }
+        
+        li:nth-child(4) {
+            border-right: none;
+            border-left: 1px solid #ffffff;
+        }
+        </style>
 </body>
 
 </html>
