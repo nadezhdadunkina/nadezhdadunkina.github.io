@@ -153,6 +153,223 @@ section {
   float: right;
 }
 
+footer{
+  width: 100%;
+}
+
+#footerContainer{
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 0.6%;
+}
+
+/*#footerContainer img{
+  margin-left: 20.4%;
+  margin-bottom: 2.5%;
+  margin-top: 2%;
+}
+
+
+#footerContainer img:hover{
+  background-color: #00e1f5;
+}*/
+
+footer .input{
+  width: 28%;
+  height: 39px;
+  margin-left: 3%;
+}
+
+footer .input[value]{
+  font-size: 17px;
+  font-family: "NeuzeitS";
+  padding-left: 2%
+}
+
+
+#footerContainer p{
+  font-size: 14px;
+  font-family: "NeuzeitS";
+  color: rgb(50, 50, 50);
+  line-height: 1.286;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.shapeDiv{
+  border-width: 1px;
+  border-color: rgb(200, 200, 200);
+  border-style: solid;
+  background-color: rgb(150, 150, 150);
+  position: absolute;
+  max-width: 1200px;
+  width: 100%;
+  height: 0;
+}
+
+
+.flexCont{
+  display: inline-flex;
+  margin-left: 25px;
+  margin-top: 3.3%;
+}
+
+
+#fb{
+  background: url('../footer.png') no-repeat -16px -6px;
+  width: 11px;
+  height: 22px;
+}
+
+#fb:hover{
+  background: url('../footerHover.png') no-repeat -16px -6px;
+  color: #00e1f5;
+}
+
+
+#twitter{
+  background: url('../footer.png') no-repeat -61px -8px;
+  width: 23px;
+  height: 18px;
+  margin-left: 36px;
+}
+
+#twitter:hover{
+  background: url('../footerHover.png') no-repeat -61px -8px;
+  color: #00e1f5;
+}
+
+#instagram{
+  background: url('../footer.png') no-repeat -116px -7px;
+  width: 20px;
+  height: 20px;
+  margin-left: 36px;
+}
+
+#instagram:hover{
+  background: url('../footerHover.png') no-repeat -116px -7px;
+  color: #00e1f5;
+}
+
+#id4{
+  background: url('../footer.png') no-repeat -165px -6px;
+  width: 23px;
+  height: 22px;
+  margin-left: 36px;
+}
+
+#id4:hover{
+  background: url('../footerHover.png') no-repeat -165px -6px;
+  color: #00e1f5;
+}
+
+#id5{
+  background: url('../footer.png') no-repeat -224px -6px;
+  width: 12px;
+  height: 22px;
+  margin-left: 36px;
+}
+
+#id5:hover{
+  background: url('../footerHover.png') no-repeat -224px -6px;
+  color: #00e1f5;
+}
+
+#id6{
+  background: url('../footer.png') no-repeat -269px -9px;
+  width: 11px;
+  height: 16px;
+  margin-left: 36px;
+}
+#id6:hover{
+    background: url('../footerHover.png') no-repeat -269px -9px;
+    color: #00e1f5;
+}
+
+#id7{
+  background: url('../footer.png') no-repeat -281px -9px;
+  width: 17px;
+  height: 16px;
+}
+#id7:hover{
+  background: url('../footerHover.png') no-repeat -281px -9px;
+  color: #00e1f5;
+}
+
+#id8{
+  background: url('../footer.png') no-repeat -325px -6px;
+  width: 18px;
+  height: 22px;
+  margin-left: 36px;
+}
+
+#id8:hover{
+  background: url('../footerHover.png') no-repeat -325px -6px;
+  color: #00e1f5;
+}
+
+#list{
+  width: 61%;
+  margin: auto;
+}
+
+footer #list ul li {
+  font-size: 14px;
+  font-family: "Myriad Pro";
+  color: rgb(50, 50, 50);
+  line-height: 1.2;
+  float: left;
+  list-style-type: none;
+  margin-left: 52px;
+}
+
+a{
+  text-decoration: none;
+  color: black; 
+}
+
+a:hover{
+  text-decoration: none;
+  color: black; 
+}
+
+#footerContainer > div > p:nth-child(5){
+  margin-top: 3.5%;
+  color: #b2b2b2;
+  text-align: center;
+}
+
+#footerContainer > div > p:nth-child(6){
+    margin-top: 2.5%;
+}
+
+#list ul{
+  padding-top: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*#down > div:first-child > img{
   margin-left: 0;
