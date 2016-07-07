@@ -86,3 +86,154 @@ table, th, td {
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
     margin-right: 21%;
 }
+
+
+
+section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#up, #down{
+  width: 100%;
+}
+
+
+.images,
+.imagesSmall{
+  width: 100%;
+}
+
+
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+/*  padding-top: 21px;*/
+  padding-top: 1%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+
+
+
+.box-up{
+  max-width: 386px;
+  width: 32.16%;
+  float: left;
+  padding-top: 21px;
+  padding-bottom: 5.8%;
+  /*padding-bottom: 197px;*/
+/*  padding-left: 1%;*/
+  /*height: 55.2%;*/
+}
+
+/*section  article:last-child  img{
+  margin: 0;
+}*/
+
+#up > div:nth-child(2){
+  margin-left: 1.76%;
+  margin-right: 1.76%;
+}
+
+
+.box-down{
+  max-width: 224px;
+  width: 18.7%;
+ /* height: 55.2%;*/
+  float: left;
+  /*margin-right: 1.625%;*/
+  margin-right: 1.33%;
+}
+
+.pRight{
+  float: right;
+}
+
+
+/*#down > div:first-child > img{
+  margin-left: 0;
+  margin-right: 0;
+}
+*/
+
+/*
+#down > div:nth-child(2) > img{
+  margin-left: 1.625%;
+  margin-right: 1.625%;
+}
+
+#down > div:nth-child(3) > img{
+  margin-left: 1.625%;
+  margin-right: 1.625%;
+}
+
+#down > div:nth-child(4) > img{
+  margin-left: 1.625%;
+  margin-right: 1.625%;
+}
+
+
+*/
+/*#down > div:nth-child(5) > img{
+
+
+}*/
+
+/*#down > div:nth-child(5) > img{
+  margin: 0;
+}*/
+/*#down > div:nth-child(5) > img{
+    margin-right: 0%;
+    float: right;
+}
+
+*/
+/*.text p{
+  font-size: 13px;
+  font-family: "NeuzeitS";
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+  line-height: 1.615;
+  text-align: left;
+  position: absolute;
+  left: -0.063px;
+  top: 284.121px;
+  width: 358px;
+  height: 103px;
+  z-index: 18;
+}
+*/
+
+
+/*.text1 {
+  font-size: 14px;
+  font-family: "NeuzeitS";
+  color: rgb(50, 50, 50);
+  line-height: 1.286;
+  position: absolute;
+  left: -0.156px;
+  top: 697.25px;
+  width: 185px;
+  height: 32px;
+  z-index: 28;
+}
+*/
+
+/*.price {
+  font-size: 14px;
+  font-family: "NeuzeitS";
+  color: rgb(150, 150, 150);
+  line-height: 1.286;
+  text-align: right;
+  position: absolute;
+  left: 153.416px;
+  top: 697.25px;
+  width: 50px;
+  height: 12px;
+  z-index: 29;
+}
+*/
