@@ -50,48 +50,16 @@ table, th, td {
 
 
 
-/*@font-face {
-    font-family: "NeuzeitS";
-    src: url("../Fonts/Fonts/NeuzeitS.eot");
-}
-*/
-/*@font-face{
-  font-family: 'NeuzeitS';
-  src: url('Fonts/Fonts/NeuzeitS.eot');
-  src: local('NeuzeitS'), 
-  local('NeuzeitS'), 
-  url('Fonts/Fonts/NeuzeitS')
-  format('truetype');
-} */
-
-/*@font-face{
-  font-family: 'Myriad Pro';
-  src: url('../Fonts/Myriad Pro.eot');
-  src: local('../Myriad Pro'), 
-  local('../Myriad Pro'), 
-  url('../Fonts/Myriad Pro')
-  format('truetype');
-} */
 
 @font-face {
-    font-family: 'NeuzeitS';
-    src: url('../Fonts/Fonts/NeuzeitS.eot');
-    src: url('../Fonts/Fonts/NeuzeitS?#iefix') format('embedded-opentype'),
-         url('../Fonts/Fonts/NeuzeitS.svg#gotham_narrowmedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: NeuzeitS;
+    src: url(../Fonts/Neuzeit_S_LT_Book.ttf);
 }
 
 @font-face {
-    font-family: 'Myriad Pro';
-    src: url('../Fonts/Fonts/Myriad Pro.eot');
-    src: url('../Fonts/Fonts/Myriad Pro?#iefix') format('embedded-opentype'),
-         url('../Fonts/Fonts/Myriad Pro.svg#gotham_narrowmedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: Myriad Pro;
+    src: url(../Fonts/Myriad-Pro_31655.ttf);
 }
-
-
 
 
 
@@ -160,6 +128,24 @@ nav ul{
   background-color: #ebebe6;
 }
 
+
+#myCarousel > div > div:nth-child(1) > p{
+  padding: 0;
+  float: left;
+  color: red;
+  font: 12px Monaco, Mono-Space;
+  margin: 0;
+}
+
+.cnt{
+  position: absolute;
+  border: 1px solid red;
+  width: 200px;
+  height: 100px;
+  top: 40%;
+  left: 20%;
+}
+
 section {
   max-width: 1200px;
   margin: auto;
@@ -181,7 +167,8 @@ section {
   display: flex;
   flex-direction: column;
   /*  padding-top: 21px;*/
-  padding-top: 1%;
+/*  padding-top: 1%;*/
+padding-top: 12px;
   flex-flow: row wrap;
   justify-content: space-around;
 }
@@ -195,7 +182,7 @@ section {
   width: 32.16%;
   float: left;
   padding-top: 21px;
-  padding-bottom: 5.8%;
+  padding-bottom: 4.2%;
   /*padding-bottom: 197px;*/
   /*  padding-left: 1%;*/
   /*height: 55.2%;*/
@@ -234,7 +221,7 @@ footer{
 #footerContainer{
   max-width: 1200px;
   margin: auto;
-  margin-top: 8%;
+  margin-top: 5.7%;
   margin-bottom: 0.6%;
   border-top: 1px solid #c8c8c8;
   border-bottom: 1px solid #c8c8c8;
@@ -265,7 +252,7 @@ footer .input{
 footer .input[value]{
   width: 100%;
   font-size: 17px;
-  font-family: "NeuzeitS";
+  font-family: "NeuzeitS", sans-serif;
   /*  padding-left: 4%;*/
   padding-left: 18px;
   /* float: right; */
@@ -281,7 +268,7 @@ footer .input[value]{
 
 #footerContainer p{
   font-size: 14px;
-  font-family: "NeuzeitS";
+  font-family: "NeuzeitS", sans-serif;
   color: rgb(50, 50, 50);
   line-height: 1.286;
   text-align: center;
@@ -306,7 +293,7 @@ footer .input[value]{
   color: #b2b2b2;
   letter-spacing: 1px;
   font-size: 12px;
-  font-family: "NeuzeitS";
+  font-family: "NeuzeitS", sans-serif;
   line-height: 1.523;
   text-align: center;
 }
@@ -428,7 +415,7 @@ footer .input[value]{
 
 footer #list ul li {
   font-size: 14px;
-  font-family: "NeuzeitS";
+  font-family: "NeuzeitS", sans-serif;
   color: rgb(50, 50, 50);
   line-height: 1.286;
   float: left;
@@ -460,7 +447,7 @@ footer #list ul li {
   letter-spacing: 1px;
   padding-top: 2%;
   font-size: 12px;
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro", sans-serif;
   color: rgb(50, 50, 50);
   text-transform: uppercase;
   line-height: 1.523;
@@ -475,21 +462,25 @@ padding-bottom: 11px;
 #footerContainer > p{
   padding-top: 3%;
   font-size: 14px;
-  font-family: "NeuzeitS";
+  font-family: "NeuzeitS", sans-serif;
   line-height: 1.636;
   color: #b2b2b2;
   text-align: center;
 }
 
-a{
+a {
   text-decoration: none;
   color: black; 
 }
 
-a:hover{
+a:hover,
+a:active,
+a:visited,
+a:focus{
   text-decoration: none;
   color: black; 
 }
+
 
 #footerContainer > div > p:nth-child(5){
   margin-top: 3.5%;
@@ -510,22 +501,21 @@ a:hover{
 }
 
 
-
 .text p{
   text-transform: uppercase;
   font-size: 13px;
-  font-family: "NeuzeitS";
+  font-family: "NeuzeitS", sans-serif;
   color: rgb(150, 150, 150);
   line-height: 1.4;
   text-align: left;
-  width: 90%;
+  width: 100%;
   letter-spacing: 1px;
 }
 
 .price {
   float: right;
   font-size: 14px;
-  font-family: "NeuzeitS";
+  font-family: "NeuzeitS", sans-serif;
   color: rgb(150, 150, 150);
   line-height: 1.286;
   text-align: right;
@@ -536,7 +526,7 @@ a:hover{
 
 .text1 {
   font-size: 14.5px;
-  font-family: "NeuzeitS";
+  font-family: "NeuzeitS", sans-serif;
   color: rgb(50, 50, 50);
   line-height: 1.286;
   width: 100%;
@@ -547,18 +537,35 @@ a:hover{
 
 
 h1 {
-  width: 73%;
-  letter-spacing: 1px;
+  width: 100%;
+  line-height: 23px;
+  letter-spacing: 1.35px;
+  font-family: "NeuzeitS", sans-serif;
+  font-size: 17px;
+}
+
+/*#up > div:nth-child(1) > div > h1,
+#up > div:nth-child(2) > div > h1,
+#up > div:nth-child(3) > div > h1{
+  padding-top: 5px;
+}*/
+#up > div:nth-child(1) > div > p:nth-child(1),
+#up > div:nth-child(2) > div > p:nth-child(1),
+#up > div:nth-child(3) > div > p:nth-child(1){
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-size: 13px;
 }
 
 
 #up > div:nth-child(1) > div > p:nth-child(3), 
 #up > div:nth-child(2) > div > p:nth-child(3), 
 #up > div:nth-child(3) > div > p:nth-child(3){
-  text-transform: none;
-  letter-spacing: 2px;
-  padding-top: 5px;
-  /*    font-weight: bold;*/
+  text-transform: none;    
+  letter-spacing: 0.14em;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 
