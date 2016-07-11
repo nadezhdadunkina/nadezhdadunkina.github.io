@@ -50,6 +50,52 @@ table, th, td {
 
 
 
+/*@font-face {
+    font-family: "NeuzeitS";
+    src: url("../Fonts/Fonts/NeuzeitS.eot");
+}
+*/
+/*@font-face{
+  font-family: 'NeuzeitS';
+  src: url('Fonts/Fonts/NeuzeitS.eot');
+  src: local('NeuzeitS'), 
+  local('NeuzeitS'), 
+  url('Fonts/Fonts/NeuzeitS')
+  format('truetype');
+} */
+
+/*@font-face{
+  font-family: 'Myriad Pro';
+  src: url('../Fonts/Myriad Pro.eot');
+  src: local('../Myriad Pro'), 
+  local('../Myriad Pro'), 
+  url('../Fonts/Myriad Pro')
+  format('truetype');
+} */
+
+@font-face {
+    font-family: 'NeuzeitS';
+    src: url('../Fonts/Fonts/NeuzeitS.eot');
+    src: url('../Fonts/Fonts/NeuzeitS?#iefix') format('embedded-opentype'),
+         url('../Fonts/Fonts/NeuzeitS.svg#gotham_narrowmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../Fonts/Fonts/Myriad Pro.eot');
+    src: url('../Fonts/Fonts/Myriad Pro?#iefix') format('embedded-opentype'),
+         url('../Fonts/Fonts/Myriad Pro.svg#gotham_narrowmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
 
 /* Homepage */
 
@@ -198,7 +244,7 @@ footer{
 
 footer .input{
   height: 39px;
-  background: url(../arrowFooter.png) no-repeat;
+  background: url(../img/arrowFooter.png) no-repeat;
   background-position: right 5% top 50%;
   width: 90%;
   height: 39px;
@@ -206,13 +252,13 @@ footer .input{
   letter-spacing: 0.1em;
   /* margin-bottom: 27px; */
   margin-left: 2%;
-  background: url(../arrowFooter.png) no-repeat;
+  background: url(../img/arrowFooter.png) no-repeat;
   background-position: right 5% top 50%;
 }
 
 
 #footerContainer input:hover {
-    background: url(../arrowFooterHover.png) no-repeat;
+    background: url(../img/arrowFooterHover.png) no-repeat;
     background-position: right 5% top 50%;
 } 
 
@@ -220,11 +266,13 @@ footer .input[value]{
   width: 100%;
   font-size: 17px;
   font-family: "NeuzeitS";
-  padding-left: 4%;
+  /*  padding-left: 4%;*/
+  padding-left: 18px;
   /* float: right; */
   margin-top: 0;
   /* margin-right: 21.5%; */
   letter-spacing: 1.8px;
+  border: 1px solid #969696;
   /* margin-left: -111%; */
   /*margin-right: -16%;*/
 }
@@ -257,6 +305,10 @@ footer .input[value]{
   margin-bottom: 1%;
   color: #b2b2b2;
   letter-spacing: 1px;
+  font-size: 12px;
+  font-family: "NeuzeitS";
+  line-height: 1.523;
+  text-align: center;
 }
 
 #inputId{
@@ -272,103 +324,106 @@ footer .input[value]{
 
 
 #fb{
-  background: url('../footer.png') no-repeat -16px -6px;
+  background: url(../img/footer.png) no-repeat -16px -6px;
   width: 11px;
   height: 22px;
 }
 
 #fb:hover{
-  background: url('../footerHover.png') no-repeat -16px -6px;
+  background: url(../img/footerHover.png) no-repeat -16px -6px;
   color: #00e1f5;
 }
 
 
 #twitter{
-  background: url('../footer.png') no-repeat -61px -8px;
+  background: url(../img/footer.png) no-repeat -61px -8px;
   width: 23px;
   height: 18px;
   margin-left: 30px;
 }
 
 #twitter:hover{
-  background: url('../footerHover.png') no-repeat -61px -8px;
+  background: url(../img/footerHover.png) no-repeat -61px -8px;
   color: #00e1f5;
 }
 
 #instagram{
-  background: url('../footer.png') no-repeat -116px -7px;
+  background: url(../img/footer.png) no-repeat -116px -7px;
   width: 20px;
   height: 20px;
   margin-left: 30px;
 }
 
 #instagram:hover{
-  background: url('../footerHover.png') no-repeat -116px -7px;
+  background: url(../img/footerHover.png) no-repeat -116px -7px;
   color: #00e1f5;
 }
 
 #id4{
-  background: url('../footer.png') no-repeat -165px -6px;
+  background: url(../img/footer.png) no-repeat -165px -6px;
   width: 23px;
   height: 22px;
   margin-left: 30px;
 }
 
 #id4:hover{
-  background: url('../footerHover.png') no-repeat -165px -6px;
+  background: url(../img/footerHover.png) no-repeat -165px -6px;
   color: #00e1f5;
 }
 
 #id5{
-  background: url('../footer.png') no-repeat -224px -6px;
+  background: url(../img/footer.png) no-repeat -224px -6px;
   width: 12px;
   height: 22px;
   margin-left: 30px;
 }
 
 #id5:hover{
-  background: url('../footerHover.png') no-repeat -224px -6px;
+  background: url(../img/footerHover.png) no-repeat -224px -6px;
   color: #00e1f5;
 }
 
 #id6{
-  background: url('../footer.png') no-repeat -269px -9px;
+  background: url(../img/footer.png) no-repeat -269px -9px;
   width: 29px;
   height: 16px;
   margin-left: 30px;
 }
 
 #id6:hover{
-    background: url('../footerHover.png') no-repeat -269px -9px;
+    background: url(../img/footerHover.png) no-repeat -269px -9px;
     color: #00e1f5;
 }
 
 
 #id7{
-  background: url('../footer.png') no-repeat -325px -6px;
+  background: url(../img/footer.png) no-repeat -325px -6px;
   width: 18px;
   height: 22px;
   margin-left: 30px;
 }
 
 #id7:hover{
-  background: url('../footerHover.png') no-repeat -325px -6px;
+  background: url(../img/footerHover.png) no-repeat -325px -6px;
   color: #00e1f5;
 }
 
 #list{
   width: 61%;
-  margin: auto;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  width: 77%;
   padding-bottom: 3.2%;
-  margin-left: 12.3%;
+  /* margin-left: 12.3%; */
   letter-spacing: 1px;
+  overflow: auto;
 }
 
 
 #list ul{
-  padding-top: 3%;
-  letter-spacing: 4px;
+/*  padding-top: 3%;*/
+  letter-spacing: 3px;
 }
 
 footer #list ul li {
@@ -378,15 +433,34 @@ footer #list ul li {
   line-height: 1.286;
   float: left;
   list-style-type: none;
-  margin-left: 38px;
+  margin-left: 5.1%;
 }
+
+
+#list > ul > ul > li:nth-child(1),
+#list > ul > ul > li:nth-child(2){
+  border-right: 1px solid black;
+  margin-left: 0;
+}
+
+#list > ul > ul > li:last-child{
+  margin-left: 0;
+}
+
+#list > ul > ul > li > a{
+  padding-left: 0.6%;
+  padding-right: 0.6%;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 
 #footerP{
   margin: auto;
   letter-spacing: 1px;
   padding-top: 2%;
   font-size: 12px;
-  font-family: "NeuzeitS";
+  font-family: "Myriad Pro";
   color: rgb(50, 50, 50);
   text-transform: uppercase;
   line-height: 1.523;
@@ -394,6 +468,7 @@ footer #list ul li {
   opacity: 0.902;
   width: 1200px;
 /*  height: 30px;*/
+padding-bottom: 11px;
 }
 
 
@@ -428,38 +503,7 @@ a:hover{
 
 
 
-/*#footerContainer > img{
-  color: black;
-}
 
-#footerContainer > img:hover{
-  color: blue;
-}
-
-*/
-/*#footerContainer > div:nth-child(2) > img{
-  color: #323232;
-}
-
-
-#footerContainer > div:nth-child(2) > img:hover{
-  color: blue;
-}
-*/
-
-
-
-/*#imgFotter{
-  background: url(../img/img-arrow02.png) no-repeat right;
-    padding-right: 35px;
-}*/
-
-
-/*#imgFooter:hover{
-  background: url('../arrowFooterHover.png') no-repeat -2px -2px;
-  color: blue;
-}
-*/
 
 .clear{
   clear: both;
@@ -535,6 +579,19 @@ h1 {
   width: 9px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*#up > div:nth-child(1) > div > p:nth-child(3) > span > img:hover{
   display: inline;
   color: #00e1f5;
@@ -543,7 +600,38 @@ h1 {
 
 
 
+/*#footerContainer > img{
+  color: black;
+}
 
+#footerContainer > img:hover{
+  color: blue;
+}
+
+*/
+/*#footerContainer > div:nth-child(2) > img{
+  color: #323232;
+}
+
+
+#footerContainer > div:nth-child(2) > img:hover{
+  color: blue;
+}
+*/
+
+
+
+/*#imgFotter{
+  background: url(../img/img-arrow02.png) no-repeat right;
+    padding-right: 35px;
+}*/
+
+
+/*#imgFooter:hover{
+  background: url('../arrowFooterHover.png') no-repeat -2px -2px;
+  color: blue;
+}
+*/
 
 
 /*#down > div:first-child > img{
@@ -605,5 +693,3 @@ h1 {
 #footerContainer img:hover{
   background-color: #00e1f5;
 }*/
-
-
