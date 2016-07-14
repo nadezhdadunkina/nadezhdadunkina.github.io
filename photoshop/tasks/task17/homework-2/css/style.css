@@ -65,6 +65,10 @@ table, th, td {
 }
 
 
+@font-face {
+    font-family: FuturaStd;
+    src: url(../Fonts/OpenSans-ExtraBold.ttf);
+}
 
 
 
@@ -86,18 +90,90 @@ nav ul{
 
 #user{
   float: left;
-  padding-top: 20px;
-  padding-left: 10px
+  margin-left: 1%;
+  top: 33%;
+  position: absolute;
+  padding: 0;
 }
 
 #search{
   float: right;
-  padding-top: 20px;
-  padding-right: 10px;
+  top: 39%;
+  position: absolute;
+  margin-left: 94%;
 }
 
-/* END NAV */
 
+#cart{
+  float: right;
+  position: absolute;
+  top: 37%;
+  margin-left: 96%;
+}
+
+
+#user:hover{
+  background: url(../img/userHover.png) no-repeat;
+  width: 2.5%;
+  opacity: 100%;
+}
+
+
+#search:hover{
+  background: url(../img/searchHover.png) no-repeat;
+  width: 2.5%;
+}
+
+
+#cart:hover{
+  background: url(../img/cartHover.png) no-repeat;
+  width: 2.5%;
+}
+
+
+fieldset {
+  padding-top: 15px;
+  margin-top: 35px;
+  padding-bottom: 33px;
+  width: 75%; 
+  font-size: 12px;
+}
+
+#fieldsetid{
+  text-align: center;
+  position: absolute;
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  width: 180px;
+  height: 224px;
+  top: 33%;
+  left: 0%;
+  padding-bottom: 15px;
+  background-color: #00e1f5;
+}
+
+#flatspot{
+  float: left;
+  margin-left: 520px;
+}
+
+
+
+#wrapper nav ul li{
+  margin-left: 57px;
+    margin-top: 1.6%;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 2.1px;
+}
+
+
+
+
+
+
+/* END NAV */
 
 
 
@@ -138,13 +214,15 @@ nav ul{
 
 .carousel-indicators li{
   background-color: #a2a2a2;
-  border: 0
+  width: 8.5px;
+  height: 8.5px;  
+  border: 0;
 }
 
 .carousel-indicators .active {
   background-color: #00e1f5;
-  width: 10px;
-  height: 10px;
+  width: 8.5px;
+  height: 8.5px;
   margin: 1px;
 }
 
@@ -154,15 +232,61 @@ nav ul{
 }
 
 
-
-.cnt{
+.boxForText{
   position: absolute;
   border: 1px solid red;
-  width: 200px;
-  height: 100px;
-  top: 40%;
-  left: 20%;
+  width: 320px;
+  height: 295px;
+  top: 38%;
+  left: 26%;
+  color: #ffffff;
+  line-height: 1.2; 
+  text-align: center;
 }
+
+
+
+
+.blog{
+  /*position: absolute;
+  border: 1px solid red;
+  width: 260px;
+  height: 169px;
+  top: 36%;
+  left: 19%;*/
+  font-size: 15px;
+  font-family: "Myriad Pro";
+/*  color: rgb(255, 255, 255);*/
+ line-height: 1.933;
+/*  text-align: center;*/
+}
+
+
+.adidasCollection{
+  font-size: 39px;
+  font-family: "Myriad Pro";
+  font-weight: bold;
+  line-height: 1.363;
+}
+
+
+
+.otherText{
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -171,7 +295,7 @@ nav ul{
 /* SECTION */
 
 
-section {
+section{
   max-width: 1200px;
   margin: auto;
 }
@@ -182,7 +306,7 @@ section {
   flex-direction: column;
   /*  padding-top: 21px;*
   /*  padding-top: 1%;*/
-  padding-top: 12px;
+  padding-top: 11px;
   flex-flow: row wrap;
   justify-content: space-around;
 }
@@ -408,7 +532,7 @@ footer .input[value]{
 }
 
 
-#wrapper footer p{
+/*#wrapper footer p{
   text-align: center;
   margin-top: 2.7%;
   margin-bottom: 1.45%;
@@ -417,7 +541,82 @@ footer .input[value]{
   font-size: 11.1px;
   line-height: 1.523;
   text-align: center;
+}*/
+
+
+
+/*#termList{
+    display: inline;
 }
+#termList li{
+    display: inline;
+    border-right: 1px solid #b2b2b2;
+    padding-right: 7px;
+}
+#termList li:last-child{
+    border-right: none;
+}
+
+#termList li:nth-child(1){
+    margin-left: 10px;
+    letter-spacing: 0.4px;
+}
+
+#termList li:nth-child(2){
+    padding-right: 12px;
+    padding-left: 1px;
+    letter-spacing: 0.4px;
+}
+#termList li:nth-child(3){
+    padding-right: 7px;
+    letter-spacing: 0.4px;
+} 
+*/
+
+.terms{
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 1.95%;
+}
+
+
+#termList li{
+  display: inline-flex;
+  border-right: 1px solid #b2b2b2;
+}
+
+
+#termList li a{
+  text-align: center;
+  color: #b2b2b2;
+  letter-spacing: 0.4px;
+  font-size: 12px;
+  line-height: 1;
+  margin-left: 4px;
+  margin-right: 6px;
+  word-spacing: 0.5px;
+}
+
+
+#termList li:last-child{
+  border-right: 0;
+}
+
+#termList li:nth-child(1){
+  margin-left: -4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -436,7 +635,7 @@ footer .input[value]{
 
 
 #twitter{
-  background: url(../img/footer.png) no-repeat -61px -8px;
+  background: url(../img/footer.png) no-repeat -61px -7px;
   width: 23px;
   height: 22px;
   margin-left: 34px;
@@ -511,11 +710,11 @@ footer .input[value]{
 #list{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3.7%;
+  margin-top: 3.66%;
   width: 77%;
-  padding-bottom: 4.3%;
+  padding-bottom: 4.47%;
   /* margin-left: 12.3%; */
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
   overflow: auto;
 }
 
@@ -531,8 +730,54 @@ footer #list ul li {
   line-height: 1.286;
   float: left;
   list-style-type: none;
-  margin-left: 5.14%;
-  word-spacing: 5.58px;
+  margin-left: 5.25%;
+  letter-spacing: 1.4px;
+}
+
+
+#list ul li:nth-child(1) > a{
+  margin-right: 6px;
+}
+
+
+#list ul li:nth-child(2) a{
+  margin-right: 1.5px;
+}
+
+
+#list ul li:nth-child(3) a{
+  margin-right: 6px;
+}
+
+
+#list ul li:nth-child(4) a{
+  margin-right: 4.5px;
+}
+
+
+#list ul li:nth-child(5) a{
+  margin-right: 3px;
+}
+
+
+#list ul ul li:nth-child(1) a{
+  margin-right: 10px;
+}
+
+
+#list ul ul li:nth-child(2) a{
+  margin-right: 10.5px;
+  margin-left: 13.5px;
+}
+
+#list ul ul li:nth-child(3) a{
+  margin-left: 15px;
+}
+
+
+#list ul li:nth-child(3) a {
+  margin-right: 6px;
+margin-left: 1px;
 }
 
 
@@ -542,9 +787,13 @@ footer #list ul li {
   margin-left: 0;
 }
 
+
+
 #list ul ul li:last-child{
   margin-left: 0;
 }
+
+
 
 #list ul ul li a{
   padding-left: 0.6%;
@@ -554,7 +803,7 @@ footer #list ul li {
 }
 
 
-#footerContainer p{
+/*#footerContainer p{
   padding-top: 3%;
   font-size: 14px;
   line-height: 1.636;
@@ -572,7 +821,7 @@ footer #list ul li {
 #footerContainer div p:nth-child(6){
   margin-top: 2.5%;
 }
-
+*/
 
 .clear{
   clear: both;
@@ -580,13 +829,36 @@ footer #list ul li {
 
 /* END FOOTER */
 
-
+.bannerClass{
+  text-align: center;
+}
 
 #banner{
+  display: inline-flex;
+  text-align: center;
+  margin-left: 15px;
+}
+
+
+
+#exitBanner{
+  opacity: 0.902;
+  color: #b7b7b7;
+  font-size: 11px;
+/*  height: 30px;*/
+  float: right;
+  margin-right: 15px;
+/*  display: inline-flex;*/
+
+}
+
+
+
+#banner li a{
   margin: auto;
   letter-spacing: 1px;
   padding-top: 1%;
-  font-size: 10px;
+  font-size: 10.5px;
   font-family: "Myriad Pro", sans-serif;
   color:  #000000;
   text-transform: uppercase;
@@ -594,10 +866,33 @@ footer #list ul li {
   text-align: center;
   opacity: 0.902;
   width: 1200px;
-  /*  height: 30px;*/
+  height: 30px;
   padding-bottom: 11px;
+  margin-left: 7px;
+  margin-right: 6px;
 }
 
+
+#banner li{
+   border-right: 1px solid #000000;
+
+}
+#banner li:nth-child(1) a{
+   margin-left: 4px;
+  margin-right: 10px;
+}
+
+
+#banner li:nth-child(2) a{
+  margin-left: 11px;
+  margin-right: 9px;
+}
+
+
+#banner li:last-child{
+  margin-left: 4px;
+  border-right: 0;
+}
 
 
 
