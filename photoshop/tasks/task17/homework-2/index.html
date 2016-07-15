@@ -13,13 +13,13 @@
     <link rel=stylesheet type="text/css" href="css/style.css">
     <title>FLATSPOT</title>
     <script src="../libs/jquery-3.0.0.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("#exit").click(function(){
-        $("fieldset").hide();
+    <script>
+    $(document).ready(function() {
+        $("#exit").click(function() {
+            $("fieldset").hide();
+        });
     });
-});
-</script>
+    </script>
 </head>
 
 <body>
@@ -52,13 +52,33 @@ $(document).ready(function(){
                 </form>
             </fieldset>
             <ul>
-            <li><img id="flatspot" src="img/flatspot.png" alt="flatspot"></li>
+                <li>
+                    <a href="#"><img id="flatspot" src="img/flatspot.png" alt="flatspot"></a>
+                </li>
                 <li>Latest</li>
                 <li>Shoes</li>
-                <li>Clothing</li>
-                <li>Brands</li>
-                <li>Skateboarding</li>
-                <li>Journal</li>
+                <li onMouseOver="javascript:getElementById('thirdLi').style.display='block';">
+                    Clothing
+                    <div id="thirdLi" style="display:none;">
+                        <ul class="thirdList">
+                            <li>Less</li>
+                            <li>Levi's</li>
+                            <li>Nike Sb</li>
+                            <li>Only</li>
+                            <li>Less</li>
+                            <li>Levi's</li>
+                            <li>Nike Sb</li>
+                            <li>Only</li>
+                            <li>Only</li>
+                            <li>Palace</li>
+                          
+                        </ul>
+                        <h1>VIEW ALL BRANDS (76)</h1>
+                    </div>
+                    <li>Brands</li>
+                    <li>Skateboarding</li>
+                    <li>Journal</li>
+                </li>
             </ul>
         </nav>
         <div class="container">
@@ -80,13 +100,23 @@ $(document).ready(function(){
                             <div class="blog">BLOG</div>
                             <div class="adidasCollection">ADIDAS SKATE COPA COLLECTION</div>
                             <div class="otherText">Bit of optional text about the slide lorem ipsum dolor amit. Ci tem labo. Ut omnitae el mod qui bea error se velique cupta...</div>
+                            <div class="btnClass"><a href="#" id="readMoreButton">Read more <img src="img/arrow-carousel-text-white.png"></a></div>
+                        </div>
+                        <div class="boxForText2">
+                            <div class="feature">FEATURE</div>
+                            <div class="longerTitle">A LONGER TITLE THAT GOES OVER THREE LINES</div>
+                            <div class="otherText">Bit of optional text about the slide lorem ipsum dolor amit. Ci tem labo. Ut omnitae el mod qui bea error se velique cupta...</div>
+                            <div class="btnClass"><a href="#" id="readMoreButton">Read more <img src="img/arrow-carousel-text-white.png"></a></div>
                         </div>
                         <img src="img/photoActive.jpg" alt="ActivePhoto">
                     </div>
-                    <!-- <div class="item">
-                        <img src="img/photoVideo.jpg" alt="ActivePhoto" width="460" height="345">
-                    </div>
                     <div class="item">
+                        <img src="img/photoVideo.jpg" alt="ActivePhoto" width="460" height="345">
+                        <img id="boxForVideo" src="img/youtube_vimeo-cover.png" alt="youtube_vimeo-cover" width="260" height="345">
+                        <img id="playVideo" src="img/playVideo.png" alt="btnPlayVideo">
+                        <div id="textVideo">Bit of optional text about the slide lorem ipsum dolor amit. Ci tem labo. Ut omnitae el mod qui bea error se velique cupta lorem...</div>
+                    </div>
+                    <!-- <div class="item">
                         <img src="img/photoActive.jpg" alt="ActivePhoto" width="460" height="345">
                     </div>
                     <div class="item">
